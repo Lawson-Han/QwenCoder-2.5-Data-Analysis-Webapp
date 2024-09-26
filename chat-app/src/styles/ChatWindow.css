@@ -1,0 +1,68 @@
+/* src/styles/ChatWindow.css */
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.message-item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.message-left {
+    justify-content: flex-start;
+}
+
+.message-right {
+    justify-content: flex-end;
+}
+
+.message-bubble {
+    max-width: 60%;
+    padding: 12px 20px;
+    border-radius: 18px;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+
+.user-message {
+    background-color: #1890ff;
+    color: white;
+    border-top-right-radius: 0;
+}
+
+.bot-message {
+    background-color: #7a7575;
+    color: white;
+    border-radius: 18px;
+    border-top-left-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+
+.chat-input-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-input-container .ant-input-search {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.avatar {
+    margin: 0 10px;
+}
