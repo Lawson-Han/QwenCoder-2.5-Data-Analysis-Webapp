@@ -10,10 +10,14 @@ def get_db_connection():
 def init_db():
     conn = get_db_connection()
     with conn.cursor() as cursor:
+        cursor.execute('DROP TABLE IF EXISTS messages;')
+        cursor.execute('DROP TABLE IF EXISTS sessions;')
+        
         # sessions table for different chat session
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS sessions (
                 id INT AUTO_INCREMENT PRIMARY KEY,
+                title VARCHAR(255) NOT NULL DEFAULT 'new chat',
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')

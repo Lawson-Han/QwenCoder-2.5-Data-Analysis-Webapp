@@ -20,15 +20,23 @@ const ChatWindow = ({ session }) => {
     }, [session]);
 
     // Sending a new message
-    const handleSendMessage = () => {
+    const handleSendMessage = async () => {
         if (newMessage.trim()) {
             setMessages([...messages, { from: 'user', text: newMessage }]);
             setNewMessage('');
 
-            // Simulate bot response for testing
-            setTimeout(() => {
-                setMessages(prevMessages => [...prevMessages, { from: 'bot', text: `Echo: ${newMessage}` }]);
-            }, 1000);
+            const response = await fetch(`http://127.0.0.1:5000/sessions/${session.id}/messages`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: newMessage }),
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                setMessages(prevMessages => [...prevMessages, { from: 'bot', text: data.response }]);
+            } else {
+                console.error(data.error);
+            }
         }
     };
 

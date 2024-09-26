@@ -1,8 +1,14 @@
 /* src/styles/Sidebar.css */
 
 .sidebar-title {
-    font-size: 16px;
+    font-size: 20px;
     padding: 16px;
     font-weight: bold;
     text-align: center;
+}
+
+.session-time {
+    color: gray;
+    font-size: 12px;
+    margin: 0 6px;
 }

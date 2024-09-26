@@ -1,11 +1,9 @@
-// src/components/Sidebar.js
-
 import React from 'react';
 import { Menu, Layout } from 'antd';
+import { PlusOutlined } from '@ant-design/icons';
 
 const { Sider } = Layout;
-
-const Sidebar = ({ sessions, currentSession, setCurrentSession }) => {
+const Sidebar = ({ sessions, currentSession, setCurrentSession, createNewSession }) => {
     return (
         <Sider
             breakpoint="lg"
@@ -14,18 +12,28 @@ const Sidebar = ({ sessions, currentSession, setCurrentSession }) => {
             width={300}
         >
             <div className="sidebar-title">Chat List</div>
-            <Menu mode="inline" selectedKeys={[String(currentSession.id)]}>
+            <Menu mode="inline" selectedKeys={[currentSession ? String(currentSession.id) : 'new-chat']}>
+                <Menu.Item key="new-chat" onClick={createNewSession} icon={<PlusOutlined />}>
+                    New Chat
+                </Menu.Item>
                 {sessions.map(session => (
-                    <Menu.Item
-                        key={session.id}
-                        onClick={() => setCurrentSession(session)}
-                    >
+                    <Menu.Item key={session.id} onClick={() => setCurrentSession(session)}>
                         {session.title}
+                        <div className="session-time">
+                            created at: {new Date(session.created_at).toLocaleString(undefined, {
+                                month: 'numeric',
+                                day: 'numeric',
+                                hour: '2-digit',
+                                minute: '2-digit',
+                                hour12: false,
+                            })}
+                        </div>
                     </Menu.Item>
                 ))}
             </Menu>
         </Sider>
     );
 };
+
 
 export default Sidebar;
