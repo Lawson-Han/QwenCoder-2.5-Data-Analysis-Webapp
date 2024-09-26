@@ -1,5 +1,6 @@
 # llama3.2-simple-website
-It's a simple LLM webapp using React.js and Flask, with MySQL database implemented.
+
+It's a simple LLM web app using React.js and Flask, with a MySQL database implemented.
 
 ### Time Record
 
@@ -11,4 +12,14 @@ It's a simple LLM webapp using React.js and Flask, with MySQL database implement
 
 9/27 1:45: Frontend reading from the database connection completed. New session creation and refresh tested successfully, allowing for persistent rendering. Began beautifying parts of the application.
 
+<img src="./readme-image/Screenshot 2024-09-27 at 03.15.16.png" alt="Screenshot 2024-09-27 at 03.15.16" style="zoom:50%;" />
+
 9/27 2:31: Handled timezone for displaying correct timestamps. Encountered a bug that took some time to fix; currently complete.
+
+9/27, 4:23 AM: Got stuck on the streaming display part—ran into an unusual bug with Socket.io.
+
+9/27 5:06 AM Thought it was due to an outdated OpenSSL version affecting HTTP requests. Got it fixed now.
+
+9/27 6:31 AM Streaming display is up and running! Finished all the tasks. Tomorrow, I'll hunt for bugs and look for areas to optimize—for example, the LLM should store context to continue the conversation.
+
+<img src="./readme-image/Screenshot 2024-09-27 at 06.30.29.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:50%;" />

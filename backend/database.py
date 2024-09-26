@@ -39,6 +39,26 @@ def init_db():
             )
         """
         )
+        cursor.execute(
+                """
+                INSERT INTO sessions (title)
+                VALUES ('Test Session 1'), ('Test Session 2'), ('Test Session 3');
+                """
+            )
+            
+            # Insert mock messages for the sessions
+        cursor.execute(
+                """
+                INSERT INTO messages (session_id, role, text)
+                VALUES
+                    (1, 'user', 'Hello! This is user message 1 for session 1'),
+                    (1, 'assistant', 'Hi! Assistant response 1 for session 1'),
+                    (2, 'user', 'User message 1 for session 2'),
+                    (2, 'assistant', 'Assistant response for session 2'),
+                    (3, 'user', 'User message for session 3'),
+                    (3, 'assistant', 'Assistant response for session 3');
+                """
+            )
 
     conn.commit()
     conn.close()
