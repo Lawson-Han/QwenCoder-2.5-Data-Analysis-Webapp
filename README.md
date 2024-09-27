@@ -31,3 +31,9 @@ It's a simple LLM web app using React.js and Flask, with a MySQL database implem
 9/27 15:36 Memory mechanics now completed. Started working on the default tab, i.e., the initial landing page.
 
 9/27 16:19 Styling beautification completed, but discovered a sidebar scaling bug.
+
+9/27 16:52 Finalise a more robust sidebar.
+
+<img src="./readme-image/Screenshot 2024-09-27 at 16.51.55.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:20%;" />
+
+<img src="./readme-image/Screenshot 2024-09-27 at 16.53.30.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:30%;" />

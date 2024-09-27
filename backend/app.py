@@ -156,6 +156,24 @@ def get_messages(session_id):
     conn.close()
     return jsonify({"messages": messages})
 
+#  delete session
+@app.route("/delete_session/<int:session_id>", methods=["DELETE"])
+def delete_session(session_id):
+    conn = get_db_connection()
+    try:
+        with conn.cursor() as cursor:
+            cursor.execute("DELETE FROM messages WHERE session_id = %s", (session_id,))
+            cursor.execute("DELETE FROM sessions WHERE id = %s", (session_id,))
+        conn.commit()
+    except Exception as e:
+        print(f"Error deleting session: {e}")
+        return jsonify({"error": "Failed to delete session"}), 500
+    finally:
+        conn.close()
+
+    print(f"Session {session_id} deleted successfully.")
+    return jsonify({"message": "Session deleted successfully"}), 200
+
 
 if __name__ == "__main__":
     with app.app_context():

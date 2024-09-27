@@ -57,8 +57,21 @@ function App() {
     }
   };
 
+  const deleteSession = async (sessionId) => {
+    const response = await fetch(`http://127.0.0.1:5000/delete_session/${sessionId}`, {
+      method: 'DELETE',
+    });
 
-  
+    if (response.ok) {
+      setSessions(sessions.filter(session => session.id !== sessionId));
+      if (currentSession && currentSession.id === sessionId) {
+        setCurrentSession(null);  // Clear current session if it's deleted
+      }
+      console.log(`Session deleted: ${sessionId}`);
+    } else {
+      console.error('Failed to delete session');
+    }
+  };
   return (
     <Layout style={{ height: '100vh' }}>
       <Sidebar
@@ -66,11 +79,12 @@ function App() {
         currentSession={currentSession}
         setCurrentSession={setCurrentSession}
         createNewSession={createNewSession}
+        deleteSession={deleteSession}
       />
       <Layout>
         {currentSession && (
           <Header style={{ background: '#fff', padding: '0 32px', borderBottom: '1px solid #f0f0f0' }}>
-            <h2>{currentSession.title}</h2>
+            <h2>{currentSession.title} {currentSession.id} </h2>
           </Header>
         )}
         <Content style={{ padding: '16px' }}>
