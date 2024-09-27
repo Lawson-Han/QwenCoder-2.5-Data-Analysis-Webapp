@@ -4,11 +4,13 @@ import React, { useState, useEffect } from 'react';
 import { Layout } from 'antd';
 import Sidebar from './components/Sidebar';
 import ChatWindow from './components/ChatWindow';
+import DefaultTab from './components/DefaultTab';
 import 'antd/dist/reset.css';
 import './styles/Sidebar.css';
 import './styles/ChatWindow.css';
 
 const { Header, Content } = Layout;
+
 
 function App() {
   const [sessions, setSessions] = useState([]);  // Track all sessions
@@ -56,6 +58,7 @@ function App() {
   };
 
 
+  
   return (
     <Layout style={{ height: '100vh' }}>
       <Sidebar
@@ -65,12 +68,15 @@ function App() {
         createNewSession={createNewSession}
       />
       <Layout>
-        <Header style={{ background: '#fff', padding: '0 32px', borderBottom: '1px solid #f0f0f0' }}>
-          <h2>{currentSession ? currentSession.title : 'Select a session'}</h2>
-        </Header>
+        {currentSession && (
+          <Header style={{ background: '#fff', padding: '0 32px', borderBottom: '1px solid #f0f0f0' }}>
+            <h2>{currentSession.title}</h2>
+          </Header>
+        )}
         <Content style={{ padding: '16px' }}>
-          {currentSession ? <ChatWindow session={currentSession} /> : <div>Please select a session to start chatting.</div>}
+          {currentSession ? <ChatWindow session={currentSession} /> : <DefaultTab createNewSession={createNewSession} />}
         </Content>
+
       </Layout>
     </Layout>
   );

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { List, Input, Avatar } from 'antd';
-import { UserOutlined, RobotFilled } from '@ant-design/icons';
-import { io } from 'socket.io-client';
+import { List, Avatar, Input, Empty } from 'antd';
+import { RobotFilled, UserOutlined } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
+import { io } from 'socket.io-client';
 
 const { Search } = Input;
 
@@ -108,6 +108,22 @@ const ChatWindow = ({ session }) => {
         };
     }, [socket]);
 
+    // empty styles
+
+    const emptyContent = (
+        <Empty className="empty-message"
+            description={
+                <>
+                    <p>No messages here...</p>
+                    <p type="secondary">Start your conversation by sending a message!</p>
+                </>
+            }
+
+        />
+
+
+    );
+
     return (
         <div className="chat-container">
             <div className="messages-container">
@@ -132,6 +148,7 @@ const ChatWindow = ({ session }) => {
                             )}
                         </div>
                     )}
+                    locale={{ emptyText: emptyContent }}
                 />
                 <div ref={messagesEndRef} />
             </div>

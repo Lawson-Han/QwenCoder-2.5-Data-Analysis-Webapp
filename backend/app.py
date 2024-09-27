@@ -76,12 +76,25 @@ def handle_send_message(data):
                 (session_id, "user", text),
             )
         conn.commit()
+        
+        # Get previous messages for the memory function
+        with conn.cursor() as cursor:
+            cursor.execute("SELECT * FROM messages WHERE session_id = %s", (session_id,))
+            previous_messages = cursor.fetchall()
+        
+        print(previous_messages)
+        
+        messages = []
+        if previous_messages:
+            messages = [{"role": msg['role'], "content": msg['text']} for msg in previous_messages]
+            
+        messages.append({"role": "user", "content": text}) 
 
         # Llama API
         payload = {
             "model": "llama3.2",
             "stream": True,
-            "messages": [{"role": "user", "content": text}],
+            "messages": messages,
         }
         headers = {"Content-Type": "application/json"}
 

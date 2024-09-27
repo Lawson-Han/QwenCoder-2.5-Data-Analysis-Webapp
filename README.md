@@ -24,4 +24,8 @@ It's a simple LLM web app using React.js and Flask, with a MySQL database implem
 
 <img src="./readme-image/Screenshot 2024-09-27 at 06.30.29.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:50%;" />
 
-9/27 14:16 开始优化loading显示，在大模型返回的时候应该显示为loading，并在结束生成的时候恢复正常。
+9/27 14:16 Started optimizing loading display; it should show loading when the large model is returning, and return to normal when generation is complete.
+
+9/27 15:17 Completed loading display, completed scroll bar settings, and correctly rendered Markdown format. 认为模型没有正确记忆conversation history，开始着手修复。
+
+9/27 15:36 Memory mechanics now completed. 开始着手做default tab，也就是一进来的开始界面
