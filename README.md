@@ -23,3 +23,5 @@ It's a simple LLM web app using React.js and Flask, with a MySQL database implem
 9/27 6:31 AM Streaming display is up and running! Finished all the tasks. Tomorrow, I'll hunt for bugs and look for areas to optimize—for example, the LLM should store context to continue the conversation.
 
 <img src="./readme-image/Screenshot 2024-09-27 at 06.30.29.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:50%;" />
+
+9/27 14:16 开始优化loading显示，在大模型返回的时候应该显示为loading，并在结束生成的时候恢复正常。

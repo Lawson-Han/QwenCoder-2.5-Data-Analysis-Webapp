@@ -17,7 +17,6 @@ function App() {
   const fetchSessions = async () => {
     const response = await fetch('http://127.0.0.1:5000/get_sessions', {
       method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
@@ -38,6 +37,7 @@ function App() {
     const response = await fetch('http://127.0.0.1:5000/add_session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify()
     });
 
     if (response.ok) {
@@ -48,7 +48,7 @@ function App() {
         created_at: data.session.created_at
       };
       setSessions([...sessions, newSession]);
-      setCurrentSession(newSession); 
+      setCurrentSession(newSession);
       console.log(`New session created: ${data.session.id}`);
     } else {
       console.error('Failed to create a new session');

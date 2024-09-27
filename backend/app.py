@@ -9,11 +9,11 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 CORS(
     app,
-    resources={r"/*": {"origins": ["http://localhost:3000", "http://127.0.0.1:3000"]}},
+    resources={r"/*": {"origins": ["http://localhost:3000", "http://192.168.0.28:3000"]}},
 )
 
 socketio = SocketIO(
-    app, cors_allowed_origins=["http://localhost:3000", "http://127.0.0.1:3000"]
+    app, cors_allowed_origins=["http://localhost:3000", "http://192.168.0.28:3000"]
 )
 
 OLLAMA_API_URL = "http://localhost:11434/api/chat"
@@ -69,6 +69,7 @@ def handle_send_message(data):
     conn = get_db_connection()
 
     try:
+        # Insert user message into db
         with conn.cursor() as cursor:
             cursor.execute(
                 "INSERT INTO messages (session_id, role, text) VALUES (%s, %s, %s)",
@@ -76,6 +77,7 @@ def handle_send_message(data):
             )
         conn.commit()
 
+        # Llama API
         payload = {
             "model": "llama3.2",
             "stream": True,
@@ -88,24 +90,38 @@ def handle_send_message(data):
         )
         response.raise_for_status()
 
+        # Process the stream
+        bot_response = ""
         for line in response.iter_lines():
             if line:
                 json_data = json.loads(line.decode("utf-8"))
-                if "message" in json_data and "content" in json_data["message"]:
+                print(json_data)
+                
+                if "message" in json_data and not json_data["done"]:
+                    if "content" in json_data["message"]:
+                        bot_response += json_data["message"]["content"]  # Append the response for later insertion
+
+                        message_text = json_data["message"]["content"]
+                        emit(
+                            "receive_message",
+                            {"text": message_text, "done": False},
+                            to=request.sid,
+                        )
+                elif json_data["done"]:
                     emit(
                         "receive_message",
-                        {"role": "assistant", "text": json_data["message"]["content"]},
+                        {"done": True},
                         to=request.sid,
                     )
+                    break 
 
-                    if json_data.get("done", False):
-                        emit(
-                        "receive_message",
-                        {"role": "assistant", "done": True},
-                        to=request.sid,
-                    )
-                        print("Received 'done' flag, stopping the stream.")
-                        break
+        # Save the complete bot response to the database once the stream is complete
+        with conn.cursor() as cursor:
+            cursor.execute(
+                "INSERT INTO messages (session_id, role, text) VALUES (%s, %s, %s)",
+                (session_id, "assistant", bot_response),
+            )
+        conn.commit()
 
     except requests.exceptions.RequestException as e:
         print(f"Error during request to LLaMA API: {e}")
