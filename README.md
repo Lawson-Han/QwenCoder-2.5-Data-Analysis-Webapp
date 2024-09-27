@@ -26,6 +26,8 @@ It's a simple LLM web app using React.js and Flask, with a MySQL database implem
 
 9/27 14:16 Started optimizing loading display; it should show loading when the large model is returning, and return to normal when generation is complete.
 
-9/27 15:17 Completed loading display, completed scroll bar settings, and correctly rendered Markdown format. 认为模型没有正确记忆conversation history，开始着手修复。
+9/27 15:17 Completed loading display, completed scroll bar settings, and correctly rendered Markdown format. Noted that the model did not properly remember conversation history, started working on a fix.
 
-9/27 15:36 Memory mechanics now completed. 开始着手做default tab，也就是一进来的开始界面
+9/27 15:36 Memory mechanics now completed. Started working on the default tab, i.e., the initial landing page.
+
+9/27 16:19 Styling beautification completed, but discovered a sidebar scaling bug.
