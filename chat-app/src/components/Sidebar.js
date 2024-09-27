@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Menu, Layout } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
+import { PlusOutlined} from '@ant-design/icons';
 
 const { Sider } = Layout;
+
 const Sidebar = ({ sessions, currentSession, setCurrentSession, createNewSession }) => {
+    const [collapsed, setCollapsed] = useState(false);
+
     return (
         <Sider
+            collapsible
+            collapsed={collapsed}
+            onCollapse={setCollapsed}
             breakpoint="lg"
-            collapsedWidth="0"
             style={{ background: '#fff', borderRight: '1px solid #f0f0f0' }}
             width={300}
         >
