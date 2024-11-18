@@ -3,6 +3,7 @@
 It's a simple LLM web app using React.js and Flask, with a MySQL database implemented.
 
 ## Time Record
+## Time Record
 
 9/26 22:44: Started working.
 
@@ -37,6 +38,10 @@ It's a simple LLM web app using React.js and Flask, with a MySQL database implem
 <img src="./readme-image/Screenshot 2024-09-27 at 16.51.55.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:20%;" />
 
 <img src="./readme-image/Screenshot 2024-09-27 at 16.53.30.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:30%;" />
+
+## Summary
+
+The development process has been smooth, and the main features are completed. It takes around 10 hours.
 
 ## Chat App (Frontend)
 
