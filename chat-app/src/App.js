@@ -5,30 +5,35 @@ import { Layout } from 'antd';
 import Sidebar from './components/Sidebar';
 import ChatWindow from './components/ChatWindow';
 import DefaultTab from './components/DefaultTab';
+import { API_BASE_URL } from './config';
 import 'antd/dist/reset.css';
 import './styles/Sidebar.css';
 import './styles/ChatWindow.css';
 
 const { Header, Content } = Layout;
 
-
 function App() {
   const [sessions, setSessions] = useState([]);  // Track all sessions
   const [currentSession, setCurrentSession] = useState(null);  // Track current session
 
   const fetchSessions = async () => {
-    const response = await fetch('http://127.0.0.1:5000/get_sessions', {
-      method: 'GET',
-    });
-
-    if (response.ok) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/get_sessions`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const data = await response.json();
       setSessions(data.sessions);
       if (data.sessions.length > 0) {
         setCurrentSession(data.sessions[0]);
       }
-    } else {
-      console.error('Failed to fetch sessions');
+    } catch (error) {
+      console.error('Error fetching sessions:', error);
     }
   };
 
@@ -36,7 +41,7 @@ function App() {
     fetchSessions();  // Fetch sessions at the beginning
   }, []);
   const createNewSession = async () => {
-    const response = await fetch('http://127.0.0.1:5000/add_session', {
+    const response = await fetch(`${API_BASE_URL}/add_session`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify()
@@ -58,7 +63,7 @@ function App() {
   };
 
   const deleteSession = async (sessionId) => {
-    const response = await fetch(`http://127.0.0.1:5000/delete_session/${sessionId}`, {
+    const response = await fetch(`${API_BASE_URL}/delete_session/${sessionId}`, {
       method: 'DELETE',
     });
 

@@ -3,6 +3,7 @@ import { List, Avatar, Input, Empty } from 'antd';
 import { RobotFilled, UserOutlined } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { io } from 'socket.io-client';
+import { API_BASE_URL, SOCKET_URL } from '../config';
 
 const { Search } = Input;
 
@@ -23,7 +24,7 @@ const ChatWindow = ({ session }) => {
     useEffect(() => {
         if (session.id) {
             const fetchMessages = async () => {
-                const response = await fetch(`http://127.0.0.1:5000/sessions/${session.id}/messages`, {
+                const response = await fetch(`${API_BASE_URL}/sessions/${session.id}/messages`, {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                 });
@@ -46,9 +47,10 @@ const ChatWindow = ({ session }) => {
         }
     }, [session]);
     const initializeSocket = () => {
-        const newSocket = io('http://127.0.0.1:5000');
+        const newSocket = io(SOCKET_URL);
         newSocket.on('receive_message', message => {
             setMessages(prevMessages => {
+                console.log(message);
                 if (message.done) {
                     setIsLoading(false);
                 }

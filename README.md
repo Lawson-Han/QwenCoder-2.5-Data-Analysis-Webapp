@@ -2,7 +2,7 @@
 
 It's a simple LLM web app using React.js and Flask, with a MySQL database implemented.
 
-### Time Record
+## Time Record
 
 9/26 22:44: Started working.
 
@@ -37,3 +37,110 @@ It's a simple LLM web app using React.js and Flask, with a MySQL database implem
 <img src="./readme-image/Screenshot 2024-09-27 at 16.51.55.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:20%;" />
 
 <img src="./readme-image/Screenshot 2024-09-27 at 16.53.30.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:30%;" />
+
+## Chat App (Frontend)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+## Chat App (Backend)
+## Quick Start
+
+1. Install Ollama (Mac/Linux):
+```bash
+curl https://ollama.ai/install.sh | sh
+```
+
+2. Download qwen2.5-coder:32b model:
+```bash
+ollama pull qwen2.5-coder:32b
+```
+
+3. Start the Ollama server:
+```bash
+ollama serve
+```
+
+4. Clone the repository:
+```bash
+git clone [your-repository-url]
+cd llama3.2-simple-website
+```
+
+5. Start the Backend:
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+6. Start the Frontend (in a new terminal):
+```bash
+cd chat-app
+npm install
+npm start
+```
+
+### Access the Application
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:5000
+
+### Project Structure
+```
+llama3.2-simple-website/
+├── backend/           # Flask backend
+│   ├── app.py        # Main application file
+│   ├── database.py   # Database operations
+│   └── requirements.txt  # Python dependencies
+└── chat-app/         # React frontend
+    ├── src/          # Source code
+    └── package.json  # Node.js dependencies
+```
+
+### Troubleshooting
+
+1. Check if Ollama is running:
+```bash
+ollama serve
+```
+
+2. Verify llama3.2 model is installed:
+```bash
+ollama list
+```
+
+3. Check backend logs in the terminal where you ran `python app.py`
+
+4. Check frontend logs in the terminal where you ran `npm start`
+
+5. If you encounter database issues, check if the SQLite database file exists:
+```bash
+ls backend/data/chat.db
+```
