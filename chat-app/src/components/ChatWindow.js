@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { List, Avatar, Input, Empty, Button, message, Typography } from 'antd';
-import { RobotFilled, UserOutlined,} from '@ant-design/icons';
+import { RobotFilled, UserOutlined, } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { io } from 'socket.io-client';
 import { API_BASE_URL, SOCKET_URL } from '../config';
@@ -133,13 +133,13 @@ const ChatWindow = ({ session }) => {
 
             if (!socket) {
                 const newSocket = initializeSocket();
-                newSocket.emit('send_message', { 
-                    session_id: session.id, 
+                newSocket.emit('send_message', {
+                    session_id: session.id,
                     text: newMessage,
                 });
             } else {
-                socket.emit('send_message', { 
-                    session_id: session.id, 
+                socket.emit('send_message', {
+                    session_id: session.id,
                     text: newMessage,
                 });
             }
@@ -187,56 +187,72 @@ const ChatWindow = ({ session }) => {
                                             remarkPlugins={[remarkGfm]}
                                             components={{
                                                 code({ node, inline, className, children, ...props }) {
-                                                    // 获取纯文本内容
                                                     const content = String(children).replace(/\n$/, '');
-
-                                                    // 代码块 (```code```)
-                                                    const match = /language-(\w+)/.exec(className || '');
-                                                    const language = match ? match[1] : '';
-
-                                                    return (
-                                                        <div style={{ position: 'relative' }}>
-                                                            <Text
-                                                                style={{
-                                                                    position: 'absolute',
-                                                                    right: '10px',
-                                                                    top: '8px',
-                                                                    fontSize: 'xs',
-                                                                    fontWeight: 'bold',
-                                                                    color: '#bbb',
-                                                                    borderRadius: 'md',
-                                                                    textTransform: 'uppercase'
-                                                                }}
-                                                            >
-                                                                {language}
-                                                            </Text>
-                                                            <SyntaxHighlighter
-                                                                language={language}
-                                                                style={oneDark}
-                                                                wrapLongLines
-                                                                customStyle={{
-                                                                    backgroundColor: '#1E1E1E',
-                                                                    color: '#D4D4D4',
-                                                                    padding: "26px 30px 20px 20px",
-                                                                    borderRadius: '10px',
-                                                                    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
-                                                                }}
-                                                                codeTagProps={{
-                                                                    style: {
-                                                                        color: '#9CDCFE',
-                                                                        fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace'
-                                                                    },
-                                                                }}
-                                                            >
+                                                    // 判断是否是行内代码
+                                                    if (inline || !className) {
+                                                        // 处理行内代码
+                                                        return (
+                                                            <code style={{
+                                                                backgroundColor: '#f6f8fa',           // 浅灰色背景
+                                                                color: '#d56161',                     // 柔和的橙红色
+                                                                padding: '2px 6px',                   // 简洁的内边距
+                                                                borderRadius: '4px',                  // 适度的圆角
+                                                                fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace',
+                                                                fontSize: '0.9em',                    // 稍小的字号
+                                                            }}>
                                                                 {content}
-                                                            </SyntaxHighlighter>
-                                                        </div>
-                                                    );
+                                                            </code>
+                                                        );
+                                                    } else {
+                                                        // 提取语言类型
+                                                        const match = /language-(\w+)/.exec(className || '');
+                                                        const language = match ? match[1] : '';
+                                                        // 处理代码块
+                                                        return (
+                                                            <div style={{ position: 'relative' }}>
+                                                                <Text
+                                                                    style={{
+                                                                        position: 'absolute',
+                                                                        right: '10px',
+                                                                        top: '8px',
+                                                                        fontSize: 'xs',
+                                                                        fontWeight: 'bold',
+                                                                        color: '#bbb',
+                                                                        borderRadius: 'md',
+                                                                        textTransform: 'uppercase'
+                                                                    }}
+                                                                >
+                                                                    {language}
+                                                                </Text>
+                                                                <SyntaxHighlighter
+                                                                    language={language}
+                                                                    style={oneDark}
+                                                                    wrapLongLines
+                                                                    customStyle={{
+                                                                        backgroundColor: '#1E1E1E',
+                                                                        color: '#D4D4D4',
+                                                                        padding: "26px 30px 20px 20px",
+                                                                        borderRadius: '10px',
+                                                                        boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
+                                                                    }}
+                                                                    codeTagProps={{
+                                                                        style: {
+                                                                            color: '#9CDCFE',
+                                                                            fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace'
+                                                                        },
+                                                                    }}
+                                                                >
+                                                                    {content}
+                                                                </SyntaxHighlighter>
+                                                            </div>
+                                                        );
+                                                    }
                                                 }
                                             }}
                                         >
                                             {msg.message}
                                         </ReactMarkdown>
+
                                     </div>
                                 </>
                             ) : (
@@ -256,14 +272,14 @@ const ChatWindow = ({ session }) => {
 
             <div className="chat-input-wrapper">
                 <div className="chat-input-container">
-                    <FileUploader 
-                        sessionId={session.id} 
+                    <FileUploader
+                        sessionId={session.id}
                         onFileChange={setUploadedFile}
                         uploadedFile={uploadedFile}
                     />
                     <Input
-                        placeholder={uploadedFile 
-                            ? "Type your question here..." 
+                        placeholder={uploadedFile
+                            ? "Type your question here..."
                             : "Please upload a file first"}
                         value={newMessage}
                         onChange={e => setNewMessage(e.target.value)}
