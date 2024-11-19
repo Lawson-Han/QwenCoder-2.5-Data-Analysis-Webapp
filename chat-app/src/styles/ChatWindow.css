@@ -51,17 +51,105 @@
 }
 
 
+.chat-input-wrapper {
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #f0f0f0;
+}
+
 .chat-input-container {
-    padding: 10px;
-    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    gap: 12px;
+    align-items: center;
     justify-content: center;
 }
 
-.chat-input-container .ant-input-search {
-    width: 100%;
-    max-width: 600px;
+/* 上传按钮 */
+.upload-button {
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+    background: #e8e8e8;
+    border-color: #d9d9d9;
+}
+
+/* 输入框 */
+.chat-input {
+    flex: 1;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.chat-input:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* 发送按钮 */
+.submit-button {
+    height: 44px;
+    padding: 0 30px;
+    border-radius: 8px;
+    background: #1890ff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #40a9ff;
+    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+/* 上传列表 */
+.ant-upload-list {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 8px;
     min-width: 300px;
+}
+
+.ant-upload-list-item {
+    padding: 4px 8px !important;
+    margin: 0 !important;
+}
+
+/* 进度条 */
+.ant-upload-list-item-progress {
+    padding: 0 !important;
+    margin: 4px 0 0 !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .chat-input-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-input, .upload-button, .submit-button {
+        width: 100%;
+    }
 }
 
 .avatar {

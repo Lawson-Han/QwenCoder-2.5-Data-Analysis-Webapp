@@ -1,15 +1,28 @@
 import sqlite3
 import os
 from datetime import datetime
+import time
 
 def get_db_connection():
     # 确保数据目录存在
     os.makedirs('data', exist_ok=True)
     
-    # 连接到数据库文件
-    conn = sqlite3.connect('data/chat.db')
-    conn.row_factory = sqlite3.Row
-    return conn
+    # 添加超时和错误处理
+    for _ in range(3):  # 最多重试3次
+        try:
+            conn = sqlite3.connect(
+                'data/chat.db',
+                timeout=20,  # 设置超时时间
+                isolation_level=None  # 自动提交模式
+            )
+            conn.row_factory = sqlite3.Row
+            return conn
+        except sqlite3.OperationalError as e:
+            if 'database is locked' in str(e):
+                time.sleep(1)  # 等待1秒后重试
+                continue
+            raise
+    raise sqlite3.OperationalError("Could not connect to database after 3 retries")
 
 def dict_factory(cursor, row):
     d = {}
@@ -23,7 +36,7 @@ def init_db():
     
     cursor = conn.cursor()
     
-    # 删除现有表（如果存在）
+    # 删除现有表
     cursor.execute("DROP TABLE IF EXISTS messages")
     cursor.execute("DROP TABLE IF EXISTS sessions")
     

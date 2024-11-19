@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { List, Avatar, Input, Empty, Upload, Button, message, Typography } from 'antd';
+import { List, Avatar, Input, Empty, Button, message, Typography, Progress, Tooltip } from 'antd';
 import { RobotFilled, UserOutlined, UploadOutlined, FileTextOutlined, FilePdfOutlined } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { io } from 'socket.io-client';
@@ -9,7 +9,6 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import remarkGfm from 'remark-gfm';
 
-const { Search } = Input;
 const { Text } = Typography;
 const ChatWindow = ({ session }) => {
     const [messages, setMessages] = useState([]);
@@ -173,27 +172,7 @@ const ChatWindow = ({ session }) => {
     };
 
     return (
-        <div
-            className={`chat-container ${isDragging ? 'dragging' : ''}`}
-            onDragEnter={handleDragIn}
-            onDragLeave={handleDragOut}
-            onDragOver={handleDrag}
-            onDrop={handleDrop}
-        >
-            {/* Drag overlay */}
-            {isDragging && (
-                <div className="drag-overlay">
-                    <div className="drag-overlay-content">
-                        <div className="file-icons">
-                            <FileTextOutlined className="file-icon csv" />
-                            <FilePdfOutlined className="file-icon pdf" />
-                        </div>
-                        <h3>Drop your files here</h3>
-                        <p>Support for CSV and PDF files</p>
-                    </div>
-                </div>
-            )}
-
+        <div className={`chat-container ${isDragging ? 'dragging' : ''}`}>
             <div className="messages-container">
                 <List
                     dataSource={messages}
@@ -295,26 +274,28 @@ const ChatWindow = ({ session }) => {
                 />
                 < div ref={messagesEndRef} />
             </div >
-            <div className="chat-input-container">
-                <Upload
-                    accept=".csv,.pdf"
-                    showUploadList={false}
-                    beforeUpload={(file) => {
-                        handleFiles([file]);
-                        return false;
-                    }}
-                >
-                    <Button icon={<UploadOutlined />} />
-                </Upload>
-                <Search
-                    placeholder="Type your question..."
-                    enterButton="Send"
-                    size="large"
-                    value={newMessage}
-                    onChange={e => setNewMessage(e.target.value)}
-                    onSearch={handleSendMessage}
-                    loading={isLoading}
-                />
+
+
+            <div className="chat-input-wrapper">
+                <div className="chat-input-container">
+                    <FileUploader sessionId={session.id} />
+                    <Input
+                        placeholder="Type your question here..."
+                        value={newMessage}
+                        onChange={e => setNewMessage(e.target.value)}
+                        onPressEnter={handleSendMessage}
+                        disabled={isLoading}
+                        className="chat-input"
+                    />
+                    <Button
+                        type="primary"
+                        onClick={handleSendMessage}
+                        loading={isLoading}
+                        className="submit-button"
+                    >
+                        Send
+                    </Button>
+                </div>
             </div>
         </div >
     );
