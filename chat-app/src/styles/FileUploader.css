@@ -1,3 +1,4 @@
 .ant-upload-list-item-container {
     position: absolute;
+    max-width: 450px;
 }

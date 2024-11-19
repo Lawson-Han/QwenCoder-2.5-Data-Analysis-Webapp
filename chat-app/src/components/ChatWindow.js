@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { List, Avatar, Input, Empty, Button, message, Typography, Progress, Tooltip } from 'antd';
-import { RobotFilled, UserOutlined, UploadOutlined, FileTextOutlined, FilePdfOutlined } from '@ant-design/icons';
+import { List, Avatar, Input, Empty, Button, message, Typography } from 'antd';
+import { RobotFilled, UserOutlined,} from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { io } from 'socket.io-client';
 import { API_BASE_URL, SOCKET_URL } from '../config';
@@ -18,7 +18,7 @@ const ChatWindow = ({ session }) => {
 
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef(null);
-    const [isDragging, setIsDragging] = useState(false);
+    const [uploadedFile, setUploadedFile] = useState(null);
 
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -27,34 +27,59 @@ const ChatWindow = ({ session }) => {
 
     useEffect(() => {
         if (session.id) {
-            const fetchMessages = async () => {
-                const response = await fetch(`${API_BASE_URL}/sessions/${session.id}/messages`, {
-                    method: 'GET',
-                    headers: { 'Content-Type': 'application/json' },
-                });
+            const fetchSessionData = async () => {
+                try {
+                    // 并行获取消息和文件信息
+                    const [messagesResponse, fileResponse] = await Promise.all([
+                        fetch(`${API_BASE_URL}/sessions/${session.id}/messages`, {
+                            method: 'GET',
+                            headers: { 'Content-Type': 'application/json' },
+                        }),
+                        fetch(`${API_BASE_URL}/sessions/${session.id}/file`, {
+                            method: 'GET',
+                            headers: { 'Content-Type': 'application/json' },
+                        })
+                    ]);
 
-                if (response.ok) {
-                    const data = await response.json();
-                    setMessages(
-                        data.messages.map(msg => ({
-                            message: msg.text,
-                            role: msg.role,
-                            message_id: msg.message_id || null,
-                        }))
-                    );
-                } else {
-                    console.error('Failed to fetch messages');
+                    // 处理消息数据
+                    if (messagesResponse.ok) {
+                        const data = await messagesResponse.json();
+                        setMessages(
+                            data.messages.map(msg => ({
+                                message: msg.text,
+                                role: msg.role,
+                                message_id: msg.message_id || null,
+                            }))
+                        );
+                    } else {
+                        console.error('Failed to fetch messages');
+                    }
+
+                    // 处理文件数据
+                    if (fileResponse.ok) {
+                        const data = await fileResponse.json();
+                        if (data.file) {
+                            setUploadedFile({
+                                name: data.file.file_name,
+                                filePath: data.file.file_path
+                            });
+                        }
+                        console.log("data")
+                        console.log(data.file)
+                    }
+                } catch (error) {
+                    console.error('Failed to fetch session data:', error);
                 }
             };
 
-            fetchMessages();
+            fetchSessionData();
         }
-    }, [session]);
+    }, [session.id]);
+
     const initializeSocket = () => {
         const newSocket = io(SOCKET_URL);
         newSocket.on('receive_message', message => {
             setMessages(prevMessages => {
-                console.log(message);
                 if (message.done) {
                     setIsLoading(false);
                 }
@@ -89,7 +114,18 @@ const ChatWindow = ({ session }) => {
         return newSocket;
     };
 
+    const handleFileChange = (fileInfo) => {
+        setUploadedFile(fileInfo);
+    };
+
     const handleSendMessage = () => {
+
+
+        if (!uploadedFile) {
+            message.warning('Please upload a CSV or PDF file before sending messages');
+            return;
+        }
+
         if (newMessage.trim()) {
             const userMessage = { role: 'user', message: newMessage };
             setMessages(prevMessages => [...prevMessages, userMessage]);
@@ -97,9 +133,15 @@ const ChatWindow = ({ session }) => {
 
             if (!socket) {
                 const newSocket = initializeSocket();
-                newSocket.emit('send_message', { session_id: session.id, text: newMessage });
+                newSocket.emit('send_message', { 
+                    session_id: session.id, 
+                    text: newMessage,
+                });
             } else {
-                socket.emit('send_message', { session_id: session.id, text: newMessage });
+                socket.emit('send_message', { 
+                    session_id: session.id, 
+                    text: newMessage,
+                });
             }
 
             setNewMessage('');
@@ -130,49 +172,8 @@ const ChatWindow = ({ session }) => {
 
     );
 
-    const handleDrag = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-    };
-
-    const handleDragIn = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setIsDragging(true);
-    };
-
-    const handleDragOut = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setIsDragging(false);
-    };
-
-    const handleDrop = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setIsDragging(false);
-
-        const files = [...e.dataTransfer.files];
-        handleFiles(files);
-    };
-
-    const handleFiles = (files) => {
-        files.forEach(file => {
-            const isCSV = file.type === 'text/csv' || file.name.endsWith('.csv');
-            const isPDF = file.type === 'application/pdf';
-
-            if (isCSV || isPDF) {
-                // Handle file upload
-                console.log('Uploading file:', file.name);
-                message.success(`Preparing to upload ${file.name}`);
-            } else {
-                message.error(`${file.name} is not a supported file type`);
-            }
-        });
-    };
-
     return (
-        <div className={`chat-container ${isDragging ? 'dragging' : ''}`}>
+        <div className="chat-container">
             <div className="messages-container">
                 <List
                     dataSource={messages}
@@ -189,28 +190,6 @@ const ChatWindow = ({ session }) => {
                                                     // 获取纯文本内容
                                                     const content = String(children).replace(/\n$/, '');
 
-                                                    // 检查是否是代码块 (被 ``` 包围)
-                                                    const isCodeBlock = content.includes('\n') || content.length > 50;  // 通常代码块会有换行或较长
-
-                                                    if (!isCodeBlock) {
-                                                        // 行内代码 (`code`)
-                                                        return (
-                                                            <code
-                                                                style={{
-                                                                    backgroundColor: '#24292e',  // GitHub Dark 风格的背景色
-                                                                    color: '#e6f1ff',           // 柔和的浅色文字
-                                                                    padding: '0.2em 0.4em',
-                                                                    borderRadius: '4px',
-                                                                    fontFamily: 'JetBrains Mono, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace',
-                                                                    fontSize: '0.9em'
-                                                                }}
-                                                                {...props}
-                                                            >
-                                                                {content}
-                                                            </code>
-                                                        );
-                                                    }
-
                                                     // 代码块 (```code```)
                                                     const match = /language-(\w+)/.exec(className || '');
                                                     const language = match ? match[1] : '';
@@ -221,11 +200,10 @@ const ChatWindow = ({ session }) => {
                                                                 style={{
                                                                     position: 'absolute',
                                                                     right: '10px',
-                                                                    top: '10px',
+                                                                    top: '8px',
                                                                     fontSize: 'xs',
                                                                     fontWeight: 'bold',
                                                                     color: '#bbb',
-                                                                    padding: '6px 8px',
                                                                     borderRadius: 'md',
                                                                     textTransform: 'uppercase'
                                                                 }}
@@ -239,7 +217,7 @@ const ChatWindow = ({ session }) => {
                                                                 customStyle={{
                                                                     backgroundColor: '#1E1E1E',
                                                                     color: '#D4D4D4',
-
+                                                                    padding: "26px 30px 20px 20px",
                                                                     borderRadius: '10px',
                                                                     boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
                                                                 }}
@@ -278,13 +256,18 @@ const ChatWindow = ({ session }) => {
 
             <div className="chat-input-wrapper">
                 <div className="chat-input-container">
-                    <FileUploader sessionId={session.id} />
+                    <FileUploader 
+                        sessionId={session.id} 
+                        onFileChange={setUploadedFile}
+                        uploadedFile={uploadedFile}
+                    />
                     <Input
-                        placeholder="Type your question here..."
+                        placeholder={uploadedFile 
+                            ? "Type your question here..." 
+                            : "Please upload a file first"}
                         value={newMessage}
                         onChange={e => setNewMessage(e.target.value)}
                         onPressEnter={handleSendMessage}
-                        disabled={isLoading}
                         className="chat-input"
                     />
                     <Button

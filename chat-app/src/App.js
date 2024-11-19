@@ -56,7 +56,6 @@ function App() {
       };
       setSessions([...sessions, newSession]);
       setCurrentSession(newSession);
-      console.log(`New session created: ${data.session.id}`);
     } else {
       console.error('Failed to create a new session');
     }
@@ -72,7 +71,6 @@ function App() {
       if (currentSession && currentSession.id === sessionId) {
         setCurrentSession(null);  // Clear current session if it's deleted
       }
-      console.log(`Session deleted: ${sessionId}`);
     } else {
       console.error('Failed to delete session');
     }

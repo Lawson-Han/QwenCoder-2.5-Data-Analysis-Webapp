@@ -74,7 +74,6 @@
     border: 1px solid #e8e8e8;
     font-size: 14px;
     transition: all 0.3s ease;
-    margin-left: 20px;
 }
 
 .chat-input:focus {
@@ -97,19 +96,6 @@
 .submit-button:hover {
     background: #40a9ff;
     box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .chat-input-container {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .chat-input,
-    .submit-button {
-        width: 100%;
-    }
 }
 
 .avatar {
