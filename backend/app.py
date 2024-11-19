@@ -192,8 +192,8 @@ def handle_send_message(data):
         )
 
         # 保存完整对话记录
-        full_response = f"SQL Query:\n```sql\n{sql_query}\n```\n"
-        full_response += f"\nResults:\n{result['results'] if success else result}"
+        full_response = sql_query
+        # full_response += f"\nResults:\n{result['results'] if success else result}"
         
         cursor.execute(
             "INSERT INTO messages (session_id, role, text) VALUES (?, ?, ?)",

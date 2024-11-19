@@ -109,9 +109,9 @@ def init_db():
 Gradient descent is an **optimization algorithm** used in machine learning. Here's what you need to know:
 
 ## Key Components
-* **Learning Rate**: Controls step size
-* **Cost Function**: Measures error
-* **Gradient**: Direction of steepest descent
+* **Learning Rate**: Controls `step size`
+* **Cost Function**: Measures `error`
+* **Gradient**: Direction of `steepest descent`
 
 ### Types of Gradient Descent:
 1. **Batch Gradient Descent**
