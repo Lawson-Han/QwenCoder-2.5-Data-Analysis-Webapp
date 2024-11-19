@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, Layout, Button, Popconfirm } from 'antd';
+import { Menu, Layout, Button, Popconfirm, Tooltip } from 'antd';
 import { PlusOutlined, CloseOutlined } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -25,37 +25,39 @@ const Sidebar = ({ sessions, currentSession, setCurrentSession, createNewSession
                     <Menu.Item 
                         key={session.id} 
                         onClick={() => setCurrentSession(session)} 
-
                     >
                         {collapsed ? (
                             `${session.title} #${session.id} ` 
                         ) : (
                             <div style={{ display: 'flex', alignItems: 'center', flex: 1 }}>
-                                <span style={{ flex: 1 }}>{session.title} {session.id} </span>
-                                <span className="session-time" style={{ marginRight: 16 }}>
-                                    created at: {new Date(session.created_at).toLocaleString(undefined, {
+                                <Tooltip 
+                                    title={`Created at: ${new Date(session.created_at).toLocaleString(undefined, {
+                                        year: 'numeric',
                                         month: 'numeric',
                                         day: 'numeric',
                                         hour: '2-digit',
                                         minute: '2-digit',
                                         hour12: false,
-                                    })}
-                                </span>
+                                    })}`}
+                                    placement="right"
+                                >
+                                    <span style={{ flex: 1 }}>{session.title} {session.id}</span>
+                                </Tooltip>
+                                {!collapsed && (
+                                    <Popconfirm
+                                        title="Are you sure to delete this session?"
+                                        onConfirm={() => deleteSession(session.id)}
+                                        okText="Yes"
+                                        cancelText="No"
+                                    >
+                                        <Button
+                                            type="text"
+                                            icon={<CloseOutlined />}
+                                            style={{ color: 'red', padding: 0 }}
+                                        />
+                                    </Popconfirm>
+                                )}
                             </div>
-                        )}
-                        {!collapsed && (
-                            <Popconfirm
-                                title="Are you sure to delete this session?"
-                                onConfirm={() => deleteSession(session.id)}
-                                okText="Yes"
-                                cancelText="No"
-                            >
-                                <Button
-                                    type="text"
-                                    icon={<CloseOutlined />}
-                                    style={{ color: 'red', padding: 0 }}
-                                />
-                            </Popconfirm>
                         )}
                     </Menu.Item>
                 ))}

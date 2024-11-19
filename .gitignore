@@ -62,3 +62,5 @@ pids
 *.pid
 *.seed
 *.pid.lock 
+
+/backend/uploads
