@@ -14,7 +14,9 @@ from file_process import FileProcessor
 app = Flask(__name__)
 CORS(
     app,
-    resources={r"/*": {"origins": ["http://localhost:3000", "http://192.168.0.28:3000"]}},
+    resources={
+        r"/*": {"origins": ["http://localhost:3000", "http://192.168.0.28:3000"]}
+    },
 )
 
 socketio = SocketIO(
@@ -24,15 +26,17 @@ socketio = SocketIO(
 OLLAMA_API_URL = "http://localhost:11434/api/chat"
 
 # 配置上传文件夹
-UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'csv', 'pdf'}
+UPLOAD_FOLDER = "uploads"
+ALLOWED_EXTENSIONS = {"csv", "pdf"}
 
 # 确保上传文件夹存在
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
+
 def allowed_file(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 @app.route("/")
 def home():
@@ -80,133 +84,121 @@ def handle_send_message(data):
     session_id = data["session_id"]
     text = data["text"]
     sql_query = ""
-    
+
     conn = get_db_connection()
     cursor = conn.cursor()
     processor = FileProcessor()
 
     try:
-        # 从数据库获取当前session的文件信息
+        # 1. 检查文件
         cursor.execute(
             "SELECT file_path, file_name FROM session_files WHERE session_id = ?",
-            (session_id,)
+            (session_id,),
         )
         file_info = cursor.fetchone()
-        
+
         if not file_info:
             socketio.emit(
                 "receive_message",
                 {"text": "Error: No file associated with this session.", "done": True},
-                room=request.sid
+                room=request.sid,
             )
             return
 
-        # 使用数据库中存储的文件名获取表信息
-        table_info = processor.get_table_info(file_info['file_path'])
-        
-        # 保存用户消息
+        # 2. 分析表结构
+        table_info = processor.get_table_info(file_info["file_path"])
+
+        # 3. 保存消息
         cursor.execute(
             "INSERT INTO messages (session_id, role, text) VALUES (?, ?, ?)",
             (session_id, "user", text),
         )
         conn.commit()
-        
-        # 获取历史消息
+
+        # 4. 准备历史消息
         cursor.execute("SELECT * FROM messages WHERE session_id = ?", (session_id,))
         previous_messages = cursor.fetchall()
-        messages = [{"role": msg['role'], "content": msg['text']} for msg in previous_messages]
+        messages = [
+            {"role": msg["role"], "content": msg["text"]} for msg in previous_messages
+        ]
         messages.append({"role": "user", "content": text})
 
-        # 准备SQL转换提示
-        sql_prompt = f"""Given the following table structure:
+        # 5. 准备SQL转换提示
+        sql_prompt = f"""You are a SQL assistant that ONLY helps with queries related to the current table.
+        
+        Current table structure:
         {table_info}
         
-        Convert user's natural language query to SQL.
+        Instructions:
+        1. If the user's question is about the table data, convert it to SQL and return ONLY the SQL query.
+        2. If the user asks about table columns that don't exist, respond with:
+           "The requested column(s) are not available in the current table. Available columns are: [list the columns]"
         
-        Return only the SQL query, nothing else."""
+        Remember: ONLY return SQL for valid table-related queries. For all other cases, return the guidance message.
+        """
 
-        # 准备LLM请求
+        # 6. LLM请求
         payload = {
-            "model": "qwen2.5-coder:7b",
+            "model": "qwen2.5-coder:14b",
             "stream": True,
-            "messages": [
-                {"role": "system", "content": sql_prompt},
-                *messages
-            ],
+            "messages": [{"role": "system", "content": sql_prompt}, *messages],
         }
-        print("payload", payload)
 
-        # 流式处理响应，只获取 SQL 查询
+        # 7. 流式处理LLM响应
         with requests.post(
-            OLLAMA_API_URL, 
-            json=payload, 
-            headers={"Content-Type": "application/json"}, 
-            stream=True
+            OLLAMA_API_URL,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            stream=True,
         ) as response:
             response.raise_for_status()
-            
+
             for line in response.iter_lines():
                 if line:
                     json_data = json.loads(line.decode("utf-8"))
-                    
                     if "message" in json_data and not json_data["done"]:
                         if "content" in json_data["message"]:
                             chunk = json_data["message"]["content"]
                             sql_query += chunk
-                            # 实时发送 SQL 生成过程
                             socketio.emit(
                                 "receive_message",
                                 {"text": chunk, "done": False},
-                                room=request.sid
+                                room=request.sid,
                             )
                             socketio.sleep(0)
-                    
                     elif json_data["done"]:
                         break
 
-        # SQL 生成完成后，尝试执行查询
+        # 8. 执行查询并生成结果
         sql_query = sql_query.strip()
-        print("llama response sql_query: ", sql_query)
-        success, result = processor.execute_query(sql_query, file_info['file_path'])
+        success, result = processor.execute_query(sql_query, file_info["file_path"])
 
         if success:
-            # 发送查询结果
             socketio.emit(
                 "receive_message",
-                {"text": f"\nQuery Results:\n{result['results']}", "done": False},
-                room=request.sid
-            )
-        else:
-            # 发送错误信息
-            socketio.emit(
-                "receive_message",
-                {"text": f"\nError executing query: {result}", "done": False},
-                room=request.sid
+                {
+                    "text": f"\n{result['results']}",
+                    "chart_data": result["chart_data"],
+                    "done": False,
+                },
+                room=request.sid,
             )
 
-        # 发送完成信号
-        socketio.emit(
-            "receive_message",
-            {"done": True},
-            room=request.sid
-        )
-
-        # 保存完整对话记录
-        full_response = sql_query
-        # full_response += f"\nResults:\n{result['results'] if success else result}"
-        
+        # 9. 保存响应
         cursor.execute(
             "INSERT INTO messages (session_id, role, text) VALUES (?, ?, ?)",
-            (session_id, "assistant", full_response),
+            (session_id, "assistant", sql_query),
         )
         conn.commit()
+
+        socketio.emit("receive_message", {"done": True}, room=request.sid)
 
     except Exception as e:
         print(f"Error during processing: {e}")
         socketio.emit(
             "receive_message",
             {"text": f"Error during query processing: {str(e)}", "done": True},
-            room=request.sid
+            room=request.sid,
         )
     finally:
         cursor.close()
@@ -224,6 +216,7 @@ def get_messages(session_id):
     cursor.close()
     conn.close()
     return jsonify({"messages": messages_list})
+
 
 #  delete session
 @app.route("/delete_session/<int:session_id>", methods=["DELETE"])
@@ -244,45 +237,49 @@ def delete_session(session_id):
     print(f"Session {session_id} deleted successfully.")
     return jsonify({"message": "Session deleted successfully"}), 200
 
-@app.route('/upload', methods=['POST'])
+
+@app.route("/upload", methods=["POST"])
 def upload_file():
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file part'}), 400
-    
-    file = request.files['file']
-    session_id = request.form.get('session_id')
-    
+    if "file" not in request.files:
+        return jsonify({"error": "No file part"}), 400
+
+    file = request.files["file"]
+    session_id = request.form.get("session_id")
+
     if not session_id:
-        return jsonify({'error': 'No session ID provided'}), 400
-    
-    if file.filename == '':
-        return jsonify({'error': 'No selected file'}), 400
-        
+        return jsonify({"error": "No session ID provided"}), 400
+
+    if file.filename == "":
+        return jsonify({"error": "No selected file"}), 400
+
     if file and allowed_file(file.filename):
         try:
             # 安全地处理文件名并保存
             filename = secure_filename(file.filename)
             file_path = os.path.join(UPLOAD_FOLDER, filename)
             file.save(file_path)
-            
+
             # 处理文件
             processor = FileProcessor()
             conn = get_db_connection()
             try:
-                success, result = processor.handle_file_upload(file_path, session_id, conn)
-                
+                success, result = processor.handle_file_upload(
+                    file_path, session_id, conn
+                )
+
                 if success:
                     return jsonify(result), 201
                 else:
                     return jsonify(result), 500
             finally:
                 conn.close()
-                
+
         except Exception as e:
             app.logger.error(f"Upload error: {str(e)}")
-            return jsonify({'error': str(e)}), 500
-        
-    return jsonify({'error': 'File type not allowed'}), 400
+            return jsonify({"error": str(e)}), 500
+
+    return jsonify({"error": "File type not allowed"}), 400
+
 
 @app.route("/sessions/<int:session_id>/file", methods=["GET"])
 def get_session_file(session_id):
@@ -291,25 +288,28 @@ def get_session_file(session_id):
         cursor = conn.cursor()
         cursor.execute(
             "SELECT file_path, file_name FROM session_files WHERE session_id = ?",
-            (session_id,)
+            (session_id,),
         )
         file_info = cursor.fetchone()
-        
+
         if file_info:
-            return jsonify({
-                "file": {
-                    "file_path": file_info['file_path'],
-                    "file_name": file_info['file_name']
+            return jsonify(
+                {
+                    "file": {
+                        "file_path": file_info["file_path"],
+                        "file_name": file_info["file_name"],
+                    }
                 }
-            })
+            )
         else:
             return jsonify({"file": None}), 200
-            
+
     except Exception as e:
         print(f"Error fetching session file: {e}")
         return jsonify({"error": "Failed to fetch session file"}), 500
     finally:
         conn.close()
+
 
 if __name__ == "__main__":
     with app.app_context():

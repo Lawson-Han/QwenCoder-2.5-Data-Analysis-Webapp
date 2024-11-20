@@ -12,7 +12,7 @@ class FileProcessor:
 
     def execute_query(self, sql_query: str, file_path: str) -> Tuple[bool, Any]:
         """
-        按需加载CSV并执行查询，返回格式化的结果
+        执行查询并返回格式化的表格和图表数据
         """
         try:
             # 提取SQL查询
@@ -33,20 +33,29 @@ class FileProcessor:
                 # 将DataFrame保存为临时表
                 df.to_sql(table_name, conn, if_exists='replace', index=False)
                 
-                # 执行查询并获取结果
-                cursor = conn.cursor()
-                cursor.execute(cleaned_sql)
-                rows = cursor.fetchall()
-                columns = [description[0] for description in cursor.description]
+                # 执行查询
+                result_df = pd.read_sql_query(cleaned_sql, conn)
                 
-                # 构建响应
-                response = "Here's the query result:\n\n"
-                response += "| " + " | ".join(columns) + " |\n"
-                response += "| " + " | ".join(["---"] * len(columns)) + " |\n"
-                for row in rows:
-                    response += "| " + " | ".join(str(value) for value in row) + " |\n"
+                # 1. 构建表格响应
+                columns = result_df.columns.tolist()
+                formatted_table = "Here's the query result:\n\n"
+                formatted_table += "| " + " | ".join(columns) + " |\n"
+                formatted_table += "| " + " | ".join(["---"] * len(columns)) + " |\n"
                 
-                return True, {"results": response}
+                for _, row in result_df.iterrows():
+                    formatted_table += "| " + " | ".join(str(value) for value in row) + " |\n"
+                
+                # 2. 构建图表数据
+                chart_data = {
+                    'labels': columns,
+                    'datasets': result_df.to_dict('records'),
+                    'types': result_df.dtypes.astype(str).to_dict()
+                }
+                
+                return True, {
+                    "results": formatted_table,
+                    "chart_data": chart_data
+                }
                     
         except Exception as e:
             return False, f"Query error: {str(e)}"
@@ -119,3 +128,29 @@ class FileProcessor:
 
         except Exception as e:
             return False, {"error": str(e)}
+
+    def get_chart_data(self, sql_query: str, file_path: str) -> Tuple[bool, Dict]:
+        """
+        执行查询并返回适合前端绘图的数据格式
+        """
+        try:
+            # 读取CSV并执行查询
+            df = pd.read_csv(file_path)
+            df.columns = df.columns.str.lower().str.replace(' ', '_')
+            
+            # 执行查询获取数据
+            with sqlite3.connect(':memory:') as conn:
+                df.to_sql('temp_table', conn, if_exists='replace', index=False)
+                result_df = pd.read_sql_query(sql_query, conn)
+            
+            # 转换为前端可用的格式
+            chart_data = {
+                'labels': result_df.columns.tolist(),
+                'datasets': result_df.to_dict('records'),
+                'types': result_df.dtypes.astype(str).to_dict()
+            }
+            
+            return True, chart_data
+            
+        except Exception as e:
+            return False, f"Data processing error: {str(e)}"
