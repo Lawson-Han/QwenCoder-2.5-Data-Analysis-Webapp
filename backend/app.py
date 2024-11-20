@@ -143,7 +143,7 @@ def handle_send_message(data):
 
         # 6. LLM请求
         payload = {
-            "model": "qwen2.5-coder:14b",
+            "model": "qwen2.5-coder:3b",
             "stream": True,
             "messages": [{"role": "system", "content": sql_prompt}, *messages],
         }
@@ -176,14 +176,31 @@ def handle_send_message(data):
 
         # 8. 执行查询并生成结果
         sql_query = sql_query.strip()
+        
+        # 先保存助手消息以获取 message_id
+        cursor.execute(
+            "INSERT INTO messages (session_id, role, text) VALUES (?, ?, ?)",
+            (session_id, "assistant", sql_query),
+        )
+        conn.commit()
+        message_id = cursor.lastrowid  # 获取新插入消息的ID
+        
         success, result = processor.execute_query(sql_query, file_info["file_path"])
 
         if success:
+            # 存储查询结果
+            cursor.execute("""
+                INSERT INTO query_results 
+                (message_id, session_id, query_data) 
+                VALUES (?, ?, ?)
+            """, (message_id, session_id, json.dumps(result["raw_data"])))
+            conn.commit()
+            
             socketio.emit(
                 "receive_message",
                 {
                     "table_data": result["table_data"],
-                    "chart_data": result["chart_data"],
+                    "message_id": message_id,
                     "done": False,
                 },
                 room=request.sid,
@@ -194,13 +211,6 @@ def handle_send_message(data):
                 {"text": f"Error during query processing.", "done": True},
                 room=request.sid,
             )
-
-        # 9. 保存响应
-        cursor.execute(
-            "INSERT INTO messages (session_id, role, text) VALUES (?, ?, ?)",
-            (session_id, "assistant", sql_query),
-        )
-        conn.commit()
 
         socketio.emit("receive_message", {"done": True}, room=request.sid)
 
@@ -220,13 +230,31 @@ def handle_send_message(data):
 def get_messages(session_id):
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM messages WHERE session_id = ?", (session_id,))
-    messages = cursor.fetchall()
-    # Convert SQLite Row objects to dictionaries
-    messages_list = [dict(message) for message in messages]
-    cursor.close()
-    conn.close()
-    return jsonify({"messages": messages_list})
+    
+    # 获取消息和查询结果
+    cursor.execute("""
+        SELECT m.*, qr.query_data 
+        FROM messages m 
+        LEFT JOIN query_results qr ON m.id = qr.message_id 
+        WHERE m.session_id = ?
+        ORDER BY m.id
+    """, (session_id,))
+    
+    messages = []
+    for row in cursor.fetchall():
+        message = dict(row)
+        if message['query_data']:
+            # 重构表格数据
+            raw_data = json.loads(message['query_data'])
+            df = pd.DataFrame(
+                data=raw_data['result']['data'],
+                columns=raw_data['result']['columns']
+            )
+            message['table_data'] = FileProcessor()._to_antd_format(df)
+            
+        messages.append(message)
+    
+    return jsonify({"messages": messages})
 
 
 #  delete session

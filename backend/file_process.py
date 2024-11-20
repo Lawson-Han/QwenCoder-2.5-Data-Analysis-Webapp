@@ -35,32 +35,32 @@ class FileProcessor:
                 
                 # 执行查询
                 result_df = pd.read_sql_query(cleaned_sql, conn)
-                print("reading sql query...")
                 
-                # 1. 构建 antd 表格数据
-                table_data = {
-                    "columns": [
-                        {"title": col, "dataIndex": col, "key": col} 
-                        for col in result_df.columns
-                    ],
-                    "dataSource": result_df.to_dict('records')
+                # 存储原始查询结果
+                result_dict = {
+                    "sql": cleaned_sql,
+                    "result": result_df.to_dict('split'),  # 使用split格式更节省空间
+                    "columns": result_df.columns.tolist(),
+                    "types": result_df.dtypes.astype(str).to_dict()
                 }
-                
-                # 2. 构建图表数据
-                chart_data = {
-                    'labels': result_df.columns.tolist(),
-                    'datasets': result_df.to_dict('records'),
-                    'types': result_df.dtypes.astype(str).to_dict()
-                }
-                print("finished building chart data...")
                 
                 return True, {
-                    "table_data": table_data,
-                    "chart_data": chart_data
+                    "table_data": self._to_antd_format(result_df),  # 转换为前端格式
+                    "raw_data": result_dict  # 用于存储
                 }
                     
         except Exception as e:
             return False, f"Query error: {str(e)}"
+
+    def _to_antd_format(self, df: pd.DataFrame) -> Dict:
+        """将DataFrame转换为antd Table格式"""
+        return {
+            "columns": [
+                {"title": col, "dataIndex": col, "key": col} 
+                for col in df.columns
+            ],
+            "dataSource": df.to_dict('records')
+        }
 
     def get_table_info(self, file_path: str) -> str:
         """

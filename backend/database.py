@@ -36,7 +36,8 @@ def init_db():
     
     cursor = conn.cursor()
     
-    # 删除现有表（保留session_files表）
+    # 删除现有表
+    cursor.execute("DROP TABLE IF EXISTS query_results")
     cursor.execute("DROP TABLE IF EXISTS messages")
     cursor.execute("DROP TABLE IF EXISTS sessions")
     cursor.execute("DROP TABLE IF EXISTS session_files")
@@ -57,11 +58,22 @@ def init_db():
             role TEXT NOT NULL,
             text TEXT NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY (session_id) REFERENCES sessions(id)
+            FOREIGN KEY (session_id) REFERENCES sessions(id) ON DELETE CASCADE
         )
     """)
     
-    # 创建session_files表（如果不存在）
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS query_results (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            message_id INTEGER NOT NULL,
+            session_id INTEGER NOT NULL,
+            query_data TEXT NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (message_id) REFERENCES messages(id) ON DELETE CASCADE,
+            FOREIGN KEY (session_id) REFERENCES sessions(id) ON DELETE CASCADE
+        )
+    """)
+    
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS session_files (
             session_id INTEGER NOT NULL,

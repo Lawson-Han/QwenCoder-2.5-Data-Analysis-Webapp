@@ -31,7 +31,6 @@ const ChatWindow = ({ session }) => {
         if (session.id) {
             const fetchSessionData = async () => {
                 try {
-                    // 并行获取消息和文件信息
                     const [messagesResponse, fileResponse] = await Promise.all([
                         fetch(`${API_BASE_URL}/sessions/${session.id}/messages`, {
                             method: 'GET',
@@ -50,7 +49,8 @@ const ChatWindow = ({ session }) => {
                             data.messages.map(msg => ({
                                 message: msg.text,
                                 role: msg.role,
-                                message_id: msg.message_id || null,
+                                message_id: msg.id,
+                                tableData: msg.table_data
                             }))
                         );
                     } else {
@@ -99,14 +99,6 @@ const ChatWindow = ({ session }) => {
                             ...lastMessage,
                             tableData: message.table_data
                         };
-                    } else {
-                        // 如果没有最后一条助手消息，创建新消息
-                        updatedMessages.push({
-                            role: 'assistant',
-                            message: '',
-                            tableData: message.table_data,
-                            message_id: message.message_id,
-                        });
                     }
                 } else if (message.text) {
                     if (lastMessage && 
