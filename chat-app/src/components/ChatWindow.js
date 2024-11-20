@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { List, Avatar, Input, Empty, Button, message, Typography } from 'antd';
+import { List, Avatar, Input, Empty, Button, message, Typography, Table } from 'antd';
 import { RobotFilled, UserOutlined, WifiOutlined, LoadingOutlined } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { io } from 'socket.io-client';
@@ -78,19 +78,39 @@ const ChatWindow = ({ session }) => {
 
     const initializeSocket = () => {
         const newSocket = io(SOCKET_URL);
+        
+        newSocket.on('message_received', () => {
+            console.log('Message received confirmation from server');
+            setInitializingText('analyzing');
+        });
+
         newSocket.on('receive_message', message => {
+            console.log('Received message from server:', message);
             setShowInitializing(false);
+            
             setMessages(prevMessages => {
-                if (message.done) {
-                    setIsLoading(false);
-                }
                 const updatedMessages = [...prevMessages];
                 const lastMessage = updatedMessages[updatedMessages.length - 1];
 
-                if (message.text) {
-                    if (
-                        lastMessage &&
-                        lastMessage.role === 'assistant' &&
+                if (message.table_data) {
+                    // 如果是表格数据，添加到最后一条助手消息中
+                    if (lastMessage && lastMessage.role === 'assistant') {
+                        updatedMessages[updatedMessages.length - 1] = {
+                            ...lastMessage,
+                            tableData: message.table_data
+                        };
+                    } else {
+                        // 如果没有最后一条助手消息，创建新消息
+                        updatedMessages.push({
+                            role: 'assistant',
+                            message: '',
+                            tableData: message.table_data,
+                            message_id: message.message_id,
+                        });
+                    }
+                } else if (message.text) {
+                    if (lastMessage && 
+                        lastMessage.role === 'assistant' && 
                         lastMessage.message_id === message.message_id
                     ) {
                         updatedMessages[updatedMessages.length - 1] = {
@@ -103,12 +123,22 @@ const ChatWindow = ({ session }) => {
                             message: message.text,
                             message_id: message.message_id,
                         });
-                        setCurrentAssistantMessageId(message.message_id);
                     }
                 }
 
+                if (message.done) {
+                    setIsLoading(false);
+                }
                 return updatedMessages;
             });
+        });
+
+        newSocket.on('connect', () => {
+            console.log('Socket connected');
+        });
+
+        newSocket.on('connect_error', (error) => {
+            console.error('Socket connection error:', error);
         });
 
         setSocket(newSocket);
@@ -145,10 +175,6 @@ const ChatWindow = ({ session }) => {
                 });
             }
 
-            setTimeout(() => {
-                setInitializingText('analyzing');
-            }, 1000);
-
             setNewMessage('');
         }
     };
@@ -183,82 +209,100 @@ const ChatWindow = ({ session }) => {
                 <List
                     dataSource={messages}
                     renderItem={(msg, index) => (
-                        <>
+                        <React.Fragment key={msg.message_id || `msg-${index}`}>
                             <div className={`message-item ${msg.role === 'user' ? 'message-right' : 'message-left'}`}>
                                 {msg.role === 'assistant' ? (
                                     <>
                                         <Avatar size="middle" className="avatar" icon={<RobotFilled />} />
                                         <div className="message-bubble bot-message">
-                                            <ReactMarkdown
-                                                remarkPlugins={[remarkGfm]}
-                                                components={{
-                                                    code({ node, inline, className, children, ...props }) {
-                                                        const content = String(children).replace(/\n$/, '');
-                                                        // 判断是否是行内代码
-                                                        if (inline || !className) {
-                                                            // 处理行内代码
-                                                            return (
-                                                                <code style={{
-                                                                    backgroundColor: '#f6f8fa',           // 浅灰色背景
-                                                                    color: '#d56161',                     // 柔和的橙红色
-                                                                    padding: '2px 6px',                   // 简洁的内边距
-                                                                    borderRadius: '4px',                  // 适度的圆角
-                                                                    fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace',
-                                                                    fontSize: '0.9em',                    // 稍小的字号
-                                                                }}>
-                                                                    {content}
-                                                                </code>
-                                                            );
-                                                        } else {
-                                                            // 提取语言类型
-                                                            const match = /language-(\w+)/.exec(className || '');
-                                                            const language = match ? match[1] : '';
-                                                            // 处理代码块
-                                                            return (
-                                                                <div style={{ position: 'relative' }}>
-                                                                    <Text
-                                                                        style={{
-                                                                            position: 'absolute',
-                                                                            right: '10px',
-                                                                            top: '8px',
-                                                                            fontSize: 'xs',
-                                                                            fontWeight: 'bold',
-                                                                            color: '#bbb',
-                                                                            borderRadius: 'md',
-                                                                            textTransform: 'uppercase'
-                                                                        }}
-                                                                    >
-                                                                        {language}
-                                                                    </Text>
-                                                                    <SyntaxHighlighter
-                                                                        language={language}
-                                                                        style={oneDark}
-                                                                        wrapLongLines
-                                                                        customStyle={{
-                                                                            backgroundColor: '#1E1E1E',
-                                                                            color: '#D4D4D4',
-                                                                            padding: "26px 30px 20px 20px",
-                                                                            borderRadius: '10px',
-                                                                            boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
-                                                                        }}
-                                                                        codeTagProps={{
-                                                                            style: {
-                                                                                color: '#9CDCFE',
-                                                                                fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace'
-                                                                            },
-                                                                        }}
-                                                                    >
+                                            {msg.message && (
+                                                <ReactMarkdown
+                                                    remarkPlugins={[remarkGfm]}
+                                                    components={{
+                                                        code({ node, inline, className, children, ...props }) {
+                                                            const content = String(children).replace(/\n$/, '');
+                                                            // 判断是否是行内代码
+                                                            if (inline || !className) {
+                                                                // 处理行内代码
+                                                                return (
+                                                                    <code style={{
+                                                                        backgroundColor: '#f6f8fa',           // 浅灰色背景
+                                                                        color: '#d56161',                     // 柔和的橙红色
+                                                                        padding: '2px 6px',                   // 简洁的内边距
+                                                                        borderRadius: '4px',                  // 适度的圆角
+                                                                        fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace',
+                                                                        fontSize: '0.9em',                    // 稍小的字号
+                                                                    }}>
                                                                         {content}
-                                                                    </SyntaxHighlighter>
-                                                                </div>
-                                                            );
+                                                                    </code>
+                                                                );
+                                                            } else {
+                                                                // 提取语言类型
+                                                                const match = /language-(\w+)/.exec(className || '');
+                                                                const language = match ? match[1] : '';
+                                                                // 处理代码块
+                                                                return (
+                                                                    <div style={{ position: 'relative' }}>
+                                                                        <Text
+                                                                            style={{
+                                                                                position: 'absolute',
+                                                                                right: '10px',
+                                                                                top: '8px',
+                                                                                fontSize: 'xs',
+                                                                                fontWeight: 'bold',
+                                                                                color: '#bbb',
+                                                                                borderRadius: 'md',
+                                                                                textTransform: 'uppercase'
+                                                                            }}
+                                                                        >
+                                                                            {language}
+                                                                        </Text>
+                                                                        <SyntaxHighlighter
+                                                                            language={language}
+                                                                            style={oneDark}
+                                                                            wrapLongLines
+                                                                            customStyle={{
+                                                                                backgroundColor: '#1E1E1E',
+                                                                                color: '#D4D4D4',
+                                                                                padding: "26px 30px 20px 20px",
+                                                                                borderRadius: '10px',
+                                                                                boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
+                                                                            }}
+                                                                            codeTagProps={{
+                                                                                style: {
+                                                                                    color: '#9CDCFE',
+                                                                                    fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace'
+                                                                                },
+                                                                            }}
+                                                                        >
+                                                                            {content}
+                                                                        </SyntaxHighlighter>
+                                                                    </div>
+                                                                );
+                                                            }
                                                         }
-                                                    }
-                                                }}
-                                            >
-                                                {msg.message}
-                                            </ReactMarkdown>
+                                                    }}
+                                                >
+                                                    {msg.message}
+                                                </ReactMarkdown>
+                                            )}
+                                            {msg.tableData && (
+                                                <div style={{ marginTop: msg.message ? '16px' : 0 }}>
+                                                    <Table
+                                                        columns={msg.tableData.columns.map(col => ({
+                                                            ...col,
+                                                            key: col.dataIndex || col.key || col.title, // 确保列有唯一key
+                                                        }))}
+                                                        dataSource={msg.tableData.dataSource.map((item, idx) => ({
+                                                            ...item,
+                                                            key: item.key || `row-${idx}`,
+                                                        }))}
+                                                        scroll={{ x: true }}
+                                                        size="large"
 
+                                                    />
+                                                </div>
+                                            )}
                                         </div>
                                     </>
                                 ) : (
@@ -296,7 +340,7 @@ const ChatWindow = ({ session }) => {
                                     </div>
                                 </div>
                             )}
-                        </>
+                        </React.Fragment>
                     )}
                     locale={{ emptyText: emptyContent }}
                 />

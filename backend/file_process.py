@@ -35,25 +35,27 @@ class FileProcessor:
                 
                 # 执行查询
                 result_df = pd.read_sql_query(cleaned_sql, conn)
+                print("reading sql query...")
                 
-                # 1. 构建表格响应
-                columns = result_df.columns.tolist()
-                formatted_table = "Here's the query result:\n\n"
-                formatted_table += "| " + " | ".join(columns) + " |\n"
-                formatted_table += "| " + " | ".join(["---"] * len(columns)) + " |\n"
-                
-                for _, row in result_df.iterrows():
-                    formatted_table += "| " + " | ".join(str(value) for value in row) + " |\n"
+                # 1. 构建 antd 表格数据
+                table_data = {
+                    "columns": [
+                        {"title": col, "dataIndex": col, "key": col} 
+                        for col in result_df.columns
+                    ],
+                    "dataSource": result_df.to_dict('records')
+                }
                 
                 # 2. 构建图表数据
                 chart_data = {
-                    'labels': columns,
+                    'labels': result_df.columns.tolist(),
                     'datasets': result_df.to_dict('records'),
                     'types': result_df.dtypes.astype(str).to_dict()
                 }
+                print("finished building chart data...")
                 
                 return True, {
-                    "results": formatted_table,
+                    "table_data": table_data,
                     "chart_data": chart_data
                 }
                     

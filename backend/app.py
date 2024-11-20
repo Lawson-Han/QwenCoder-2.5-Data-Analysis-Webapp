@@ -85,11 +85,15 @@ def handle_send_message(data):
     text = data["text"]
     sql_query = ""
 
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    processor = FileProcessor()
-
     try:
+        # 立即发送接收确认，并确保它被发送出去
+        socketio.emit("message_received", room=request.sid)
+        socketio.sleep(0)  # 让出控制权，确保消息被发送
+
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        processor = FileProcessor()
+
         # 1. 检查文件
         cursor.execute(
             "SELECT file_path, file_name FROM session_files WHERE session_id = ?",
@@ -139,7 +143,7 @@ def handle_send_message(data):
 
         # 6. LLM请求
         payload = {
-            "model": "qwen2.5-coder:3b",
+            "model": "qwen2.5-coder:14b",
             "stream": True,
             "messages": [{"role": "system", "content": sql_prompt}, *messages],
         }
@@ -178,7 +182,7 @@ def handle_send_message(data):
             socketio.emit(
                 "receive_message",
                 {
-                    "text": f"\n{result['results']}",
+                    "table_data": result["table_data"],
                     "chart_data": result["chart_data"],
                     "done": False,
                 },
@@ -187,7 +191,7 @@ def handle_send_message(data):
         else:
             socketio.emit(
                 "receive_message",
-                {"text": f"Error during query processing: {str(e)}", "done": True},
+                {"text": f"Error during query processing.", "done": True},
                 room=request.sid,
             )
 
