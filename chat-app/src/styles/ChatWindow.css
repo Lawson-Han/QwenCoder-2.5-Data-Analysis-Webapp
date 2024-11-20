@@ -29,7 +29,7 @@
 
 /* 消息气泡样式 */
 .message-bubble {
-    max-width: 70%;
+    max-width: min(85%, 1000px);
     padding: 14px 18px;
     border-radius: 18px;
     word-wrap: break-word;
@@ -196,4 +196,214 @@
     background: #f5f7fa;
     color: #374151;
     border-radius: 0 8px 8px 0;
+}
+
+/* Add these new styles */
+.initializing-message {
+    background: #f5f7fa;
+    min-width: 220px;
+    padding: 16px 20px;
+    transition: all 0.3s ease;
+}
+
+.initializing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.stage-icon {
+    position: relative;
+    font-size: 24px;
+    color: #60a5fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+
+/* Connection stage styles */
+.connection-stage {
+    background: #eef2ff;
+    border: 1px solid #e0e7ff;
+}
+
+.pulse-ring {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #60a5fa;
+    animation: pulse 1.5s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+    70% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Analyzing stage styles */
+.analyzing-stage {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #e0f2fe;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #60a5fa;
+    animation: progress 2s ease-in-out infinite;
+    transform-origin: left;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 70%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.initializing-text {
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.typing-indicator span {
+    width: 8px;
+    height: 8px;
+    background: #60a5fa;
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { 
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    40% { 
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Medium screen adaptations */
+@media screen and (max-width: 768px) {
+    .message-bubble {
+        max-width: 100%;  /* Increase bubble width */
+    }
+    
+    .initializing-message {
+        min-width: 180px;  /* Reduce min-width slightly */
+    }
+
+    /* Hide avatars on mobile */
+    .avatar {
+        display: none;
+    }
+    
+    /* Adjust message container padding */
+    .messages-container {
+        padding: 0;
+    }
+    
+    /* Adjust chat input container */
+    .chat-input-container {
+        padding: 0 12px;
+    }
+    
+    /* Make initializing message more compact */
+    .initializing-content {
+        gap: 8px;
+        padding: 8px 0;
+    }
+    
+    /* Smaller stage icon */
+    .stage-icon {
+        height: 32px;
+        width: 32px;
+        font-size: 18px;
+    }
+    
+    .pulse-ring {
+        width: 32px;
+        height: 32px;
+    }
+    
+    /* Adjust progress bar */
+    .progress-bar {
+        height: 3px;
+    }
+    
+    /* Adjust text size */
+    .initializing-text {
+        font-size: 13px;
+    }
+    
+    /* Adjust input and button sizes */
+    .chat-input-wrapper {
+        margin: 1em 0;
+    }
+    
+    .chat-input,
+    .submit-button {
+        height: 40px;
+    }
+    
+    .submit-button {
+        padding: 0 20px;
+    }
+}
+
+/* Extra small screen adaptations */
+@media screen and (max-width: 480px) {
+    .message-bubble {
+        max-width: 100%;  /* Full width on very small screens */
+        padding: 12px 14px;
+    }
+    
+    .chat-input-container {
+        gap: 8px;
+    }
+    
+    .submit-button {
+        padding: 0 16px;
+        font-size: 13px;
+    }
 }

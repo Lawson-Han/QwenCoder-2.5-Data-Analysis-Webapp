@@ -106,7 +106,7 @@ def init_db():
         (2, "user", "Can you explain what is gradient descent?", "2024-11-19 02:11:00"),
         (2, "assistant", """# Gradient Descent Explained
 
-Gradient descent is an **optimization algorithm** used in machine learning. Here's what you need to know:
+Gradient descent is an **optimization algorithm** widely utilized in the field of machine learning and statistics. It is designed to minimize a function by iteratively moving towards the steepest descent as defined by the negative of the gradient. Understanding gradient descent is crucial for anyone looking to delve into machine learning, as it forms the backbone of many algorithms used for training models. Here are some essential aspects you should be aware of:
 
 ## Key Components
 * **Learning Rate**: Controls `step size`

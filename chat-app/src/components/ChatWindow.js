@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { List, Avatar, Input, Empty, Button, message, Typography } from 'antd';
-import { RobotFilled, UserOutlined, } from '@ant-design/icons';
+import { RobotFilled, UserOutlined, WifiOutlined, LoadingOutlined } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { io } from 'socket.io-client';
 import { API_BASE_URL, SOCKET_URL } from '../config';
@@ -19,6 +19,8 @@ const ChatWindow = ({ session }) => {
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef(null);
     const [uploadedFile, setUploadedFile] = useState(null);
+    const [showInitializing, setShowInitializing] = useState(false);
+    const [initializingText, setInitializingText] = useState('');
 
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -64,8 +66,6 @@ const ChatWindow = ({ session }) => {
                                 filePath: data.file.file_path
                             });
                         }
-                        console.log("data")
-                        console.log(data.file)
                     }
                 } catch (error) {
                     console.error('Failed to fetch session data:', error);
@@ -79,6 +79,7 @@ const ChatWindow = ({ session }) => {
     const initializeSocket = () => {
         const newSocket = io(SOCKET_URL);
         newSocket.on('receive_message', message => {
+            setShowInitializing(false);
             setMessages(prevMessages => {
                 if (message.done) {
                     setIsLoading(false);
@@ -119,8 +120,6 @@ const ChatWindow = ({ session }) => {
     };
 
     const handleSendMessage = () => {
-
-
         if (!uploadedFile) {
             message.warning('Please upload a CSV or PDF file before sending messages');
             return;
@@ -130,6 +129,8 @@ const ChatWindow = ({ session }) => {
             const userMessage = { role: 'user', message: newMessage };
             setMessages(prevMessages => [...prevMessages, userMessage]);
             setIsLoading(true);
+            setShowInitializing(true);
+            setInitializingText('connection');
 
             if (!socket) {
                 const newSocket = initializeSocket();
@@ -143,6 +144,10 @@ const ChatWindow = ({ session }) => {
                     text: newMessage,
                 });
             }
+
+            setTimeout(() => {
+                setInitializingText('analyzing');
+            }, 1000);
 
             setNewMessage('');
         }
@@ -178,92 +183,121 @@ const ChatWindow = ({ session }) => {
                 <List
                     dataSource={messages}
                     renderItem={(msg, index) => (
-                        <div className={`message-item ${msg.role === 'user' ? 'message-right' : 'message-left'}`}>
-                            {msg.role === 'assistant' ? (
-                                <>
-                                    <Avatar size="middle" className="avatar" icon={<RobotFilled />} />
-                                    <div className="message-bubble bot-message">
-                                        <ReactMarkdown
-                                            remarkPlugins={[remarkGfm]}
-                                            components={{
-                                                code({ node, inline, className, children, ...props }) {
-                                                    const content = String(children).replace(/\n$/, '');
-                                                    // 判断是否是行内代码
-                                                    if (inline || !className) {
-                                                        // 处理行内代码
-                                                        return (
-                                                            <code style={{
-                                                                backgroundColor: '#f6f8fa',           // 浅灰色背景
-                                                                color: '#d56161',                     // 柔和的橙红色
-                                                                padding: '2px 6px',                   // 简洁的内边距
-                                                                borderRadius: '4px',                  // 适度的圆角
-                                                                fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace',
-                                                                fontSize: '0.9em',                    // 稍小的字号
-                                                            }}>
-                                                                {content}
-                                                            </code>
-                                                        );
-                                                    } else {
-                                                        // 提取语言类型
-                                                        const match = /language-(\w+)/.exec(className || '');
-                                                        const language = match ? match[1] : '';
-                                                        // 处理代码块
-                                                        return (
-                                                            <div style={{ position: 'relative' }}>
-                                                                <Text
-                                                                    style={{
-                                                                        position: 'absolute',
-                                                                        right: '10px',
-                                                                        top: '8px',
-                                                                        fontSize: 'xs',
-                                                                        fontWeight: 'bold',
-                                                                        color: '#bbb',
-                                                                        borderRadius: 'md',
-                                                                        textTransform: 'uppercase'
-                                                                    }}
-                                                                >
-                                                                    {language}
-                                                                </Text>
-                                                                <SyntaxHighlighter
-                                                                    language={language}
-                                                                    style={oneDark}
-                                                                    wrapLongLines
-                                                                    customStyle={{
-                                                                        backgroundColor: '#1E1E1E',
-                                                                        color: '#D4D4D4',
-                                                                        padding: "26px 30px 20px 20px",
-                                                                        borderRadius: '10px',
-                                                                        boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
-                                                                    }}
-                                                                    codeTagProps={{
-                                                                        style: {
-                                                                            color: '#9CDCFE',
-                                                                            fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace'
-                                                                        },
-                                                                    }}
-                                                                >
+                        <>
+                            <div className={`message-item ${msg.role === 'user' ? 'message-right' : 'message-left'}`}>
+                                {msg.role === 'assistant' ? (
+                                    <>
+                                        <Avatar size="middle" className="avatar" icon={<RobotFilled />} />
+                                        <div className="message-bubble bot-message">
+                                            <ReactMarkdown
+                                                remarkPlugins={[remarkGfm]}
+                                                components={{
+                                                    code({ node, inline, className, children, ...props }) {
+                                                        const content = String(children).replace(/\n$/, '');
+                                                        // 判断是否是行内代码
+                                                        if (inline || !className) {
+                                                            // 处理行内代码
+                                                            return (
+                                                                <code style={{
+                                                                    backgroundColor: '#f6f8fa',           // 浅灰色背景
+                                                                    color: '#d56161',                     // 柔和的橙红色
+                                                                    padding: '2px 6px',                   // 简洁的内边距
+                                                                    borderRadius: '4px',                  // 适度的圆角
+                                                                    fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace',
+                                                                    fontSize: '0.9em',                    // 稍小的字号
+                                                                }}>
                                                                     {content}
-                                                                </SyntaxHighlighter>
-                                                            </div>
-                                                        );
+                                                                </code>
+                                                            );
+                                                        } else {
+                                                            // 提取语言类型
+                                                            const match = /language-(\w+)/.exec(className || '');
+                                                            const language = match ? match[1] : '';
+                                                            // 处理代码块
+                                                            return (
+                                                                <div style={{ position: 'relative' }}>
+                                                                    <Text
+                                                                        style={{
+                                                                            position: 'absolute',
+                                                                            right: '10px',
+                                                                            top: '8px',
+                                                                            fontSize: 'xs',
+                                                                            fontWeight: 'bold',
+                                                                            color: '#bbb',
+                                                                            borderRadius: 'md',
+                                                                            textTransform: 'uppercase'
+                                                                        }}
+                                                                    >
+                                                                        {language}
+                                                                    </Text>
+                                                                    <SyntaxHighlighter
+                                                                        language={language}
+                                                                        style={oneDark}
+                                                                        wrapLongLines
+                                                                        customStyle={{
+                                                                            backgroundColor: '#1E1E1E',
+                                                                            color: '#D4D4D4',
+                                                                            padding: "26px 30px 20px 20px",
+                                                                            borderRadius: '10px',
+                                                                            boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
+                                                                        }}
+                                                                        codeTagProps={{
+                                                                            style: {
+                                                                                color: '#9CDCFE',
+                                                                                fontFamily: 'Consolas, SF Mono, Menlo, Andale Mono, Monaco, PT Mono, monospace'
+                                                                            },
+                                                                        }}
+                                                                    >
+                                                                        {content}
+                                                                    </SyntaxHighlighter>
+                                                                </div>
+                                                            );
+                                                        }
                                                     }
-                                                }
-                                            }}
-                                        >
-                                            {msg.message}
-                                        </ReactMarkdown>
+                                                }}
+                                            >
+                                                {msg.message}
+                                            </ReactMarkdown>
 
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className="message-bubble user-message">{msg.message}</div>
+                                        <Avatar size="middle" className="avatar" icon={<UserOutlined />} />
+                                    </>
+                                )}
+                            </div>
+                            {showInitializing && index === messages.length - 1 && msg.role === 'user' && (
+                                <div className="message-item message-left">
+                                    <Avatar size="middle" className="avatar" icon={<RobotFilled />} />
+                                    <div className={`message-bubble bot-message initializing-message ${initializingText}-stage`}>
+                                        <div className="initializing-content">
+                                            {initializingText === 'connection' ? (
+                                                <>
+                                                    <div className="stage-icon">
+                                                        <div className="pulse-ring"></div>
+                                                        <WifiOutlined />
+                                                    </div>
+                                                    <span className="initializing-text">Establishing secure connection...</span>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <div className="stage-icon">
+                                                        <LoadingOutlined spin />
+                                                    </div>
+                                                    <span className="initializing-text">Analyzing your request...</span>
+                                                    <div className="progress-bar">
+                                                        <div className="progress-fill"></div>
+                                                    </div>
+                                                </>
+                                            )}
+                                        </div>
                                     </div>
-                                </>
-                            ) : (
-                                <>
-                                    <div className="message-bubble user-message">{msg.message}</div>
-                                    <Avatar size="middle" className="avatar" icon={<UserOutlined />} />
-                                </>
+                                </div>
                             )}
-                        </div>
-                    )
-                    }
+                        </>
+                    )}
                     locale={{ emptyText: emptyContent }}
                 />
                 < div ref={messagesEndRef} />

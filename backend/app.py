@@ -139,10 +139,11 @@ def handle_send_message(data):
 
         # 6. LLM请求
         payload = {
-            "model": "qwen2.5-coder:14b",
+            "model": "qwen2.5-coder:3b",
             "stream": True,
             "messages": [{"role": "system", "content": sql_prompt}, *messages],
         }
+        print("send payload to ollama", payload)
 
         # 7. 流式处理LLM响应
         with requests.post(
@@ -181,6 +182,12 @@ def handle_send_message(data):
                     "chart_data": result["chart_data"],
                     "done": False,
                 },
+                room=request.sid,
+            )
+        else:
+            socketio.emit(
+                "receive_message",
+                {"text": f"Error during query processing: {str(e)}", "done": True},
                 room=request.sid,
             )
 
