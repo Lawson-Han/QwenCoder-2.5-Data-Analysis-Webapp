@@ -57,6 +57,8 @@ def init_db():
             session_id INTEGER,
             role TEXT NOT NULL,
             text TEXT NOT NULL,
+            type TEXT DEFAULT 'table',  -- 'table', 'line', 'bar', 'pie', 'scatter', 'column'
+            data TEXT,  -- 用于存储查询结果数据
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (session_id) REFERENCES sessions(id) ON DELETE CASCADE
         )

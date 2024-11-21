@@ -12,7 +12,7 @@ class FileProcessor:
 
     def execute_query(self, sql_query: str, file_path: str) -> Tuple[bool, Any]:
         """
-        执行查询并返回格式化的表格和图表数据
+        执行查询并返回格式化的表格数据
         """
         try:
             # 提取SQL查询
@@ -39,14 +39,14 @@ class FileProcessor:
                 # 存储原始查询结果
                 result_dict = {
                     "sql": cleaned_sql,
-                    "result": result_df.to_dict('split'),  # 使用split格式更节省空间
+                    "result": result_df.to_dict('split'),
                     "columns": result_df.columns.tolist(),
                     "types": result_df.dtypes.astype(str).to_dict()
                 }
                 
                 return True, {
-                    "table_data": self._to_antd_format(result_df),  # 转换为前端格式
-                    "raw_data": result_dict  # 用于存储
+                    "table_data": self._to_antd_format(result_df),
+                    "raw_data": result_dict
                 }
                     
         except Exception as e:
@@ -130,29 +130,3 @@ class FileProcessor:
 
         except Exception as e:
             return False, {"error": str(e)}
-
-    def get_chart_data(self, sql_query: str, file_path: str) -> Tuple[bool, Dict]:
-        """
-        执行查询并返回适合前端绘图的数据格式
-        """
-        try:
-            # 读取CSV并执行查询
-            df = pd.read_csv(file_path)
-            df.columns = df.columns.str.lower().str.replace(' ', '_')
-            
-            # 执行查询获取数据
-            with sqlite3.connect(':memory:') as conn:
-                df.to_sql('temp_table', conn, if_exists='replace', index=False)
-                result_df = pd.read_sql_query(sql_query, conn)
-            
-            # 转换为前端可用的格式
-            chart_data = {
-                'labels': result_df.columns.tolist(),
-                'datasets': result_df.to_dict('records'),
-                'types': result_df.dtypes.astype(str).to_dict()
-            }
-            
-            return True, chart_data
-            
-        except Exception as e:
-            return False, f"Data processing error: {str(e)}"

@@ -10,6 +10,7 @@ from werkzeug.utils import secure_filename
 import pandas as pd
 from file_process import FileProcessor
 import numpy as np
+from typing import Tuple
 
 app = Flask(__name__)
 CORS(
@@ -125,29 +126,17 @@ def handle_send_message(data):
         messages = [
             {"role": msg["role"], "content": msg["text"]} for msg in previous_messages
         ]
-        messages.append({"role": "user", "content": text})
 
         # 5. 准备SQL转换提示
-        sql_prompt = f"""You are a SQL assistant that ONLY helps with queries related to the current table.
+        intent, system_prompt = get_prompt_by_intent(text, table_info)
         
-        Current table structure:
-        {table_info}
-        
-        Instructions:
-        1. If the user's question is about the table data, convert it to SQL and return ONLY the SQL query.
-        2. If the user asks about table columns that don't exist, respond with:
-           "The requested column(s) are not available in the current table. Available columns are: [list the columns]"
-        
-        Remember: ONLY return SQL for valid table-related queries. For all other cases, return the guidance message.
-        """
 
         # 6. LLM请求
         payload = {
-            "model": "qwen2.5-coder:3b",
+            "model": "qwen2.5-coder:7b",
             "stream": True,
-            "messages": [{"role": "system", "content": sql_prompt}, *messages],
+            "messages": [{"role": "system", "content": system_prompt}, *messages],
         }
-        print("send payload to ollama", payload)
 
         # 7. 流式处理LLM响应
         with requests.post(
@@ -184,7 +173,7 @@ def handle_send_message(data):
         )
         conn.commit()
         message_id = cursor.lastrowid  # 获取新插入消息的ID
-        
+
         success, result = processor.execute_query(sql_query, file_info["file_path"])
 
         if success:
@@ -200,6 +189,7 @@ def handle_send_message(data):
                 "receive_message",
                 {
                     "table_data": result["table_data"],
+                    "chart_type": intent,  # 发送图表类型
                     "message_id": message_id,
                     "done": False,
                 },
@@ -208,7 +198,7 @@ def handle_send_message(data):
         else:
             socketio.emit(
                 "receive_message",
-                {"text": f"Error during query processing.", "done": True},
+                {"text": f"Error during query processing: failed to get data.", "done": True},
                 room=request.sid,
             )
 
@@ -398,6 +388,96 @@ def preview_csv():
     except Exception as e:
         app.logger.error(f"Preview error: {str(e)}")
         return jsonify({"error": str(e)}), 500
+
+
+def get_prompt_by_intent(text: str, table_info: str) -> Tuple[str, str]:
+    try:
+        # 首先判断用户意图和图表类型
+        intent_prompt = f"""Analyze the user's request and determine:
+        1. If it's a visualization request or a regular query
+        2. If it's a visualization request, what type of chart would be most suitable
+        
+        User request: "{text}"
+        
+        Return ONLY one of these options:
+        - "query" for regular data queries
+        - "line" for time series or trend analysis
+        - "bar" for comparisons between categories
+        - "pie" for showing proportions
+        - "scatter" for correlation analysis
+        - "column" for grouped comparisons
+        """
+        
+        # 获取意图
+        payload = {
+            "model": "qwen2.5-coder:3b",
+            "messages": [{"role": "user", "content": intent_prompt}],
+            "stream": False
+        }
+        
+        response = requests.post(OLLAMA_API_URL, json=payload)
+        response_data = response.json()
+        
+        # 安全地获取意图并清理
+        raw_type = response_data.get("message", {}).get("content", "query").strip().lower()
+        
+        # 清理和标准化图表类型
+        def normalize_chart_type(raw_type: str) -> str:
+            # 移除常见的额外字符
+            cleaned = raw_type.replace('"', '').replace("'", "").replace("-", "").replace(":", "").strip()
+            
+            # 定义有效的图表类型
+            valid_types = {
+                "query": "query",
+                "line": "line",
+                "bar": "bar",
+                "pie": "pie",
+                "scatter": "scatter",
+                "column": "column"
+            }
+            
+            # 查找最匹配的图表类型
+            for valid_type in valid_types:
+                if valid_type in cleaned:
+                    return valid_types[valid_type]
+            
+            # 如果没有匹配到任何有效类型，返回默认值
+            return "query"
+        
+        chart_type = normalize_chart_type(raw_type)
+        print(f"Raw intent: {raw_type} -> Normalized: {chart_type}")
+        
+        # 统一的 SQL 生成 prompt
+        sql_prompt = f"""You are a SQL expert. Convert the request into a SQL query.
+        Current table structure:
+        {table_info}
+        
+        Instructions:
+        1. You MUST ONLY return the SQL query
+        2. DO NOT include any explanations, comments, or additional text for drawing the chart.
+        3. DO NOT mention or suggest any visualization tools or methods, visualization will be handled elsewhere.
+        4. DO NOT provide any post-query instructions
+        5. If columns don't exist, ONLY return: Requested columns not fond
+        
+        Example correct response:
+        ```sql
+        SELECT column1, COUNT(*) as count FROM table GROUP BY column1
+        ```
+        
+        Example error response:
+        ```sql
+        ERROR: Requested columns not found
+        ```
+        
+        Remember: Your ONLY task is to generate the SQL query. Data processing and visualization will be handled elsewhere.
+        """
+        
+        return chart_type, sql_prompt
+            
+    except Exception as e:
+        print(f"Error in get_prompt_by_intent: {e}")
+        return "query", sql_prompt
+
 
 
 if __name__ == "__main__":
