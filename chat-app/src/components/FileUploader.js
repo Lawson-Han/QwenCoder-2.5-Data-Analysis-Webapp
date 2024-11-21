@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { UploadOutlined } from '@ant-design/icons';
-import { Button, message, Upload } from 'antd';
+import { Button, message, Upload, Modal, Table, Tooltip } from 'antd';
+import { API_BASE_URL } from '../config';
 import '../styles/FileUploader.css';
 
 const FileUploader = ({ sessionId, onFileChange, uploadedFile }) => {
-    const [fileList, setFileList] = useState(() => {
-        if (uploadedFile) {
-            return [{
-                uid: '-1',
-                name: uploadedFile.name,
-                status: 'done',
-                url: uploadedFile.filePath
-            }];
-        }
-        return [];
-    });
+    const [fileList, setFileList] = useState([]);
+    const [previewVisible, setPreviewVisible] = useState(false);
+    const [previewData, setPreviewData] = useState(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
         if (uploadedFile) {
@@ -29,9 +23,62 @@ const FileUploader = ({ sessionId, onFileChange, uploadedFile }) => {
         }
     }, [uploadedFile]);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const handlePreview = async (file) => {
+        try {
+            setPreviewData(null);
+            
+            const response = await fetch(`${API_BASE_URL}/preview_csv`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    file_path: file.url || uploadedFile?.filePath
+                })
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to load preview');
+            }
+
+            const data = await response.json();
+            
+            if (!data.columns || !data.dataSource) {
+                throw new Error('Invalid preview data format');
+            }
+
+            const processedData = {
+                columns: data.columns,
+                dataSource: data.dataSource.map(row => {
+                    const processedRow = {};
+                    Object.entries(row).forEach(([key, value]) => {
+                        processedRow[key] = value === null ? '-' : value;
+                    });
+                    return processedRow;
+                })
+            };
+
+            setPreviewData(processedData);
+            setPreviewVisible(true);
+        } catch (error) {
+            console.error('Error loading preview:', error);
+            message.error(error.message || 'Error loading file preview');
+        }
+    };
+
     const props = {
         name: 'file',
-        action: 'http://localhost:5001/upload',
+        action: `${API_BASE_URL}/upload`,
         maxCount: 1,    
         accept: '.csv,.pdf',
         fileList: fileList,
@@ -40,8 +87,14 @@ const FileUploader = ({ sessionId, onFileChange, uploadedFile }) => {
         },
         beforeUpload: (file) => {
             const isLt10M = file.size / 1024 / 1024 < 10;
+            const isCsv = file.type === 'text/csv' || file.type === 'application/vnd.ms-excel';
+            
             if (!isLt10M) {
                 message.error('File must be smaller than 10MB');
+                return Upload.LIST_IGNORE;
+            }
+            if (!isCsv) {
+                message.error(`${file.name} is not a csv file.`);
                 return Upload.LIST_IGNORE;
             }
             return true;
@@ -64,41 +117,74 @@ const FileUploader = ({ sessionId, onFileChange, uploadedFile }) => {
             }
             setFileList(info.fileList);
         },
+        onPreview: handlePreview,
         progress: {
             strokeColor: {
                 '0%': '#108ee9',
                 '100%': '#87d068',
             },
             strokeWidth: 3,
-            format: (percent) => {
-                const text = percent && `${parseFloat(percent.toFixed(0))}%`;
-                return text;
-            },
+            format: (percent) => percent && `${parseFloat(percent.toFixed(2))}%`,
             size: 'small',
         },
         showUploadList: {
-            extra: ({ size = 0 }) => (
-                <span
-                    style={{
-                        color: 'grey',
-                    }}
-                >
-                    ({(size / 1024 / 1024).toFixed(2)}MB)
-                </span>
-            ),
+            showPreviewIcon: true,
+            showRemoveIcon: true,
         },
+        itemRender: (originNode, file) => (
+            <Tooltip title="Click to preview" placement="top" color="#3CB17A">
+                <div style={{ 
+                    cursor: 'pointer',
+                   
+                }}>
+                    {originNode}
+                </div>
+            </Tooltip>
+        )
     };
 
     return (
-        <Upload {...props}>
-            <Button
-                icon={<UploadOutlined />}
-                size="large"
-                type="dashed"
+        <>
+            <Upload {...props}>
+                <Button
+                    icon={<UploadOutlined />}
+                    size="large"
+                    type="dashed"
+                    className="upload-button"
+                >
+                    {!isMobile && 'Upload File'}
+                </Button>
+            </Upload>
+            
+            <Modal
+                title={`Preview: ${uploadedFile?.name}`}
+                open={previewVisible}
+                onCancel={() => setPreviewVisible(false)}
+                footer={null}
+                width={1200}
+                centered
+                style={{ 
+                    maxWidth: '90vw',
+                }}
             >
-                Upload File
-            </Button>
-        </Upload>
+                {previewData && (
+                    <Table
+                        columns={previewData.columns.map(col => ({
+                            ...col,
+                            width: col.width || 120,
+                            ellipsis: true
+                        }))}
+                        dataSource={previewData.dataSource}
+                        scroll={{ 
+                            x: previewData.columns.length * 120,
+                            y: 500
+                        }}
+                        size="large"
+                        pagination={false}
+                    />
+                )}
+            </Modal>
+        </>
     );
 };
 

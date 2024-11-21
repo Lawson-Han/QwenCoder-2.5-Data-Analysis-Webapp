@@ -345,7 +345,7 @@
     
     /* Adjust chat input container */
     .chat-input-container {
-        padding: 0 12px;
+        padding: 0;
     }
     
     /* Make initializing message more compact */

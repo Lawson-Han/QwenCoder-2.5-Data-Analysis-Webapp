@@ -7,9 +7,9 @@ import json
 from datetime import datetime, timezone
 import os
 from werkzeug.utils import secure_filename
-import sqlite3
 import pandas as pd
 from file_process import FileProcessor
+import numpy as np
 
 app = Flask(__name__)
 CORS(
@@ -348,6 +348,56 @@ def get_session_file(session_id):
         return jsonify({"error": "Failed to fetch session file"}), 500
     finally:
         conn.close()
+
+
+@app.route("/preview_csv", methods=["POST"])
+def preview_csv():
+    try:
+        data = request.json
+        file_path = data.get('file_path')
+        
+        if not file_path or not os.path.exists(file_path):
+            return jsonify({"error": "File not found"}), 404
+
+        # 读取CSV文件（限制预览行数）
+        df = pd.read_csv(file_path, nrows=50)  # 限制预览50行
+        
+        # 处理特殊值（NaN, Infinity等）
+        df = df.replace({
+            np.nan: None,  # 将 NaN 转换为 None (会被JSON序列化为null)
+            np.inf: None,  # 将 Infinity 转换为 None
+            -np.inf: None  # 将 -Infinity 转换为 None
+        })
+        
+        # 确保所有数值都能被JSON序列化
+        for col in df.select_dtypes(include=[np.number]).columns:
+            df[col] = df[col].astype(float).apply(lambda x: None if pd.isna(x) else float(x))
+        
+        # 构建表格数据
+        preview_data = {
+            "columns": [
+                {"title": str(col), "dataIndex": str(col), "key": str(col)} 
+                for col in df.columns
+            ],
+            "dataSource": df.to_dict('records')
+        }
+        
+        # 验证JSON序列化是否成功
+        try:
+            json.dumps(preview_data)
+        except TypeError as e:
+            app.logger.error(f"JSON serialization error: {str(e)}")
+            return jsonify({"error": "Data serialization failed"}), 500
+        
+        return jsonify(preview_data)
+
+    except pd.errors.EmptyDataError:
+        return jsonify({"error": "Empty CSV file"}), 400
+    except pd.errors.ParserError as e:
+        return jsonify({"error": f"CSV parsing error: {str(e)}"}), 400
+    except Exception as e:
+        app.logger.error(f"Preview error: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == "__main__":
