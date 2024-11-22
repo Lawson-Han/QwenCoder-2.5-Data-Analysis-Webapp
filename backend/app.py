@@ -208,7 +208,7 @@ def handle_send_message(data):
         print(f"Error during processing: {e}")
         socketio.emit(
             "receive_message",
-            {"text": f"Error during query processing: {str(e)}", "done": True},
+            {"text": f"Error during LLM processing: {str(e)}", "done": True},
             room=request.sid,
         )
     finally:
@@ -395,7 +395,7 @@ def get_prompt_by_intent(text: str, table_info: str) -> Tuple[str, str]:
         # 首先判断用户意图和图表类型
         intent_prompt = f"""Analyze the user's request and determine:
         1. If it's a visualization request or a regular query
-        2. If it's a visualization request, what type of chart would be most suitable
+        2. What type of chart would be most suitable
         
         User request: "{text}"
         
