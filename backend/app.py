@@ -175,6 +175,7 @@ def handle_send_message(data):
         message_id = cursor.lastrowid  # 获取新插入消息的ID
 
         success, result = processor.execute_query(sql_query, file_info["file_path"])
+        print("result", result)
 
         if success:
             # 存储查询结果
@@ -198,7 +199,7 @@ def handle_send_message(data):
         else:
             socketio.emit(
                 "receive_message",
-                {"text": f"Error during query processing: failed to get data.", "done": True},
+                {"done": True},
                 room=request.sid,
             )
 
@@ -459,17 +460,12 @@ def get_prompt_by_intent(text: str, table_info: str) -> Tuple[str, str]:
         4. DO NOT provide any post-query instructions
         5. If columns don't exist, ONLY return: Requested columns not fond
         
-        Example correct response:
-        ```sql
-        SELECT column1, COUNT(*) as count FROM table GROUP BY column1
-        ```
-        
         Example error response:
         ```sql
         ERROR: Requested columns not found
         ```
         
-        Remember: Your ONLY task is to generate the SQL query. Data processing and visualization will be handled elsewhere.
+        Remember: Your ONLY task is to generate one SQL query. Data processing and visualization will be handled elsewhere.
         """
         
         return chart_type, sql_prompt

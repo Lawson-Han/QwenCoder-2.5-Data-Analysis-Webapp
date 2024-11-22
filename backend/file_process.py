@@ -26,8 +26,16 @@ class FileProcessor:
             
             # 读取CSV并标准化列名
             df = pd.read_csv(file_path)
-            df.columns = df.columns.str.lower().str.replace(' ', '_')
+            
+            # 标准化列名：转小写，替换空格为下划线，移除特殊字符
+            df.columns = df.columns.str.lower()\
+                .str.replace(' ', '_')\
+                .str.replace(r'[\(\)\$\%\:]', '', regex=True)\
+                .str.replace(r'\.', '_', regex=True)\
+                .str.replace(r'/', '_', regex=True)
+                
             table_name = os.path.splitext(os.path.basename(file_path))[0]
+            print("df_columns", df.columns)
             
             with sqlite3.connect(':memory:') as conn:
                 # 将DataFrame保存为临时表
@@ -69,6 +77,14 @@ class FileProcessor:
         try:
             # 读取CSV文件
             df = pd.read_csv(file_path)
+            
+            # 使用与 execute_query 相同的列名标准化处理
+            df.columns = df.columns.str.lower()\
+                .str.replace(' ', '_')\
+                .str.replace(r'[\(\)\$\%\:]', '', regex=True)\
+                .str.replace(r'\.', '_', regex=True)\
+                .str.replace(r'/', '_', regex=True)
+                
             table_name = os.path.splitext(os.path.basename(file_path))[0]
             
             # 获取基本信息
@@ -82,10 +98,10 @@ class FileProcessor:
                 sample_values = df[col].dropna().head(3).tolist()
                 
                 col_info = {
-                    "name": col.lower().replace(' ', '_'),
+                    "name": col,  # 已经标准化过的列名，不需要再处理
                     "type": str(col_type),
                     "unique_values": unique_count,
-                    "sample_values": sample_values
+                    # "sample_values": sample_values
                 }
                 column_info.append(col_info)
             
@@ -95,9 +111,10 @@ class FileProcessor:
             for col in column_info:
                 info += f"- {col['name']} ({col['type']})\n"
                 info += f"  * {col['unique_values']} unique values\n"
-                info += f"  * Sample values: {', '.join(str(x) for x in col['sample_values'])}\n"
+                # info += f"  * Sample values: {', '.join(str(x) for x in col['sample_values'])}\n"
             
             info += "\nYou can reference these columns in your SQL queries using the lowercase names with underscores."
+            print("info", info)
             
             return info
             

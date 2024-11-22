@@ -1,0 +1,1201 @@
+ENTITY NAME,ENTITY ID,EXCHANGE,INDUSTRY CLASSIFICATION(GICS),DIVIDEND YIELD 2019(%),DIVIDEND YIELD 2020(%),DIVIDEND YIELD 2021(%),DIVIDEND YIELD 2022(%),DIVIDEND YIELD 2023(%),MARKET CAP(HK$M),CURRENT ROE(%),ROE 2019(%),ROE 2020(%),ROE 2021(%),ROE 2022(%),ROE 2023(%),DIVIDEND PAYOUT RATIO 2019(%),DIVIDEND PAYOUT RATIO 2020(%),DIVIDEND PAYOUT RATIO 2021(%),DIVIDEND PAYOUT RATIO 2022(%),DIVIDEND PAYOUT RATIO 2023(%),DAY CLOSE PRICE 1/2/2019(HK$),DAY CLOSE PRICE 12/31/2019(HK$),PRICE CHANGE IN 2019(%),DAY CLOSE PRICE 1/2/2020(HK$),DAY CLOSE PRICE 12/31/2020(HK$),PRICE CHANGE IN 2020(%),DAY CLOSE PRICE 1/4/2021(HK$),DAY CLOSE PRICE 12/31/2021(HK$),PRICE CHANGE IN 2021(%),DAY CLOSE PRICE 1/3/2022(HK$),DAY CLOSE PRICE 12/30/2022(HK$),PRICE CHANGE IN 2022(%),DAY CLOSE PRICE 1/3/2023(HK$),DAY CLOSE PRICE 12/29/2023(HK$),PRICE CHANGE IN 2023(%),,,,DIVIDEND YIELD (%),PRICE CHANGE (%),,DIVIDEND PAYOUT RATIO (%),PRICE CHANGE (%)
+Agricultural Bank of China Limited (SEHK:1288),4149089,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,5.77,7.01,8.37,9.03,8.01,"1,632,635.94",9.69,11.74,10.39,10.45,10.16,9.69,30.74,32.17,30.21,30.52,31.90,3.38,3.43,1.48,3.47,2.84,(18.16),2.81,2.68,(4.63),2.70,2.68,(0.74),2.68,3.01,12.31,,,,5.77,1.48,,30.74,1.48
+AIA Group Limited (SEHK:1299),4252473,SEHK,Financials; Insurance; Insurance; Life and Health Insurance; Health and Medical Insurance; Life Insurance,4.21,1.35,1.76,1.71,2.29,"515,092.98",8.72,12.70,9.71,12.00,6.34,8.72,91.42,36.44,30.39,70.18,63.14,62.95,81.80,29.94,84.70,95.00,12.16,98.55,78.60,(20.24),79.00,86.80,9.87,88.30,68.05,(22.93),,,,4.21,29.94,,91.42,29.94
+AK Medical Holdings Limited (SEHK:1789),9338271,SEHK,Health Care; Health Care Equipment and Services; Health Care Equipment and Supplies; Health Care Equipment,0.40,0.56,0.61,0.26,0.96,"5,766.68",7.86,27.28,19.88,4.55,9.58,7.86,12.04,24.01,39.62,11.70,NA,4.22,8.78,108.06,9.20,13.46,46.30,12.86,6.60,(48.68),6.61,9.79,48.11,9.74,6.26,(35.73),,,,0.40,108.06,,12.04,108.06
+Anhui Conch Cement Company Limited (SEHK:914),4982008,SEHK,"Materials; Materials; Construction Materials; Construction Materials; Concrete; Cement, Hydraulic; Clays; Clay Refractories",3.39,4.49,6.58,10.23,9.09,"120,505.00",5.46,26.55,23.41,18.96,8.32,5.46,27.93,31.00,35.36,83.78,85.05,36.80,56.80,54.35,60.95,48.55,(20.34),48.40,38.95,(19.52),39.45,27.30,(30.80),27.75,18.04,(34.99),,,,3.39,54.35,,27.93,54.35
+Anhui Expressway Company Limited (SEHK:995),4995077,SEHK,Industrials; Transportation; Transportation Infrastructure; Highways and Railtracks,6.23,5.43,4.40,10.14,7.88,"23,284.14",12.15,9.56,6.89,12.83,11.11,12.15,47.14,54.66,34.32,79.78,69.02,4.65,4.61,(0.86),4.70,4.63,(1.49),4.77,6.30,32.08,6.29,6.29,0.00,6.44,7.70,19.57,,,,6.23,-0.86,,47.14,-0.86
+ANTA Sports Products Limited (SEHK:2020),4914998,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Textiles, Apparel and Luxury Goods; Apparel, Accessories and Luxury Goods; Accessories; Apparel; Specialty Apparel; Athletic Uniforms",0.85,0.46,0.92,1.27,2.03,"229,867.40",24.03,29.93,23.76,28.59,23.73,24.03,26.50,27.20,31.23,40.66,39.29,36.35,69.75,91.88,70.10,122.90,75.32,127.00,116.90,(7.95),114.70,102.30,(10.81),104.20,75.75,(27.30),,,,0.85,91.88,,26.50,91.88
+ASMPT Limited (SEHK:522),4338048,SEHK,"Information Technology; Semiconductors and Semiconductor Equipment; Semiconductors and Semiconductor Equipment; Semiconductor Materials and Equipment; Semiconductor Manufacturing Machinery; Back-End Equipment; Automatic Testing Equipment; Semiconductor Handling, Assembly and Packaging Equipment",2.50,1.37,3.92,7.01,3.37,"41,491.99",4.49,5.86,5.13,22.20,16.75,4.49,177.31,35.30,42.78,61.43,144.74,75.35,108.10,43.46,113.70,102.30,(10.03),97.95,84.25,(13.99),84.85,55.65,(34.41),55.75,74.50,33.63,,,,2.50,43.46,,177.31,43.46
+AviChina Industry & Technology Company Limited (SEHK:2357),4987076,SEHK,"Industrials; Capital Goods; Aerospace and Defense; Aerospace and Defense; Aerospace and Defense Maintenance and Services; Aircraft Systems, Components and Equipment; Fluid Power Aircraft Subassemblies; Defense Electronics; Command, Control and Communication Equipment; Military Aircraft; Passenger and Cargo Aircraft and Airplanes; Passenger Helicopters",0.85,0.61,1.12,2.68,2.69,"24,157.75",9.15,7.36,8.83,9.58,8.84,9.15,13.91,41.49,70.19,78.24,NA,4.74,3.51,(25.95),3.56,5.41,51.97,6.70,5.39,(19.55),5.53,3.51,(36.53),3.63,3.35,(7.71),,,,0.85,-25.95,,13.91,-25.95
+BAIC Motor Corporation Limited (SEHK:1958),4913722,SEHK,Consumer Discretionary; Automobiles and Components; Automobiles; Automobile Manufacturers; Light Truck and Sport Utility Vehicles (SUVs); Passenger Motor Vehicles,4.88,6.48,2.89,9.06,8.16,"17,393.28",17.21,21.41,17.75,20.41,21.24,17.21,32.72,72.68,19.52,30.56,NA,4.08,4.42,8.33,4.43,2.87,(35.21),2.93,3.35,14.33,3.35,2.07,(38.21),2.13,2.28,7.04,,,,4.88,8.33,,32.72,8.33
+Bank of China Limited (SEHK:3988),4055265,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,6.33,7.90,8.46,9.12,8.45,"1,329,118.37",9.26,10.91,9.91,10.07,9.64,9.26,31.24,32.70,30.09,30.46,32.13,3.32,3.33,0.30,3.37,2.65,(21.36),2.61,2.81,7.66,2.83,2.84,0.35,2.86,2.98,4.20,,,,6.33,0.30,,31.24,0.30
+"Bank of Chongqing Co., Ltd. (SEHK:1963)",4306523,SEHK,Financials; Banks; Banks; Regional Banks; Regional Commercial Banks,3.75,5.32,10.09,11.22,10.92,"22,035.62",9.44,11.80,11.33,10.65,10.16,9.44,18.96,28.89,30.54,34.05,37.33,4.41,4.67,5.90,4.74,4.85,2.32,4.83,4.46,(7.66),4.45,4.07,(8.54),4.11,3.96,(3.65),,,,3.75,5.90,,18.96,5.90
+"Bank of Communications Co., Ltd. (SEHK:3328)",4147549,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,6.15,8.41,8.08,9.27,8.37,"465,216.68",8.74,10.37,9.48,9.59,9.15,8.74,31.44,32.21,30.65,31.29,32.66,5.96,5.54,(7.05),5.61,4.10,(26.92),4.08,4.71,15.44,4.74,4.49,(5.27),4.58,4.87,6.33,,,,6.15,-7.05,,31.44,-7.05
+"Bank of Qingdao Co., Ltd. (SEHK:3866)",4283860,SEHK,Financials; Regional Banks; Regional Commercial Banks; Banks; Banks; National and State Commercial Banks; National Commercial Banks,3.76,4.93,4.62,6.04,9.23,"17,190.54",9.59,8.06,7.99,9.32,9.06,9.59,50.81,44.79,29.91,34.32,28.09,7.56,6.10,(19.31),6.09,4.45,(26.93),4.65,4.69,0.86,4.67,3.13,(32.98),3.17,1.92,(39.43),,,,3.76,-19.31,,50.81,-19.31
+Beijing Enterprises Holdings Limited (SEHK:392),4987914,SEHK,Utilities; Utilities; Gas Utilities; Gas Utilities; Oil and Gas Distribution,3.16,4.51,4.24,5.40,7.48,"29,688.88",6.53,10.21,6.12,10.19,7.79,6.53,17.70,27.21,14.50,22.49,NA,40.25,35.75,(11.18),36.10,25.30,(29.92),25.35,26.90,6.11,27.00,25.00,(7.41),25.85,27.15,5.03,,,,3.16,-11.18,,17.70,-11.18
+Beijing Enterprises Water Group Limited (SEHK:371),4608046,SEHK,Utilities; Utilities; Water Utilities; Water Utilities; Sewage Treatment Systems; Water Supply; Water Purification,4.82,5.19,5.54,6.85,9.02,"19,189.02",5.67,13.85,10.11,9.06,4.42,5.67,36.87,37.44,42.92,101.95,NA,3.90,3.94,1.03,3.97,3.12,(21.41),3.10,3.03,(2.26),3.11,2.00,(35.69),2.02,1.74,(13.86),,,,4.82,1.03,,36.87,1.03
+"Beijing Jingneng Clean Energy Co., Limited (SEHK:579)",5000937,SEHK,Utilities; Independent Power and Renewable Electricity Producers; Independent Power Producers and Energy Traders; Utilities,5.57,3.10,3.27,4.48,7.60,"14,675.22",9.66,9.72,9.69,9.28,9.52,9.66,26.30,25.49,23.90,23.10,NA,1.77,1.36,(23.16),1.37,2.54,85.40,2.55,2.53,(0.78),2.69,1.84,(31.60),1.93,1.73,(10.36),,,,5.57,-23.16,,26.30,-23.16
+Beijing Tong Ren Tang Chinese Medicine Company Limited (SEHK:3613),4811938,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Pharmaceutical Products",1.96,2.82,1.79,2.44,2.72,"7,508.79",15.22,19.93,19.27,19.54,19.00,15.22,34.62,35.49,33.05,36.29,NA,12.10,11.76,(2.81),12.16,8.15,(32.98),8.19,13.42,63.86,14.14,11.46,(18.95),11.58,12.14,4.84,,,,1.96,-2.81,,34.62,-2.81
+BOC Aviation Limited (SEHK:2588),4313347,SEHK,Industrials; Capital Goods; Trading Companies and Distributors; Trading Companies and Distributors,3.20,4.11,3.09,3.15,3.81,"43,340.95",13.95,16.00,10.90,11.18,0.38,13.95,31.95,48.34,28.08,907.13,26.36,57.20,79.25,38.55,78.40,67.00,(14.54),63.70,57.10,(10.36),57.40,65.15,13.50,66.95,59.70,(10.83),,,,3.20,38.55,,31.95,38.55
+BOC Hong Kong (Holdings) Limited (SEHK:2388),4156486,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,5.43,6.12,4.86,4.25,6.78,"237,887.56",10.74,11.50,9.08,7.73,8.34,10.74,48.40,47.13,49.07,52.50,51.82,28.45,27.05,(4.92),27.05,23.50,(13.12),24.00,25.55,6.46,25.95,26.60,2.50,26.80,21.20,(20.90),,,,5.43,-4.92,,48.40,-4.92
+Bosideng International Holdings Limited (SEHK:3998),4914041,SEHK,"Consumer Discretionary; Textiles, Apparel and Luxury Goods; Apparel, Accessories and Luxury Goods; Apparel; Men's Apparel; Specialty Apparel; Women's, Misses', and Juniors' Apparel; Consumer Durables and Apparel",3.20,2.41,2.95,4.85,5.27,"41,939.64",17.37,10.11,11.66,15.75,17.54,17.37,51.53,71.72,51.47,63.49,80.51,1.36,2.81,106.62,2.81,3.95,40.57,4.18,4.91,17.46,4.59,3.71,(19.17),3.71,3.51,(5.39),,,,3.20,106.62,,51.53,106.62
+BYD Company Limited (SEHK:1211),4217796,SEHK,Consumer Discretionary; Automobiles and Components; Automobiles; Automobile Manufacturers,0.60,0.03,0.07,0.06,0.59,"639,242.67",23.06,3.44,9.47,4.70,15.70,23.06,262.52,85.76,79.91,9.34,13.23,47.75,38.85,(18.64),39.35,203.20,416.39,223.20,266.60,19.44,265.20,192.60,(27.38),201.60,214.40,6.35,,,,0.60,-18.64,,262.52,-18.64
+BYD Electronic (International) Company Limited (SEHK:285),4971259,SEHK,Information Technology; Technology Hardware and Equipment; Communications Equipment; Communications Equipment,1.48,0.19,1.03,0.48,0.50,"55,766.81",14.71,9.74,27.72,9.98,7.48,14.71,27.50,2.94,23.51,12.49,NA,9.40,14.98,59.36,15.60,40.60,160.26,41.55,28.55,(31.29),28.10,25.10,(10.68),25.60,36.60,42.97,,,,1.48,59.36,,27.50,59.36
+Canvest Environmental Protection Group Company Limited (SEHK:1381),5001325,SEHK,Utilities; Utilities; Independent Power and Renewable Electricity Producers; Renewable Electricity,1.64,2.35,2.40,2.85,2.57,"9,709.37",10.93,15.76,15.73,16.18,15.20,10.93,16.18,18.06,18.27,21.96,NA,4.14,3.60,(13.04),3.59,3.32,(7.52),3.40,4.12,21.18,4.17,4.21,0.96,4.18,3.73,(10.77),,,,1.64,-13.04,,16.18,-13.04
+"Central China Securities Co., Ltd. (SEHK:1375)",4772305,SEHK,Financials; Financial Services; Capital Markets; Investment Banking and Brokerage; Investment Banking; Security Underwriting Services; Securities and Commodities Markets Services; Commodity Contract Services; Security Brokers and Dealers; Security Brokers; Merger and Acquisition Advisory Services; Commodity Brokers,1.52,1.33,2.21,4.04,0.70,"13,966.56",1.43,0.69,0.83,3.89,0.76,1.43,101.67,0.00,31.31,101.64,13.68,1.62,1.84,13.58,1.88,1.68,(10.64),1.85,1.40,(24.32),1.40,1.13,(19.29),1.15,1.11,(3.48),,,,1.52,13.58,,101.67,13.58
+"CGN Power Co., Ltd. (SEHK:1816)",5000915,SEHK,Utilities; Independent Power and Renewable Electricity Producers; Independent Power Producers and Energy Traders; Utilities,4.05,4.97,4.08,5.31,4.74,"207,115.96",10.55,11.90,10.74,10.75,9.87,10.55,140.20,133.22,127.80,122.33,103.98,1.83,2.08,13.66,2.11,1.67,(20.85),1.65,2.37,43.64,2.41,1.86,(22.82),1.90,2.04,7.37,,,,4.05,13.66,,140.20,13.66
+Champion Real Estate Investment Trust (SEHK:2778),4143467,SEHK,Real Estate; Equity Real Estate Investment Trusts (REITs); Office REITs; Office REITs,5.23,5.64,6.19,6.96,7.43,"9,558.17",0.47,(0.87),(21.60),(1.67),(1.56),0.47,NM,NM,NM,NA,NA,5.39,5.15,(4.45),5.11,4.53,(11.35),4.57,3.99,(12.69),3.98,3.08,(22.61),3.12,2.45,(21.47),,,,5.23,-4.45,,NM,-4.45
+China BlueChemical Ltd. (SEHK:3983),4981539,SEHK,Materials; Materials; Chemicals; Fertilizers and Agricultural Chemicals; Nitrogenous Fertilizers; Phosphatic Fertilizers,8.89,6.74,4.45,9.81,10.09,"11,156.20",12.77,4.99,5.07,10.09,10.37,12.77,98.33,47.00,24.63,43.50,NA,2.33,1.92,(17.60),1.96,1.23,(37.24),1.24,2.17,75.00,2.27,1.85,(18.50),1.90,1.97,3.68,,,,8.89,-17.60,,98.33,-17.60
+"China Cinda Asset Management Co., Ltd. (SEHK:1359)",4095175,SEHK,Financials; Financial Services; Capital Markets; Asset Management and Custody Banks; Investment Company and Business Development Companies; Investment Company,6.11,7.65,8.80,10.29,6.97,"24,043.66",3.30,7.50,5.74,6.55,3.55,3.30,36.36,37.79,186.27,73.33,59.28,1.87,1.77,(5.35),1.81,1.47,(18.78),1.45,1.42,(2.07),1.49,1.08,(27.52),1.10,0.78,(29.09),,,,6.11,-5.35,,36.36,-5.35
+China CITIC Bank Corporation Limited (SEHK:998),4190041,SEHK,Financials; Banks; Banks; Diversified Commercial Banks; Diversified Banks,5.60,7.94,9.03,10.22,9.78,"336,781.96",9.58,9.94,9.07,9.38,9.48,9.58,26.76,29.91,29.38,29.51,31.23,4.66,4.67,0.21,4.73,3.29,(30.44),3.27,3.38,3.36,3.39,3.46,2.06,3.50,3.68,5.14,,,,5.60,0.21,,26.76,0.21
+China Coal Energy Company Limited (SEHK:1898),4333358,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Coal and Consumable Fuels; Coal Products",2.87,5.97,3.58,5.55,6.41,"158,075.90",14.80,7.54,7.37,14.54,16.48,14.80,107.42,112.56,43.47,42.66,44.90,3.06,3.09,0.98,3.16,2.33,(26.27),2.36,4.50,90.68,4.73,6.35,34.25,6.44,7.10,10.25,,,,2.87,0.98,,107.42,0.98
+China Communications Construction Company Limited (SEHK:1800),4325237,SEHK,"Industrials; Capital Goods; Construction and Engineering; Construction and Engineering; Heavy Construction; Highway and Street Construction; Bridge, Tunnel, and Elevated Highway Construction; Nonbuilding Structures Construction; Construction Support Services; Rail Construction",4.24,7.60,5.05,6.69,7.11,"139,094.87",6.82,8.03,5.92,6.27,6.11,6.82,105.05,142.15,135.90,141.60,117.83,7.30,6.35,(13.01),6.54,3.35,(48.78),3.29,4.24,28.88,4.27,3.75,(12.18),3.85,3.48,(9.61),,,,4.24,-13.01,,105.05,-13.01
+China Communications Services Corporation Limited (SEHK:552),4999624,SEHK,Industrials; Capital Goods; Construction and Engineering; Construction and Engineering,2.51,4.23,4.26,6.72,6.57,"24,310.32",8.75,8.93,8.56,8.30,8.57,8.75,29.13,30.03,29.95,35.57,35.71,6.16,5.68,(7.79),5.67,3.42,(39.68),3.31,3.80,14.80,3.80,2.85,(25.00),3.01,3.24,7.64,,,,2.51,-7.79,,29.13,-7.79
+China Conch Venture Holdings Limited (SEHK:586),4992492,SEHK,Industrials; Construction and Engineering; Construction and Engineering; Commercial Construction and Engineering; Construction Support Services; Engineering and Surveying Services; Engineering Services; Capital Goods,1.62,1.72,1.84,4.13,6.17,"9,572.84",5.65,24.13,19.77,16.05,8.70,5.65,12.49,13.85,14.18,6.83,NA,22.90,34.00,48.47,35.40,37.70,6.50,38.15,38.10,(0.13),38.10,16.96,(55.49),16.96,6.48,(61.79),,,,1.62,48.47,,12.49,48.47
+China Construction Bank Corporation (SEHK:939),4147550,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,5.19,5.94,7.24,8.71,9.07,"1,218,816.15",10.99,12.74,11.83,12.15,11.83,10.99,30.46,31.00,29.05,28.90,30.53,6.27,6.73,7.34,6.80,5.89,(13.38),5.77,5.40,(6.41),5.44,4.89,(10.11),4.93,4.65,(5.68),,,,5.19,7.34,,30.46,7.34
+"China Datang Corporation Renewable Power Co., Limited (SEHK:1798)",5001404,SEHK,Utilities; Utilities; Independent Power and Renewable Electricity Producers; Renewable Electricity; Alternative Energy Resources; Electric Power By Solar Energy; Electric Power By Wind Energy; Hydroelectric Power Generation,2.91,2.70,1.00,1.52,3.00,"11,783.40",8.81,7.68,7.35,7.76,11.86,8.81,279.36,18.39,33.82,21.67,32.71,0.92,0.79,(14.13),0.79,1.22,54.43,1.38,3.59,160.14,3.98,2.31,(41.96),2.37,1.80,(24.05),,,,2.91,-14.13,,279.36,-14.13
+"China Development Bank Financial Leasing Co., Ltd. (SEHK:1606)",4314033,SEHK,Financials; Financial Services; Financial Services; Specialized Finance; Credit Agencies; Business Credit Agencies; Finance Leasing,6.77,9.95,7.89,10.29,6.24,"25,411.18",11.60,11.78,12.50,13.83,10.41,11.60,38.40,37.91,23.43,39.44,22.70,1.95,1.50,(23.08),1.40,1.15,(17.86),1.13,1.18,4.42,1.11,1.06,(4.50),1.04,1.39,33.65,,,,6.77,-23.08,,38.40,-23.08
+China Education Group Holdings Limited (SEHK:839),9310246,SEHK,"Consumer Discretionary; Consumer Services; Diversified Consumer Services; Education Services; Schools; Colleges, Universities, Professional Schools, and Junior Colleges; Junior Colleges and Technical Institutes; Vocational Schools",1.23,1.83,3.15,3.63,4.92,"10,237.60",8.84,10.20,8.93,14.25,13.67,8.84,32.07,64.87,44.11,21.41,88.19,9.24,10.20,10.39,10.16,14.94,47.05,15.04,12.66,(15.82),12.22,10.10,(17.35),9.99,4.90,(50.95),,,,1.23,10.39,,32.07,10.39
+China Energy Engineering Corporation Limited (SEHK:3996),4990246,SEHK,"Industrials; Capital Goods; Construction and Engineering; Commercial Construction and Engineering; Construction Support Services; Construction Management Services; Engineering and Surveying Services; Engineering Services; Heavy Construction; Nonbuilding Structures Construction; Specialty Contract Work; Construction and Engineering; Architectural Services; Power and Communication Transmission Lines; Water, Sewer and Pipeline Construction; Structural Metal and Steel Work",3.71,4.47,2.07,2.90,3.66,"83,514.19",6.33,9.21,6.88,6.67,6.57,6.33,29.70,159.37,112.16,102.74,107.22,0.95,0.94,(1.05),0.93,0.75,(19.35),0.76,1.32,73.68,1.39,0.91,(34.53),0.92,0.78,(15.22),,,,3.71,-1.05,,29.70,-1.05
+China Everbright Environment Group Limited (SEHK:257),4988849,SEHK,Industrials; Commercial and Professional Services; Commercial Services and Supplies; Environmental and Facilities Services; Sanitary Services; Environmental Consulting,4.00,6.16,5.59,8.60,9.06,"18,674.64",7.92,14.91,14.42,13.55,8.58,7.92,29.52,27.57,31.60,40.05,NA,6.90,6.25,(9.42),6.27,4.38,(30.14),4.51,6.26,38.80,6.63,3.49,(47.36),3.52,2.54,(27.84),,,,4.00,-9.42,,29.52,-9.42
+China Foods Limited (SEHK:506),4910503,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Beverages; Soft Drinks and Non-alcoholic Beverages; Bottled Water; Juices",1.30,1.89,3.48,4.46,4.52,"8,307.75",14.94,11.06,12.39,13.05,14.03,14.94,23.03,24.51,43.49,45.02,NA,2.73,3.01,10.26,3.02,2.54,(15.89),2.72,3.05,12.13,3.12,2.80,(10.26),2.79,2.94,5.38,,,,1.30,10.26,,23.03,10.26
+"China Galaxy Securities Co., Ltd. (SEHK:6881)",4327156,SEHK,Financials; Financial Services; Capital Markets; Investment Banking and Brokerage; Investment Banking; Securities and Commodities Markets Services; Security Brokers and Dealers; Security Brokers; Commodity Contract Services,2.23,3.60,5.89,9.53,5.94,"100,405.87",6.76,7.60,9.50,11.62,7.71,6.76,16.91,22.59,23.01,43.88,33.09,3.44,4.59,33.43,4.72,4.86,2.97,4.80,4.48,(6.67),4.54,3.81,(16.08),3.86,4.13,6.99,,,,2.23,33.43,,16.91,33.43
+China Gas Holdings Limited (SEHK:384),5000748,SEHK,Utilities; Utilities; Gas Utilities; Gas Utilities; Oil and Gas Distribution; Natural Gas Transmission,1.58,1.62,3.40,4.84,7.13,"37,396.74",7.47,24.44,23.70,22.09,13.31,7.47,21.60,26.13,24.90,39.97,69.69,26.15,29.20,11.66,29.25,30.80,5.30,30.70,16.20,(47.23),16.40,11.36,(30.73),11.48,7.71,(32.84),,,,1.58,11.66,,21.60,11.66
+China Hongqiao Group Limited (SEHK:1378),4357891,SEHK,"Materials; Materials; Metals and Mining; Aluminum; Aluminum Production; Rolling, Drawing and Extruding of Aluminum",5.11,4.51,11.54,13.70,3.44,"93,713.08",12.34,10.04,14.63,19.91,10.39,12.34,31.52,35.90,45.34,102.51,NA,4.25,4.70,10.59,4.83,7.10,47.00,7.23,8.23,13.83,8.47,7.37,(12.99),7.52,6.39,(15.03),,,,5.11,10.59,,31.52,10.59
+China Life Insurance Company Limited (SEHK:2628),4090721,SEHK,Financials; Insurance; Insurance; Life and Health Insurance; Health and Medical Insurance; Life Insurance,0.84,4.68,5.95,5.68,5.27,"676,548.78",4.95,16.11,11.86,11.07,7.19,4.95,35.80,36.56,34.51,19.83,26.32,16.20,21.65,33.64,22.00,17.10,(22.27),17.10,12.92,(24.44),13.00,13.40,3.08,13.66,10.12,(25.92),,,,0.84,33.64,,35.80,33.64
+China Lilang Limited (SEHK:1234),4912333,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Textiles, Apparel and Luxury Goods; Apparel, Accessories and Luxury Goods; Accessories; Apparel; Men's Apparel",6.13,6.24,7.34,6.38,5.20,"5,652.13",13.69,23.19,15.35,12.78,12.02,13.69,51.53,64.28,67.82,53.74,45.23,6.70,6.36,(5.07),6.34,5.29,(16.56),5.38,4.36,(18.96),4.37,3.76,(13.96),3.82,4.23,10.73,,,,6.13,-5.07,,51.53,-5.07
+China Longyuan Power Group Corporation Limited (SEHK:916),4294264,SEHK,Utilities; Utilities; Electric Power By Solar Energy; Independent Power and Renewable Electricity Producers; Renewable Electricity; Alternative Energy Resources; Electric Power By Wind Energy,2.28,1.51,0.78,1.80,2.17,"116,896.85",8.30,9.08,8.95,11.66,7.71,8.30,17.19,17.21,12.72,93.24,75.82,5.28,4.93,(6.63),5.05,7.77,53.86,8.60,18.20,111.63,19.20,9.54,(50.31),10.30,5.92,(42.52),,,,2.28,-6.63,,17.19,-6.63
+China Medical System Holdings Limited (SEHK:867),4811436,SEHK,"Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceutical Products; Anti-infective Drugs; Cardiovascular Drugs; Gastrointestinal Drugs; Oncology Drugs; Respiratory Drugs; Health Care; Pharmaceuticals",3.37,4.31,4.30,5.02,4.45,"17,408.88",15.74,21.83,24.79,25.26,23.75,15.74,41.96,32.96,38.27,39.16,56.66,6.90,11.22,62.61,11.12,8.66,(22.12),9.04,13.02,44.03,13.64,12.28,(9.97),12.46,13.84,11.08,,,,3.37,62.61,,41.96,62.61
+China Mengniu Dairy Company Limited (SEHK:2319),4910484,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Food Products; Packaged Foods and Meats; Dairy Products and Eggs; Dry, Condensed, And Evaporated Dairy Products; Milk; Prepared and Preserved Foods; Desserts and Dessert Toppings; Ice Cream, Flavored Ices and Frozen Desserts; Dairy Products; Cheese",0.65,0.42,0.74,1.27,2.11,"60,577.98",9.71,13.46,9.92,12.53,11.27,9.71,17.27,20.05,21.31,28.41,NA,23.85,31.50,32.08,31.90,46.80,46.71,47.80,44.20,(7.53),44.85,35.40,(21.07),36.40,21.00,(42.31),,,,0.65,32.08,,17.27,32.08
+China Merchants Port Holdings Company Limited (SEHK:144),4995324,SEHK,Industrials; Transportation; Transportation Infrastructure; Marine Ports and Services; Marine Cargo Services,7.21,8.01,5.14,8.22,7.71,"41,812.17",6.07,10.14,5.85,7.87,7.30,6.07,19.60,14.26,14.26,11.75,NA,14.00,13.18,(5.86),13.32,9.49,(28.75),9.52,14.20,49.16,14.48,11.44,(20.99),11.58,10.64,(8.12),,,,7.21,-5.86,,19.60,-5.86
+China Mobile Limited (SEHK:941),6235058,SEHK,Communication Services; Telecommunication Services; Wireless Telecommunication Services; Wireless Telecommunication Services; Cellular Services; Mobile Data Services,4.45,7.36,7.24,8.95,7.16,"1,493,464.25",10.24,9.87,9.57,9.98,10.29,10.24,49.95,55.38,49.84,69.29,69.18,73.40,65.50,(10.76),65.35,44.20,(32.36),43.85,46.80,6.73,47.10,51.75,9.87,52.50,64.80,23.43,,,,4.45,-10.76,,49.95,-10.76
+China National Building Material Company Limited (SEHK:3323),4982025,SEHK,"Materials; Materials; Construction Materials; Construction Materials; Concrete; Cement, Hydraulic; Ready-Mixed Concrete; Glass",2.35,4.10,5.93,12.70,12.88,"25,135.62",5.34,12.85,13.70,14.93,8.21,5.34,21.89,29.15,28.07,73.97,84.40,5.19,8.70,67.63,9.00,9.32,3.56,8.98,9.56,6.46,9.61,6.41,(33.30),6.53,3.34,(48.85),,,,2.35,67.63,,21.89,67.63
+China Nonferrous Mining Corporation Limited (SEHK:1258),4349160,SEHK,Materials; Metals and Mining; Copper Ores; Materials; Copper,3.61,2.73,3.59,7.48,4.31,"25,519.32",15.83,15.85,12.33,26.91,16.97,15.83,21.69,9.83,19.12,54.17,37.99,1.88,1.82,(3.19),1.82,2.20,20.88,2.19,3.10,41.55,3.06,4.01,31.05,3.92,5.13,30.87,,,,3.61,-3.19,,21.69,-3.19
+China Oilfield Services Limited (SEHK:2883),4977152,SEHK,Energy; Energy; Energy Equipment and Services; Oil and Gas Drilling; Oil Rig Services,0.65,2.66,3.02,0.25,2.24,"76,173.41",7.98,7.06,7.19,0.84,6.39,7.98,13.35,28.24,259.02,36.70,31.64,6.41,12.22,90.64,12.12,6.56,(45.87),6.57,6.83,3.96,6.84,9.49,38.74,9.67,7.98,(17.48),,,,0.65,90.64,,13.35,90.64
+China Overseas Grand Oceans Group Limited (SEHK:81),4835829,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Real Estate Management and Development,3.19,6.37,8.96,10.62,7.78,"5,552.62",5.36,17.81,18.89,17.92,8.36,5.36,15.68,18.79,20.02,18.88,NA,2.48,5.39,117.34,5.48,4.16,(24.09),3.95,3.96,0.25,3.94,3.39,(13.96),3.48,2.57,(26.15),,,,3.19,117.34,,15.68,117.34
+China Overseas Land & Investment Limited (SEHK:688),4143457,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Land Sub Dividers And Developers; Real Estate Management and Development,3.13,6.05,6.39,5.63,5.45,"125,209.47",7.06,15.67,15.45,12.56,6.73,7.06,24.39,25.53,26.96,32.85,31.66,25.40,30.35,19.49,30.70,16.86,(45.08),16.50,18.46,11.88,18.42,20.60,11.83,21.00,13.76,(34.48),,,,3.13,19.49,,24.39,19.49
+China Overseas Property Holdings Limited (SEHK:2669),4864500,SEHK,Real Estate; Real Estate Management and Development; Real Estate Management and Development; Real Estate Services; Real Estate Agents And Brokers,0.86,1.24,0.87,1.23,2.30,"13,365.72",36.03,40.77,38.03,37.68,38.14,36.03,25.67,23.48,24.05,25.82,NA,2.29,4.90,113.97,4.99,4.04,(19.04),4.04,8.27,104.70,7.91,8.13,2.78,8.80,5.86,(33.41),,,,0.86,113.97,,25.67,113.97
+China Petroleum & Chemical Corporation (SEHK:386),5576887,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Integrated Oil and Gas",9.32,9.84,7.46,14.50,9.20,"814,716.10",7.16,8.32,4.76,9.55,8.25,7.16,80.02,69.51,48.78,85.02,69.90,5.44,4.69,(13.79),4.70,3.47,(26.17),3.53,3.63,2.83,3.69,3.77,2.17,3.82,4.09,7.07,,,,9.32,-13.79,,80.02,-13.79
+China Power International Development Limited (SEHK:2380),5001021,SEHK,Utilities; Utilities; Independent Power and Renewable Electricity Producers; Independent Power Producers and Energy Traders,7.74,8.59,2.96,1.87,4.38,"38,842.27",5.54,5.00,6.44,1.38,4.44,5.54,84.03,74.46,NM,26.09,57.92,1.76,1.67,(5.11),1.69,1.66,(1.78),1.67,5.25,214.37,5.45,3.30,(39.45),3.61,2.87,(20.50),,,,7.74,-5.11,,84.03,-5.11
+China Reinsurance (Group) Corporation (SEHK:1508),4175234,SEHK,Financials; Insurance; Insurance; Reinsurance; Casualty Reinsurance Carriers; Accident Reinsurance; Fire and Marine Reinsurance Carriers; Health and Medical Reinsurance Carriers; Life Reinsurance Carriers,2.75,6.02,6.56,10.65,3.36,"22,089.50",5.88,7.21,5.93,5.75,1.55,5.88,30.95,30.95,33.43,NM,31.56,1.57,1.28,(18.47),1.33,0.80,(39.85),0.81,0.75,(7.41),0.75,0.50,(34.00),0.51,0.46,(10.78),,,,2.75,-18.47,,30.95,-18.47
+China Resources Beer (Holdings) Company Limited (SEHK:291),4913706,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Beverages; Brewers; Beer, Ale and Malt Beverages",0.39,0.27,0.74,1.15,1.90,"104,462.50",17.03,6.78,10.21,20.06,16.87,17.03,37.12,26.79,27.93,40.03,NA,25.85,43.10,66.73,42.50,71.40,68.00,74.00,63.85,(13.72),60.50,54.55,(9.83),54.95,34.20,(37.76),,,,0.39,66.73,,37.12,66.73
+China Resources Building Materials Technology Holdings Limited (SEHK:1313),4985313,SEHK,"Materials; Materials; Construction Materials; Construction Materials; Concrete; Cement, Hydraulic; Ready-Mixed Concrete; Stone Materials",5.37,7.04,9.85,9.66,2.94,"7,611.40",1.35,21.69,19.57,14.62,3.50,1.35,43.19,47.54,52.14,144.30,NA,6.96,9.92,42.53,10.26,8.66,(15.59),8.56,5.89,(31.19),5.98,4.14,(30.77),4.23,1.70,(59.81),,,,5.37,42.53,,43.19,42.53
+China Resources Gas Group Limited (SEHK:1193),5000745,SEHK,Utilities; Utilities; Gas Utilities; Gas Utilities; Oil and Gas Distribution,1.80,2.11,2.11,4.33,4.10,"55,420.61",12.18,19.28,16.23,16.73,11.84,12.18,33.26,38.31,32.98,60.86,NA,30.50,42.80,40.33,42.50,41.25,(2.94),42.00,44.05,4.88,44.10,29.30,(33.56),29.60,25.60,(13.51),,,,1.80,40.33,,33.26,40.33
+China Resources Land Limited (SEHK:1109),4143939,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Real Estate Management and Development,3.24,3.73,4.63,4.73,5.75,"164,724.70",10.28,16.55,13.86,13.64,10.22,10.28,25.80,30.10,30.27,35.69,NA,28.25,38.80,37.35,39.40,32.00,(18.78),31.00,32.80,5.81,32.60,35.75,9.66,36.60,28.00,(23.50),,,,3.24,37.35,,25.80,37.35
+China Resources Pharmaceutical Group Limited (SEHK:3320),4972739,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Pharmaceutical Products; Anti-infective Drugs; Cardiovascular Drugs; Central Nervous System Drugs; Gastrointestinal Drugs; Generic Pharmaceuticals; Hematologic Drugs; Oncology Drugs; Respiratory Drugs",1.80,2.76,3.38,2.37,3.12,"29,213.67",8.89,7.84,7.12,7.60,8.47,8.89,24.86,20.96,20.00,22.72,NA,9.76,7.23,(25.92),7.34,3.98,(45.78),3.96,3.55,(10.35),4.67,6.32,35.33,6.52,5.13,(21.32),,,,1.80,-25.92,,24.86,-25.92
+China Resources Power Holdings Company Limited (SEHK:836),4157537,SEHK,Utilities; Utilities; Independent Power and Renewable Electricity Producers; Independent Power Producers and Energy Traders,3.68,6.86,2.51,1.60,4.50,"92,168.10",11.49,8.95,8.76,0.91,6.85,11.49,29.41,39.45,169.23,23.38,33.76,14.70,10.94,(25.58),11.00,8.35,(24.09),8.35,26.10,212.57,27.45,15.96,(41.86),16.58,15.64,(5.67),,,,3.68,-25.58,,29.41,-25.58
+China Risun Group Limited (SEHK:1907),14264773,SEHK,Materials; Materials; Chemicals; Commodity Chemicals,6.00,2.58,5.75,7.14,1.93,"13,349.23",7.31,23.86,21.79,26.66,15.70,7.31,98.81,15.84,38.73,44.39,29.81,NA,2.60,#VALUE!,2.57,2.76,7.39,2.80,4.73,68.93,4.77,3.05,(36.06),3.10,3.29,6.13,,,,6.00,#VALUE!,,98.81,#VALUE!
+China Shenhua Energy Company Limited (SEHK:1088),4230011,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Coal and Consumable Fuels; Bituminous Coal And Lignite Mining",6.33,9.44,11.80,13.86,10.87,"854,705.09",14.85,12.01,10.35,13.84,17.99,14.85,41.97,69.91,69.94,76.66,88.98,16.68,16.28,(2.40),16.56,14.60,(11.84),14.58,18.28,25.38,18.66,22.55,20.85,23.05,26.75,16.05,,,,6.33,-2.40,,41.97,-2.40
+China Shineway Pharmaceutical Group Limited (SEHK:2877),4810477,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Medicinal Chemicals and Botanical Products; Pharmaceutical Products; Cardiovascular Drugs; Central Nervous System Drugs; Respiratory Drugs; Non-Prescription Drugs; Gastrointestinal Drugs",3.53,4.79,10.42,5.05,8.20,"7,085.65",14.45,8.72,5.10,9.52,11.77,14.45,35.53,58.83,81.39,33.44,NA,7.61,7.38,(3.02),7.35,5.31,(27.76),5.33,6.89,29.27,6.83,7.59,11.13,7.80,7.27,(6.79),,,,3.53,-3.02,,35.53,-3.02
+China State Construction International Holdings Limited (SEHK:3311),4990392,SEHK,"Industrials; Capital Goods; Construction and Engineering; Commercial Construction and Engineering; Commercial Construction, General Contractors and Operative Builders; Commercial and Institutional Buildings; Industrial Buildings and Warehouses; Construction Support Services; Construction Management Services; Engineering and Surveying Services; Engineering Services; Heavy Construction; Specialty Contract Work; Construction and Engineering; Hotel and Motel Construction; Highway and Street Construction; Bridge, Tunnel, and Elevated Highway Construction",3.95,7.47,4.02,5.07,5.70,"43,575.38",13.67,12.18,11.88,11.95,12.64,13.67,29.04,32.02,33.32,30.66,NA,6.01,7.08,17.80,7.28,4.42,(39.29),4.54,9.69,113.44,9.81,8.77,(10.60),8.47,9.03,6.61,,,,3.95,17.80,,29.04,17.80
+China Suntien Green Energy Corporation Limited (SEHK:956),4980647,SEHK,"Oil, Gas and Consumable Fuels; Oil and Gas Storage and Transportation; Energy; Energy; Fuel Dealers; Natural Gas Pipelines",6.32,6.00,2.70,6.03,7.68,"28,086.38",10.53,13.47,12.29,14.06,11.48,10.53,35.31,119.97,85.63,99.52,100.06,1.94,2.25,15.98,2.26,2.38,5.31,2.69,6.08,126.02,6.70,3.25,(51.49),3.29,2.84,(13.68),,,,6.32,15.98,,35.31,15.98
+China Taiping Insurance Holdings Company Limited (SEHK:966),4259322,SEHK,Financials; Insurance; Insurance; Life and Health Insurance; Health and Medical Insurance; Life Insurance,0.52,2.15,3.74,4.73,3.87,"21,779.75",8.89,14.38,9.93,9.52,5.22,8.89,12.21,21.95,22.00,21.75,20.06,20.50,19.32,(5.76),20.20,13.98,(30.79),14.02,10.70,(23.68),11.00,9.72,(11.64),9.83,6.72,(31.64),,,,0.52,-5.76,,12.21,-5.76
+China Telecom Corporation Limited (SEHK:728),4222730,SEHK,Communication Services; Telecommunication Services; Diversified Telecommunication Services; Local Telecommunications Services; Long Distance Telecommunications Services; Integrated Telecommunication Services,3.89,5.81,4.81,7.76,6.46,"576,255.65",6.89,5.93,5.85,6.56,6.38,6.89,43.34,44.42,32.52,103.39,74.57,3.92,3.21,(18.11),3.20,2.15,(32.81),2.09,2.60,24.40,2.59,3.07,18.53,3.19,3.74,17.24,,,,3.89,-18.11,,43.34,-18.11
+China Tower Corporation Limited (SEHK:788),7665552,SEHK,Communication Services; Telecommunication Services; Diversified Telecommunication Services; Integrated Telecommunication Services,0.15,1.39,3.13,3.69,4.47,"154,887.45",4.98,2.88,3.49,3.90,4.59,4.98,7.58,39.84,53.68,52.56,NA,1.40,1.72,22.86,1.72,1.14,(33.72),1.10,0.86,(21.82),0.85,0.84,(1.18),0.86,0.82,(4.65),,,,0.15,22.86,,7.58,22.86
+China Unicom (Hong Kong) Limited (SEHK:762),4999366,SEHK,Telecommunication Services; Diversified Telecommunication Services; Integrated Telecommunication Services; Local Telecommunications Services; Long Distance Telecommunications Services; Communication Services,2.12,3.64,6.24,6.29,7.03,"179,305.01",5.43,3.58,3.88,4.39,4.97,5.43,36.19,43.60,60.48,47.69,NA,8.07,7.34,(9.05),7.32,4.45,(39.21),4.47,3.90,(12.75),3.91,4.83,23.53,5.18,4.90,(5.41),,,,2.12,-9.05,,36.19,-9.05
+China Water Affairs Group Limited (SEHK:855),4260686,SEHK,Utilities; Utilities; Water Utilities; Sewage Treatment Systems; Water Supply; Water Utilities,5.15,5.12,2.86,5.27,7.23,"7,671.92",14.83,17.71,18.57,17.15,15.91,14.83,31.73,29.35,29.08,27.58,15.82,8.33,5.83,(30.01),5.86,6.06,3.41,6.08,11.18,83.88,11.44,6.45,(43.62),6.72,4.29,(36.16),,,,5.15,-30.01,,31.73,-30.01
+China XLX Fertiliser Ltd. (SEHK:1866),4981080,SEHK,Materials; Materials; Chemicals; Fertilizers and Agricultural Chemicals; Nitrogenous Fertilizers,4.82,3.49,2.23,5.74,7.89,"5,021.15",16.31,7.79,8.63,24.62,20.63,16.31,37.64,26.96,8.97,18.36,27.02,2.51,2.40,(4.38),2.40,2.50,4.17,2.58,5.33,106.59,5.89,4.06,(31.07),4.03,3.49,(13.40),,,,4.82,-4.38,,37.64,-4.38
+"Chongqing Rural Commercial Bank Co., Ltd. (SEHK:3618)",4296051,SEHK,Financials; Banks; Banks; Regional Banks; Regional Commercial Banks,5.87,7.95,9.70,11.11,9.96,"52,141.19",9.29,12.34,9.27,9.64,9.44,9.29,24.22,30.61,28.57,29.20,30.05,4.14,3.98,(3.86),4.04,3.16,(21.78),3.10,2.77,(10.65),2.83,2.67,(5.65),2.70,3.03,12.22,,,,5.87,-3.86,,24.22,-3.86
+Chow Sang Sang Holdings International Limited (SEHK:116),4913865,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Textiles, Apparel and Luxury Goods; Apparel, Accessories and Luxury Goods; Jewelry, Timepieces and Gemstone Products; Jewelry",5.99,3.41,3.67,4.16,3.90,"5,575.28",8.71,6.11,5.64,5.98,3.87,8.71,61.06,37.33,42.12,64.40,NA,11.32,9.69,(14.40),9.96,8.80,(11.65),9.15,10.90,19.13,11.10,10.34,(6.85),10.56,8.98,(14.96),,,,5.99,-14.40,,61.06,-14.40
+Chow Tai Fook Jewellery Group Limited (SEHK:1929),4913771,SEHK,Consumer Discretionary; Consumer Discretionary Distribution and Retail; Specialty Retail; Other Specialty Retail,4.30,2.87,4.42,3.14,4.56,"101,675.16",16.17,14.30,10.22,21.09,20.81,16.17,65.55,110.31,46.46,68.53,92.86,6.42,7.45,16.04,7.55,9.75,29.14,9.75,14.02,43.79,14.00,15.92,13.71,16.46,11.62,(29.40),,,,4.30,16.04,,65.55,16.04
+CIMC Enric Holdings Limited (SEHK:3899),4992510,SEHK,"Industrials; Capital Goods; Machinery; Industrial Machinery and Supplies and Components; Industrial Heating, Ventilation, Air Conditioning, and Refrigeration Equipment and Supplies; Air and Gas Compressors; Material Handling Machinery and Equipment; Warehousing and Storage Equipment and Supplies; Storage Tanks and Cylinders",3.01,4.31,1.23,2.66,3.40,"15,354.06",10.63,12.94,7.62,11.38,12.04,10.63,27.02,62.83,26.70,34.52,NA,5.83,4.65,(20.24),4.79,4.64,(3.13),5.06,11.34,124.11,12.26,7.89,(35.64),7.75,7.06,(8.90),,,,3.01,-20.24,,27.02,-20.24
+CITIC Limited (SEHK:267),4199168,SEHK,Industrials; Capital Goods; Industrial Conglomerates; Industrial Conglomerates,4.22,7.01,6.99,7.96,8.30,"198,395.59",8.13,9.17,8.51,9.22,9.66,8.13,23.74,19.78,22.29,25.28,NA,11.84,10.42,(11.99),10.42,5.49,(47.31),5.54,7.70,38.99,7.77,8.24,6.05,8.23,7.80,(5.22),,,,4.22,-11.99,,23.74,-11.99
+CITIC Telecom International Holdings Limited (SEHK:1883),4488942,SEHK,Communication Services; Telecommunication Services; Diversified Telecommunication Services; Alternative Carriers; Broadband Telecommunications Services,6.69,8.20,8.17,8.68,7.47,"9,363.26",11.74,11.14,10.80,11.08,11.86,11.74,69.26,71.65,73.51,71.20,73.60,2.74,2.84,3.65,2.83,2.44,(13.78),2.44,2.63,7.79,2.66,2.65,(0.38),2.72,3.28,20.59,,,,6.69,3.65,,69.26,3.65
+CK Asset Holdings Limited (SEHK:1113),4595745,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Land Sub Dividers And Developers; Real Estate Management and Development,3.47,3.04,3.80,4.62,5.82,"110,053.27",4.42,8.56,4.72,5.71,5.08,4.42,26.62,NA,38.13,38.13,42.18,55.50,56.25,1.35,55.95,39.80,(28.87),40.20,49.15,22.26,48.85,48.05,(1.64),48.10,39.20,(18.50),,,,3.47,1.35,,26.62,1.35
+CK Infrastructure Holdings Limited (SEHK:1038),4157499,SEHK,Utilities; Utilities; Electric Utilities; Electric Utilities; Electric Power Transmission and Control,4.38,5.91,4.99,6.14,5.88,"107,335.43",6.11,9.03,5.83,5.97,6.06,6.11,65.86,95.55,90.74,87.27,NA,58.30,55.45,(4.89),55.35,41.65,(24.75),42.25,49.65,17.51,49.55,40.85,(17.56),41.10,43.20,5.11,,,,4.38,-4.89,,65.86,-4.89
+CLP Holdings Limited (SEHK:2),5001227,SEHK,Utilities; Utilities; Electric Utilities; Electric Utilities; Electric Power Distribution; Electric Power Generation By Fossil Fuels; Electric Power Transmission and Control; Electric Power Generation By Nuclear Fuels,3.76,4.30,3.94,5.44,4.81,"153,481.87",6.73,4.71,10.20,7.50,1.23,6.73,159.83,67.12,90.76,736.78,115.28,87.25,81.90,(6.13),82.45,71.70,(13.04),73.05,78.75,7.80,79.75,56.95,(28.59),56.95,64.45,13.17,,,,3.76,-6.13,,159.83,-6.13
+CMOC Group Limited (SEHK:3993),4349148,SEHK,Materials; Materials; Metals and Mining; Diversified Metals and Mining; Chemical And Fertilizer Mineral Mining; Phosphate Rock; Smelting and Refining of Diversified Metals,3.74,0.93,0.97,2.33,2.20,"196,549.48",12.73,3.56,5.12,11.36,13.04,12.73,226.34,113.24,47.70,78.98,76.01,2.82,3.34,18.44,3.50,5.06,44.57,5.58,4.11,(26.34),4.12,3.60,(12.62),3.70,4.27,15.41,,,,3.74,18.44,,226.34,18.44
+CNOOC Limited (SEHK:883),4157445,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Oil and Gas Exploration and Production; Oil and Gas Production",5.63,9.05,6.85,7.01,10.31,"943,596.83",19.60,14.06,5.66,15.35,26.23,19.60,47.46,103.59,29.11,54.61,47.04,11.32,12.96,14.49,12.98,7.18,(44.68),7.05,8.03,13.90,8.09,9.98,23.36,10.10,13.00,28.71,,,,5.63,14.49,,47.46,14.49
+"COSCO SHIPPING Development Co., Ltd. (SEHK:2866)",4994889,SEHK,Industrials; Capital Goods; Trading Companies and Distributors; Trading Companies and Distributors; Machinery Rental and Leasing,4.08,3.92,4.74,25.45,11.83,"28,999.07",4.84,8.25,8.30,20.27,12.74,4.84,294.22,222.15,57.31,147.98,370.17,0.78,0.92,17.95,0.93,1.26,35.48,1.42,1.42,0.00,1.44,1.04,(27.78),1.04,0.80,(23.08),,,,4.08,17.95,,294.22,17.95
+"COSCO SHIPPING International (Hong Kong) Co., Ltd. (SEHK:517)",4995280,SEHK,Industrials; Transportation Infrastructure; Marine Ports and Services; Transportation,7.80,6.75,10.71,7.94,11.18,"5,233.52",7.46,4.07,4.18,3.61,4.44,7.46,74.19,72.45,135.57,88.34,NA,2.73,2.05,(24.91),2.07,2.37,14.49,2.45,2.38,(2.86),2.39,2.52,5.44,2.50,3.04,21.60,,,,7.80,-24.91,,74.19,-24.91
+COSCO SHIPPING Ports Limited (SEHK:1199),4995303,SEHK,Industrials; Transportation; Transportation Infrastructure; Marine Ports and Services,4.80,5.88,5.01,5.44,4.47,"15,430.30",5.86,6.04,6.15,6.09,5.73,5.86,24.70,14.60,40.76,18.83,NA,7.37,6.38,(13.43),6.50,5.39,(17.08),5.60,6.77,20.89,6.90,6.20,(10.14),6.23,5.64,(9.47),,,,4.80,-13.43,,24.70,-13.43
+Country Garden Services Holdings Company Limited (SEHK:6098),10372784,SEHK,Real Estate; Real Estate Management and Development; Real Estate Operating Companies; Real Estate Management Services; Nonresidential Property Managers; Residential Property Managers; Real Estate Management and Development,0.36,0.32,0.57,1.81,2.35,"14,709.29",1.31,42.91,25.48,15.95,5.78,1.31,13.55,15.52,16.78,44.32,NA,11.88,26.25,120.96,26.10,52.45,100.96,51.15,46.70,(8.70),44.60,19.44,(56.41),19.38,6.75,(65.17),,,,0.36,120.96,,13.55,120.96
+CPMC Holdings Limited (SEHK:906),4983459,SEHK,"Materials; Materials; Containers and Packaging; Metal, Glass and Plastic Containers; Metal Packaging; Aerosol Packaging; Metal Cans; Metal Shipping Barrels, Drums, Kegs, And Pails; Plastic Packaging; Plastic Bottles",4.00,4.33,5.62,6.02,3.61,"7,571.28",8.33,5.86,7.35,8.36,8.40,8.33,46.72,39.86,62.59,49.20,51.60,3.67,3.40,(7.36),3.32,3.58,7.83,3.55,4.36,22.82,4.26,4.22,(0.94),4.28,6.73,57.24,,,,4.00,-7.36,,46.72,-7.36
+Crystal International Group Limited (SEHK:2232),8917987,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Apparel, Accessories and Luxury Goods; Apparel; Specialty Apparel; Athletic Uniforms; Women's, Misses', and Juniors' Apparel; Textiles, Apparel and Luxury Goods; Women's, Misses', and Juniors' Blouses, Shirts and Sweaters; Women's, Misses', and Juniors' Underwear and Nightwear; Women's Intimate Apparel",3.86,5.25,1.53,6.09,5.79,"9,671.07",11.79,14.65,9.60,13.29,13.13,11.79,29.72,39.16,22.06,31.24,NA,3.82,3.21,(15.97),3.26,2.38,(26.99),2.48,2.62,5.65,2.63,2.43,(7.60),2.50,2.90,16.00,,,,3.86,-15.97,,29.72,-15.97
+"CSC Financial Co., Ltd. (SEHK:6066)",5000115,SEHK,Financials; Financial Services; Capital Markets; Investment Banking and Brokerage; Investment Banking; Private Placement Advisory Services; Security Underwriting Services; Debt Underwriting Services; Equity Underwriting Services; Investment Brokerage Services; Securities and Commodities Markets Services; Security Brokers and Dealers; Security Brokers,3.05,2.48,5.28,6.78,4.25,"157,896.69",7.39,10.56,15.26,13.82,8.69,7.39,NA,NA,NA,NA,NA,4.33,6.72,55.20,6.94,10.30,48.41,10.78,8.53,(20.87),8.49,6.83,(19.55),6.84,6.90,0.88,,,,3.05,55.20,,NA,55.20
+CSPC Pharmaceutical Group Limited (SEHK:1093),4810448,SEHK,"Health Care; Pharmaceuticals; Pharmaceuticals; Medicinal Chemicals and Botanical Products; Anti-infective Drugs; Antibiotics; Cardiovascular Drugs; Central Nervous System Drugs; Oncology Drugs; Respiratory Drugs; Pharmaceutical Research and Development; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceutical Products; Antifungal Drugs; Generic Pharmaceuticals; Hematologic Drugs",0.97,1.13,2.01,2.44,3.44,"68,925.52",18.22,21.30,24.54,22.79,21.32,18.22,25.99,29.61,30.16,34.42,NA,5.56,9.68,73.97,9.73,7.93,(18.49),7.98,8.47,6.14,8.47,8.20,(3.19),8.32,7.26,(12.74),,,,0.97,73.97,,25.99,73.97
+CSSC (Hong Kong) Shipping Company Limited (SEHK:3877),7760787,SEHK,Financials; Financial Services; Financial Services; Specialized Finance; Credit Agencies; Business Credit Agencies; Finance Leasing,2.29,7.34,8.26,7.76,6.76,"8,230.02",15.62,12.56,12.77,14.53,15.95,15.62,20.84,44.28,40.86,32.78,32.27,NA,1.31,#VALUE!,1.28,1.09,(14.84),1.10,1.09,(0.91),1.10,1.16,5.45,1.17,1.48,26.50,,,,2.29,#VALUE!,,20.84,#VALUE!
+Dah Sing Banking Group Limited (SEHK:2356),4296393,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,4.61,5.40,4.80,6.07,7.94,"8,490.74",5.90,8.20,5.19,5.51,5.27,5.90,30.12,28.24,28.83,36.37,48.94,13.70,10.42,(23.94),10.58,7.96,(24.76),7.93,6.66,(16.02),6.72,5.60,(16.67),5.81,5.04,(13.25),,,,4.61,-23.94,,30.12,-23.94
+Dah Sing Financial Holdings Limited (SEHK:440),4217301,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,4.82,6.18,4.24,5.86,7.31,"6,407.48",5.29,6.94,4.44,4.72,4.22,5.29,27.83,25.94,25.89,29.76,40.19,37.55,30.70,(18.24),30.70,21.85,(28.83),22.15,23.60,6.55,23.60,18.08,(23.39),18.96,16.00,(15.61),,,,4.82,-18.24,,27.83,-18.24
+Dongfang Electric Corporation Limited (SEHK:1072),4987681,SEHK,"Industrials; Capital Goods; Electrical Equipment; Heavy Electrical Equipment; Power Generation Equipment; Engines and Turbines; Steam, Gas, and Hydraulic Turbines; Motors and Generators; Generators",2.66,3.96,1.65,2.03,5.13,"54,931.22",9.13,4.42,5.86,7.04,8.14,9.13,30.98,35.86,23.81,26.50,30.69,4.55,4.70,3.30,4.89,5.67,15.95,6.10,13.12,115.08,13.92,13.28,(4.60),13.92,7.14,(48.71),,,,2.66,3.30,,30.98,3.30
+Dongyue Group Limited (SEHK:189),6256048,SEHK,Materials; Materials; Chemicals; Specialty Chemicals,8.10,3.74,1.15,3.96,10.62,"11,158.66",3.45,18.99,9.27,20.49,24.47,3.45,43.23,55.43,11.87,16.22,NA,4.06,4.32,6.40,4.50,6.15,36.67,6.18,12.16,96.76,12.56,8.59,(31.61),8.83,5.65,(36.01),,,,8.10,6.40,,43.23,6.40
+"Dynagreen Environmental Protection Group Co., Ltd. (SEHK:1330)",4988791,SEHK,"Industrials; Commercial and Professional Services; Commercial Services and Supplies; Environmental and Facilities Services; Sanitary Services; Hazardous Waste Collection, Treatment and Disposal Services; Sewer Cleaning and Rodding; Solid Waste Collection, Treatment and Disposal Services",3.46,3.39,6.12,4.63,5.60,"8,048.06",8.25,12.69,10.66,11.12,10.65,8.25,108.34,110.58,104.57,84.00,99.32,3.13,3.29,5.11,3.35,3.22,(3.88),3.27,4.01,22.63,4.16,2.52,(39.42),2.55,2.35,(7.84),,,,3.46,5.11,,108.34,5.11
+EEKA Fashion Holdings Limited (SEHK:3709),4912352,SEHK,"Consumer Discretionary; Consumer Discretionary Distribution and Retail; Online Apparel and Accessory Retail; Specialty Retail; Apparel Retail; Online Apparel Retail; Women's, Misses', and Juniors' Apparel Stores",3.52,1.12,2.86,4.29,2.82,"8,348.76",19.48,17.84,13.21,15.17,9.48,19.48,33.79,20.81,37.50,73.82,NA,9.77,9.08,(7.06),9.02,14.30,58.54,14.22,13.30,(6.47),11.40,11.20,(1.75),10.00,14.18,41.80,,,,3.52,-7.06,,33.79,-7.06
+ENN Energy Holdings Limited (SEHK:2688),5001493,SEHK,Utilities; Utilities; Gas Utilities; Gas Utilities; Oil and Gas Distribution,1.40,1.47,1.12,2.51,5.06,"70,224.20",16.48,24.26,21.82,22.97,15.20,16.48,20.74,27.38,36.45,45.30,NA,69.90,85.15,21.82,86.45,113.80,31.64,115.90,146.80,26.66,150.80,109.60,(27.32),113.40,57.50,(49.29),,,,1.40,21.82,,20.74,21.82
+Far East Horizon Limited (SEHK:3360),4296279,SEHK,Financials; Financial Services; Financial Services; Specialized Finance; Credit Agencies; Finance Leasing; Business Credit Agencies,4.11,4.13,5.20,6.89,7.98,"23,603.79",12.58,11.98,11.60,12.67,12.51,12.58,30.77,32.65,26.85,28.37,31.55,7.67,7.30,(4.82),7.44,7.99,7.39,7.80,6.92,(11.28),6.81,6.10,(10.43),6.13,6.14,0.16,,,,4.11,-4.82,,30.77,-4.82
+First Pacific Company Limited (SEHK:142),1031113,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Food Products; Packaged Foods and Meats; Bread and Bakery Products; Coffee And Tea; Tea; Dairy Products and Eggs; Dairy Products; Prepared and Preserved Foods; Infant Food; Snack Food; Seasonings and Preservatives; Sauces And Salad Dressings; Bread, Biscuits and Cookies; Butter and Margarine; Dry, Condensed, And Evaporated Dairy Products; Milk; Edible Oils; Grain Mill Products; Flour; Desserts and Dessert Toppings; Ice Cream, Flavored Ices and Frozen Desserts; Pasta; Sweeteners; Sugar; Cane Sugar",4.53,5.67,5.75,8.80,7.07,"15,425.07",12.23,0.41,6.17,7.60,10.01,12.23,NM,38.89,27.51,28.40,23.74,3.05,2.65,(13.11),2.65,2.47,(6.79),2.38,2.87,20.59,2.88,2.33,(19.10),2.31,3.11,34.63,,,,4.53,-13.11,,NM,-13.11
+"Flat Glass Group Co., Ltd. (SEHK:6865)",4972527,SEHK,Information Technology; Semiconductors and Semiconductor Equipment; Semiconductors and Semiconductor Equipment; Semiconductor Materials and Equipment,1.10,0.32,0.45,1.38,3.89,"60,082.13",15.21,17.53,27.73,22.26,16.43,15.21,32.03,15.02,19.52,34.92,34.21,2.06,5.15,150.00,5.35,32.65,510.28,35.10,39.60,12.82,40.70,18.88,(53.61),18.86,13.18,(30.12),,,,1.10,150.00,,32.03,150.00
+Fu Shou Yuan International Group Limited (SEHK:1448),4912724,SEHK,Consumer Discretionary; Consumer Services; Diversified Consumer Services; Specialized Consumer Services; Cemeteries and Funeral Home Services; Cemeteries; Funeral Homes and Crematories; Funeral Homes and Funeral Services,1.20,1.03,1.82,1.68,3.14,"11,537.00",15.38,17.03,15.57,16.45,13.76,15.38,27.52,25.08,29.77,34.95,43.93,5.50,6.60,20.00,6.78,7.28,7.37,7.41,6.13,(17.27),6.15,6.70,8.94,6.72,5.30,(21.13),,,,1.20,20.00,,27.52,20.00
+Fufeng Group Limited (SEHK:546),4985945,SEHK,Materials; Materials; Chemicals; Diversified Chemicals,9.59,4.76,5.17,9.20,12.01,"12,297.35",19.16,10.16,5.46,10.51,27.41,19.16,64.64,50.34,22.85,27.95,NA,3.36,3.43,2.08,3.61,2.90,(19.67),2.99,2.69,(10.03),2.82,4.75,68.44,4.82,4.33,(10.17),,,,9.59,2.08,,64.64,2.08
+Geely Automobile Holdings Limited (SEHK:175),4912598,SEHK,Consumer Discretionary; Automobiles and Components; Automobiles; Passenger Motor Vehicles; Automobile Manufacturers; Light Truck and Sport Utility Vehicles (SUVs),2.30,0.94,0.94,1.84,2.44,"89,866.00",6.12,16.47,9.36,6.48,6.35,6.12,34.26,40.81,35.87,36.60,38.77,12.98,15.24,17.41,15.60,26.50,69.87,26.90,21.30,(20.82),21.30,11.40,(46.48),11.86,8.59,(27.57),,,,2.30,17.41,,34.26,17.41
+Genertec Universal Medical Group Company Limited (SEHK:2666),4812137,SEHK,Financials; Financial Services; Financial Services; Specialized Finance; Credit Agencies; Business Credit Agencies; Finance Leasing,4.58,5.01,5.51,7.59,7.57,"8,928.07",10.98,13.79,12.77,12.46,11.19,10.98,25.64,25.99,24.80,29.50,28.05,5.75,5.90,2.61,5.97,5.79,(3.02),5.91,5.63,(4.74),5.62,4.74,(15.66),4.71,4.49,(4.67),,,,4.58,2.61,,25.64,2.61
+Grand Ming Group Holdings Limited (SEHK:1271),4990687,SEHK,"Industrials; Capital Goods; Construction and Engineering; Construction and Engineering; Commercial Construction and Engineering; Commercial Construction, General Contractors and Operative Builders; Commercial and Institutional Buildings",2.04,1.25,1.01,1.89,2.31,"5,283.23",49.95,5.34,1.30,6.10,0.76,49.95,46.68,205.62,295.27,647.14,33.39,2.47,2.40,(2.83),2.40,4.79,99.58,4.77,7.90,65.62,7.89,5.30,(32.83),5.75,3.89,(32.35),,,,2.04,-2.83,,46.68,-2.83
+Grand Pharmaceutical Group Limited (SEHK:512),4812022,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Medicinal Chemicals and Botanical Products; Pharmaceutical Products; Oncology Drugs; Cardiovascular Drugs; Hormones and Hormone Antagonists; Respiratory Drugs",2.03,1.40,1.70,2.39,3.42,"13,902.18",12.86,14.12,17.94,19.41,15.18,12.86,25.24,18.09,16.25,18.78,NA,3.40,4.24,24.71,4.35,6.88,58.16,6.63,6.46,(2.56),6.55,4.60,(29.77),4.58,4.09,(10.70),,,,2.03,24.71,,25.24,24.71
+Great Eagle Holdings Limited (SEHK:41),4143460,SEHK,Real Estate; Real Estate Management and Development; Diversified Real Estate Activities; Real Estate Management and Development,3.16,3.90,3.81,4.84,7.18,"8,389.46",1.17,(0.64),(15.54),(1.05),(0.56),1.17,NM,NM,NM,NM,85.29,32.85,26.25,(20.09),26.50,21.30,(19.62),21.90,21.80,(0.46),21.95,17.16,(21.82),17.38,12.12,(30.26),,,,3.16,-20.09,,NM,-20.09
+Greentown China Holdings Limited (SEHK:3900),4429472,SEHK,"Real Estate; Real Estate Management and Development; Land Sub Dividers And Developers; Land Sub Dividers and Developers, except Cemetery; Real Estate Management and Development; Real Estate Development",2.72,2.89,3.42,4.71,6.89,"13,065.11",5.93,6.09,7.50,8.00,8.12,5.93,54.54,33.65,33.60,47.12,35.25,5.66,9.57,69.08,10.00,11.34,13.40,10.88,12.56,15.44,11.88,11.40,(4.04),11.40,7.95,(30.26),,,,2.72,69.08,,54.54,69.08
+Greentown Service Group Co. Ltd. (SEHK:2869),4988132,SEHK,Real Estate; Real Estate Management and Development; Real Estate Operating Companies; Real Estate Management Services; Residential Property Managers; Real Estate Operators And Lessors; Nonresidential Building Operators and Lessors; Hotel Property Operators and Lessors; Real Estate Management and Development,0.88,0.78,1.67,3.09,3.44,"10,028.76",8.90,17.63,14.72,12.30,8.28,8.90,37.23,31.03,38.43,79.32,47.10,5.83,8.51,45.97,8.37,9.57,14.34,9.45,7.20,(23.81),7.14,5.18,(27.45),5.32,2.91,(45.30),,,,0.88,45.97,,37.23,45.97
+Guangdong Investment Limited (SEHK:270),5000876,SEHK,Utilities; Utilities; Water Utilities; Water Utilities; Sewage Treatment Systems; Water Supply,3.36,4.16,6.00,7.67,10.80,"23,405.40",4.83,11.28,10.57,9.31,9.18,4.83,71.02,84.28,82.78,84.06,NA,14.94,16.30,9.10,16.38,13.96,(14.77),14.20,9.91,(30.21),9.90,7.99,(19.29),8.24,5.68,(31.07),,,,3.36,9.10,,71.02,9.10
+"Guangzhou Automobile Group Co., Ltd. (SEHK:2238)",4911721,SEHK,Consumer Discretionary; Automobiles and Components; Automobile Manufacturers; Automobiles; Passenger Motor Vehicles,3.86,2.29,3.12,5.06,7.09,"76,364.02",3.03,8.37,7.16,8.25,7.44,3.03,60.34,41.55,37.82,41.05,79.08,7.71,9.70,25.81,9.84,8.62,(12.40),8.67,7.69,(11.30),7.83,5.26,(32.82),5.33,3.63,(31.89),,,,3.86,25.81,,60.34,25.81
+Guangzhou Baiyunshan Pharmaceutical Holdings Company Limited (SEHK:874),4810945,SEHK,Health Care; Health Care Equipment and Services; Health Care Providers and Services; Health Care Distributors; Pharmaceutical Product Distribution; Healthcare Equipment Distribution,1.81,3.39,2.92,3.50,3.74,"49,838.76",12.12,14.01,11.41,13.33,13.09,12.12,32.79,44.25,34.04,37.58,39.09,27.15,26.60,(2.03),26.75,19.02,(28.90),18.82,22.45,19.29,23.80,23.00,(3.36),23.10,21.75,(5.84),,,,1.81,-2.03,,32.79,-2.03
+"Guangzhou Rural Commercial Bank Co., Ltd. (SEHK:1551)",4308417,SEHK,Financials; Banks; Banks; Regional Banks; Regional Commercial Banks,6.23,6.24,7.08,4.64,5.23,"23,055.66",3.53,12.24,7.06,4.64,4.61,3.53,26.09,45.58,38.07,40.13,23.08,4.99,3.65,(26.85),3.64,3.50,(3.85),3.50,3.43,(2.00),3.20,2.64,(17.50),2.63,2.20,(16.35),,,,6.23,-26.85,,26.09,-26.85
+Guoco Group Limited (SEHK:53),4085474,SEHK,Industrials; Capital Goods; Industrial Conglomerates; Industrial Conglomerates,3.03,2.71,2.35,3.01,5.33,"23,165.22",4.81,5.19,(0.97),3.28,4.31,4.81,38.47,NM,26.04,33.35,19.11,98.00,132.00,34.69,132.00,92.25,(30.11),94.90,85.00,(10.43),84.55,66.50,(21.35),66.70,56.30,(15.59),,,,3.03,34.69,,38.47,34.69
+"Haitong Unitrust International Financial Leasing Co., Ltd. (SEHK:1905)",4558801,SEHK,Financials; Financial Services; Business Credit Agencies; Finance Leasing; Financial Services; Specialized Finance; Credit Agencies,3.32,6.50,7.51,9.38,14.42,"7,411.77",8.23,9.61,7.17,8.44,8.41,8.23,35.08,65.04,41.32,44.19,60.93,NA,1.68,#VALUE!,1.60,1.42,(11.25),1.41,1.03,(26.95),0.96,0.85,(11.46),0.77,0.82,6.49,,,,3.32,#VALUE!,,35.08,#VALUE!
+Hang Lung Group Limited (SEHK:10),4260129,SEHK,Real Estate; Real Estate Management and Development; Real Estate Operating Companies; Real Estate Management Services; Real Estate Operators And Lessors; Nonresidential Building Operators and Lessors; Office Building Operators and Lessors; Shopping Mall Operators and Lessors; Residential Building Operators and Lessors; Apartment Building Operators and Lessors; Real Estate Management and Development,4.15,4.25,5.04,6.00,8.08,"11,955.01",3.17,8.14,(1.38),3.13,3.00,3.17,21.56,NM,45.26,43.00,41.75,19.52,19.26,(1.33),19.50,19.28,(1.13),18.96,16.66,(12.13),16.36,14.34,(12.35),14.52,10.64,(26.72),,,,4.15,-1.33,,21.56,-1.33
+Hang Lung Properties Limited (SEHK:101),4143410,SEHK,Real Estate; Real Estate Management and Development; Real Estate Management Services; Nonresidential Property Managers; Residential Property Managers; Real Estate Operators And Lessors; Nonresidential Building Operators and Lessors; Office Building Operators and Lessors; Shopping Mall Operators and Lessors; Residential Building Operators and Lessors; Real Estate Management and Development; Real Estate Operating Companies; Hotel Property Operators and Lessors; Industrial Property Operators and Lessors; Apartment Building Operators and Lessors,4.39,3.72,4.80,5.11,7.17,"36,129.06",3.22,6.73,(1.39),3.20,2.98,3.22,55.47,NM,90.70,91.76,88.64,14.58,17.10,17.28,17.28,20.45,18.34,20.20,16.04,(20.59),15.78,15.26,(3.30),15.76,10.88,(30.96),,,,4.39,17.28,,55.47,17.28
+Hang Seng Bank Limited (SEHK:11),4147673,SEHK,Financials; Banks; Banks; Diversified Banks,4.84,5.01,4.27,3.00,5.82,"181,822.97",10.87,14.56,9.21,7.59,6.55,10.87,64.20,65.77,73.55,74.12,72.50,173.00,161.00,(6.94),162.20,133.70,(17.57),137.00,142.70,4.16,144.30,129.80,(10.05),129.90,91.05,(29.91),,,,4.84,-6.94,,64.20,-6.94
+Health and Happiness (H&H) International Holdings Limited (SEHK:1112),4911673,SEHK,"Food, Beverage and Tobacco; Consumer Staples; Food Products; Packaged Foods and Meats; Meats, Meat Processing And Meat Related Products; Meat Products; Prepared and Preserved Foods; Animal Feed; Confectionery Products; Candy; Infant Food",1.49,3.68,6.29,2.52,6.78,"6,281.31",9.36,19.25,19.27,8.41,10.17,9.36,27.02,75.84,80.14,38.19,81.56,42.30,32.25,(23.76),33.75,28.70,(14.96),29.65,12.08,(59.26),11.78,16.66,41.43,16.42,12.10,(26.31),,,,1.49,-23.76,,27.02,-23.76
+Henderson Land Development Company Limited (SEHK:12),4143422,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Real Estate Management and Development,4.39,5.95,1.51,6.61,7.48,"112,320.18",2.84,5.30,3.13,3.90,2.73,2.84,51.28,85.31,NA,NA,94.24,34.77,38.25,10.00,38.25,30.25,(20.92),30.90,33.20,7.44,33.25,27.25,(18.05),27.60,24.05,(12.86),,,,4.39,10.00,,51.28,10.00
+Hengan International Group Company Limited (SEHK:1044),4912578,SEHK,Consumer Staples; Household and Personal Products; Personal Care Products; Personal Care Products; Beauty Care Products; Skin Care Products; Baby Care Products; Diapers; Feminine Care Products,4.54,4.94,6.87,4.03,5.37,"28,297.64",13.90,22.29,24.38,16.90,9.98,13.90,66.98,63.44,82.66,84.51,NA,57.00,55.50,(2.63),55.10,54.90,(0.36),56.00,40.15,(28.30),40.40,41.45,2.60,40.70,29.05,(28.62),,,,4.54,-2.63,,66.98,-2.63
+HK Electric Investments and HK Electric Investments Limited (SEHK:2638),5001177,SEHK,Utilities; Utilities; Electric Utilities; Electric Utilities; Electric Power Distribution; Electric Power Generation By Fossil Fuels; Electric Power Transmission and Control,4.70,4.20,4.19,6.20,6.80,"40,204.71",6.42,4.79,5.68,6.10,6.05,6.42,136.91,103.59,96.49,95.80,NA,7.93,7.68,(3.15),7.76,7.63,(1.68),7.68,7.65,(0.39),7.72,5.17,(33.03),5.25,4.71,(10.29),,,,4.70,-3.15,,136.91,-3.15
+HKT Trust and HKT Limited (SEHK:6823),4999372,SEHK,Communication Services; Telecommunication Services; Integrated Telecommunication Services; Local Telecommunications Services; Long Distance Telecommunications Services; Diversified Telecommunication Services,6.30,7.00,6.84,7.67,8.07,"66,925.27",13.96,13.86,14.02,12.84,13.36,13.96,100.40,100.62,112.90,113.47,114.12,11.38,10.98,(3.51),11.00,10.06,(8.55),10.02,10.48,4.59,10.54,9.57,(9.20),9.76,9.32,(4.51),,,,6.30,-3.51,,100.40,-3.51
+Hong Kong Exchanges and Clearing Limited (SEHK:388),4322619,SEHK,Financials; Financial Services; Capital Markets; Financial Exchanges and Data; Security and Commodity Exchanges,2.68,1.58,2.01,2.26,3.06,"275,165.03",23.52,21.99,24.51,25.21,20.19,23.52,61.60,60.70,91.96,95.90,86.97,222.00,253.00,13.96,260.40,425.00,63.21,441.80,455.40,3.08,454.60,337.20,(25.82),343.00,268.00,(21.87),,,,2.68,13.96,,61.60,13.96
+Huadian Power International Corporation Limited (SEHK:1071),4351103,SEHK,Utilities; Utilities; Independent Power and Renewable Electricity Producers; Independent Power Producers and Energy Traders,2.49,8.21,9.03,9.07,6.39,"74,236.36",6.25,6.08,7.09,(7.97),(0.86),6.25,203.26,164.78,NM,NM,146.88,3.45,2.96,(14.20),2.95,1.95,(33.90),2.07,3.40,64.25,3.60,3.23,(10.28),3.34,3.47,3.89,,,,2.49,-14.20,,203.26,-14.20
+Industrial and Commercial Bank of China Limited (SEHK:1398),4226356,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,4.75,5.71,7.27,8.54,8.62,"1,942,944.36",10.02,12.44,11.34,11.33,10.64,10.02,30.48,31.27,29.29,29.66,31.29,5.43,6.00,10.50,6.05,5.03,(16.86),4.85,4.40,(9.28),4.42,4.02,(9.05),4.06,3.82,(5.91),,,,4.75,10.50,,30.48,10.50
+Jiangsu Expressway Company Limited (SEHK:177),4995084,SEHK,Industrials; Transportation; Highways and Railtracks; Transportation Infrastructure,4.89,5.80,6.98,7.53,7.18,"59,301.64",11.69,13.86,7.66,12.10,9.92,11.69,64.87,123.90,73.90,91.36,77.19,10.90,10.68,(2.02),10.86,8.67,(20.17),8.73,7.99,(8.48),8.04,7.13,(11.32),7.14,7.02,(1.68),,,,4.89,-2.02,,64.87,-2.02
+Jiangxi Copper Company Limited (SEHK:358),4351423,SEHK,Materials; Materials; Metals and Mining; Copper; Copper Ores; Primary Smelting And Refining Of Copper; Secondary Smelting And Refining Of Copper,2.12,0.89,0.98,5.10,5.01,"78,265.53",8.79,3.92,3.88,8.18,7.62,8.79,117.51,91.92,26.70,41.17,54.84,9.07,10.72,18.19,10.88,12.18,11.95,12.94,12.48,(3.55),12.70,11.52,(9.29),11.80,11.04,(6.44),,,,2.12,18.19,,117.51,18.19
+JNBY Design Limited (SEHK:3306),4912661,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Textiles, Apparel and Luxury Goods; Apparel, Accessories and Luxury Goods; Accessories; Apparel; Infant's Apparel; Men's Apparel; Women's, Misses', and Juniors' Apparel",7.65,6.00,12.10,10.29,9.24,"7,272.67",33.89,35.92,23.94,40.42,32.86,33.89,70.53,63.40,61.16,80.63,63.07,10.28,10.46,1.75,10.50,9.00,(14.29),8.80,12.40,40.91,12.22,9.33,(23.65),9.21,10.50,14.01,,,,7.65,1.75,,70.53,1.75
+Johnson Electric Holdings Limited (SEHK:179),4990896,SEHK,Consumer Discretionary; Automobile Components; Automotive Parts and Equipment; Automobiles and Components,2.88,1.77,3.09,3.46,4.11,"9,180.96",6.45,11.77,(21.83),10.41,6.33,6.45,15.40,NM,8.03,37.03,7.87,15.80,17.72,12.15,17.66,19.20,8.72,19.96,16.52,(17.23),16.70,9.83,(41.14),10.06,12.40,23.26,,,,2.88,12.15,,15.40,12.15
+K. Wah International Holdings Limited (SEHK:173),4429476,SEHK,"Real Estate; Real Estate Management and Development; Real Estate Development; Land Sub Dividers And Developers; Land Sub Dividers and Developers, except Cemetery; Real Estate Management and Development",4.60,5.63,6.98,7.75,10.77,"5,357.25",1.84,8.39,7.76,7.64,3.11,1.84,19.87,20.10,19.60,47.93,62.50,3.71,4.35,17.25,4.35,3.73,(14.25),3.68,3.01,(18.21),3.01,2.71,(9.97),2.78,1.95,(29.86),,,,4.60,17.25,,19.87,17.25
+Kerry Logistics Network Limited (SEHK:636),4995112,SEHK,Industrials; Transportation; Air Freight and Logistics; Air Freight and Logistics,3.29,1.71,2.36,5.56,5.72,"14,947.44",6.98,17.10,5.06,14.88,16.58,6.98,11.30,17.96,10.21,39.39,NA,11.58,13.38,15.54,13.62,17.00,24.82,17.42,19.06,9.41,19.52,14.04,(28.07),14.00,8.22,(41.29),,,,3.29,15.54,,11.30,15.54
+Kerry Properties Limited (SEHK:683),4143419,SEHK,Real Estate; Real Estate Management and Development; Diversified Real Estate Activities; Real Estate Management and Development,5.45,6.87,6.65,7.94,9.45,"20,173.15",3.42,6.80,4.94,8.79,2.73,3.42,28.48,98.38,51.34,71.05,60.54,26.55,24.75,(6.78),25.05,19.64,(21.60),19.72,20.30,2.94,20.55,17.00,(17.27),17.62,14.28,(18.96),,,,5.45,-6.78,,28.48,-6.78
+Kinetic Development Group Limited (SEHK:1277),4379718,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Coal and Consumable Fuels; Coal Products",12.00,10.23,18.27,20.83,18.18,"8,008.50",30.18,41.31,32.47,67.31,48.79,30.18,40.22,41.65,26.80,33.75,37.31,0.46,0.38,(18.48),0.38,0.44,17.33,0.43,0.52,20.93,0.51,0.60,17.65,0.59,0.55,(6.78),,,,12.00,-18.48,,40.22,-18.48
+Kingboard Holdings Limited (SEHK:148),4571283,SEHK,"Information Technology; Technology Hardware and Equipment; Electronic Equipment, Instruments and Components; Electronic Components; Electronic Components; Microelectronics",3.97,2.69,4.11,11.03,4.87,"15,782.36",3.63,6.69,9.82,19.39,6.28,3.63,34.30,14.09,13.15,91.00,NA,20.85,24.70,18.47,25.15,32.70,30.02,33.15,37.95,14.48,38.45,24.85,(35.37),25.45,18.68,(26.60),,,,3.97,18.47,,34.30,18.47
+Kingboard Laminates Holdings Limited (SEHK:1888),4970845,SEHK,"Technology Hardware and Equipment; Information Technology; Electronic Equipment, Instruments and Components; Electronic Components",4.66,3.16,4.90,15.73,3.87,"17,253.60",6.05,13.17,16.95,40.56,11.19,6.05,57.72,32.98,115.02,245.13,NA,6.36,9.66,51.89,9.78,12.66,29.45,12.70,13.26,4.41,13.40,8.58,(35.97),8.64,6.72,(22.22),,,,4.66,51.89,,57.72,51.89
+Kowloon Development Company Limited (SEHK:34),4143413,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Real Estate Management and Development,7.57,9.63,7.86,11.23,14.04,"5,730.19",1.80,6.44,2.46,12.06,6.43,1.80,37.50,117.65,43.62,80.58,NA,8.28,9.77,18.00,9.80,8.10,(17.35),8.25,10.30,24.85,10.36,7.39,(28.67),7.47,5.91,(20.88),,,,7.57,18.00,,37.50,18.00
+Kunlun Energy Company Limited (SEHK:135),4424748,SEHK,Utilities; Utilities; Gas Utilities; Gas Utilities; Oil and Gas Distribution,3.74,4.22,3.53,4.53,4.08,"61,304.32",11.12,6.18,7.08,9.82,10.48,11.12,32.98,37.56,7.90,34.41,NA,8.06,6.88,(14.64),7.04,6.70,(4.83),7.00,7.31,4.43,7.41,5.57,(24.83),5.64,7.04,24.82,,,,3.74,-14.64,,32.98,-14.64
+Lee & Man Paper Manufacturing Limited (SEHK:2314),4984427,SEHK,Materials; Materials; Paper and Forest Products; Paper Products; Industrial Service Paper; Tissue Paper; Paper Manufacturing; Pulp Mills,4.75,3.94,6.09,5.09,2.53,"9,836.29",4.02,13.41,12.85,10.14,4.25,4.02,39.10,33.28,48.07,67.35,NA,6.62,5.90,(10.88),6.05,6.35,4.96,6.30,5.42,(13.97),5.44,3.44,(36.76),3.48,2.29,(34.20),,,,4.75,-10.88,,39.10,-10.88
+Legend Holdings Corporation (SEHK:3396),4411094,SEHK,"Information Technology; Technology Hardware and Equipment; Technology Hardware, Storage and Peripherals; Technology Hardware, Storage and Peripherals",1.87,3.55,3.79,5.61,2.95,"12,464.46",0.62,9.87,10.11,17.88,10.66,0.62,5.32,18.54,14.76,71.63,NM,20.00,17.68,(11.60),17.76,10.18,(42.68),10.18,11.52,13.16,11.52,8.35,(27.52),8.62,7.36,(14.62),,,,1.87,-11.60,,5.32,-11.60
+Lenovo Group Limited (SEHK:992),4329903,SEHK,"Information Technology; Technology Hardware, Storage and Peripherals; Technology Hardware and Equipment; Technology Hardware, Storage and Peripherals; Computer Components; Personal Computers And Accessories; Computer Audio Equipment; Desktop Computers; Laptop Computers; Monitors; Servers; Wireless Telephone Equipment; Mobile Telephones",5.37,3.84,3.57,5.93,3.48,"102,090.35",29.38,15.21,19.73,34.24,47.65,29.38,62.20,59.98,35.86,23.59,36.00,5.13,5.23,1.95,5.37,7.32,36.31,7.62,8.96,17.59,9.05,6.41,(29.17),6.49,10.92,68.26,,,,5.37,1.95,,62.20,1.95
+Li Ning Company Limited (SEHK:2331),4913188,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Textiles, Apparel and Luxury Goods; Apparel, Accessories and Luxury Goods; Apparel; Accessories; Specialty Apparel; Athletic Uniforms",0.42,0.32,0.29,0.79,4.32,"45,003.98",13.08,23.16,21.48,26.93,17.89,13.08,14.32,22.24,12.84,29.40,NA,8.39,23.35,178.31,23.05,53.30,131.24,53.30,85.35,60.13,85.50,67.75,(20.76),69.35,20.90,(69.86),,,,0.42,178.31,,14.32,178.31
+"Liaoning Port Co., Ltd. (SEHK:2880)",4562018,SEHK,Industrials; Transportation; Transportation Infrastructure; Marine Ports and Services; Marine Cargo Services; Towing and Tugboat Services,2.23,3.11,5.13,4.65,3.08,"31,973.31",3.56,4.24,7.21,5.10,3.55,3.56,116.27,61.52,66.92,75.67,62.98,0.99,0.97,(2.02),0.98,0.74,(24.49),0.76,0.71,(6.58),0.71,0.68,(4.23),0.69,0.62,(10.14),,,,2.23,-2.02,,116.27,-2.02
+Link Real Estate Investment Trust (SEHK:823),4143456,SEHK,Real Estate; Equity Real Estate Investment Trusts (REITs); Retail REITs; Retail REITs,3.42,4.07,4.49,5.26,5.68,"79,807.66",8.69,11.10,(9.90),0.47,4.29,8.69,28.37,NM,508.75,NA,NA,78.20,82.50,5.50,82.30,70.60,(14.22),71.75,68.65,(4.32),68.65,57.30,(16.53),58.20,43.85,(24.66),,,,3.42,5.50,,28.37,5.50
+L'Occitane International S.A. (SEHK:973),4911163,SEHK,Consumer Staples; Household and Personal Products; Personal Care Products; Personal Care Products; Beauty Care Products; Cosmetics; Hair Care Products; Perfumes and Colognes; Skin Care Products,1.37,1.04,1.05,2.25,1.14,"43,478.36",9.45,11.55,10.14,12.56,18.71,9.45,36.72,37.24,21.58,22.37,84.13,14.50,18.46,27.31,18.02,19.32,7.21,19.16,31.55,64.67,32.55,24.35,(25.19),24.60,22.30,(9.35),,,,1.37,27.31,,36.72,27.31
+Longfor Group Holdings Limited (SEHK:960),4429478,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Real Estate Management and Development,3.26,3.07,4.97,7.39,9.83,"62,394.38",7.30,17.27,16.05,15.33,14.43,7.30,39.00,44.07,41.23,26.82,27.06,22.40,36.50,62.95,37.10,45.40,22.37,44.25,36.70,(17.06),36.10,24.30,(32.69),24.15,12.50,(48.24),,,,3.26,62.95,,39.00,62.95
+Lonking Holdings Limited (SEHK:3339),4988980,SEHK,Industrials; Capital Goods; Machinery; Construction Machinery and Heavy Transportation Equipment; Construction Machinery and Equipment,8.55,10.42,15.07,16.06,8.20,"6,291.75",6.54,19.02,20.45,12.57,4.01,6.54,44.49,49.79,93.06,191.14,NA,1.98,2.34,18.18,2.43,2.40,(1.23),2.40,2.19,(8.75),2.19,1.37,(37.44),1.40,1.22,(12.86),,,,8.55,18.18,,44.49,18.18
+Luk Fook Holdings (International) Limited (SEHK:590),4914648,SEHK,Consumer Discretionary; Consumer Discretionary Distribution and Retail; Specialty Retail; Other Specialty Retail,4.90,3.88,5.00,4.74,6.06,"10,579.68",10.57,14.57,8.27,9.38,11.90,10.57,43.26,74.55,41.84,44.28,50.27,22.10,22.45,1.58,22.75,18.70,(17.80),18.40,21.00,14.13,21.25,23.20,9.18,24.05,20.95,(12.89),,,,4.90,1.58,,43.26,1.58
+Man Wah Holdings Limited (SEHK:1999),4916289,SEHK,Consumer Discretionary; Consumer Durables and Apparel; Household Durables; Home Furnishings; Mattresses and Beds; Metal Household Furniture; Wood Household Furniture,2.34,1.31,2.40,4.12,4.67,"19,969.32",14.70,21.35,24.26,21.71,19.18,14.70,50.55,30.31,43.46,51.05,65.57,3.00,5.55,85.00,5.52,16.82,204.71,17.10,12.08,(29.36),11.54,7.77,(32.67),7.83,5.35,(31.67),,,,2.34,85.00,,50.55,85.00
+Metallurgical Corporation of China Ltd. (SEHK:1618),4352229,SEHK,Industrials; Capital Goods; Construction and Engineering; Construction and Engineering; Construction Support Services; Engineering and Surveying Services; Engineering Services; Nonbuilding Structures Construction; Heavy Construction; Specialty Contract Work,4.55,5.75,4.53,5.28,5.98,"69,376.86",6.92,6.90,7.29,7.96,8.26,6.92,128.76,91.68,78.26,62.82,73.72,1.88,1.75,(6.91),1.79,1.37,(23.46),1.41,1.99,41.13,2.05,1.73,(15.61),1.75,1.52,(13.14),,,,4.55,-6.91,,128.76,-6.91
+Midea Real Estate Holding Limited (SEHK:3990),10735009,SEHK,"Real Estate; Real Estate Management and Development; Real Estate Development; Land Sub Dividers and Developers, except Cemetery; Real Estate Management and Development; Land Sub Dividers And Developers",5.13,9.24,13.20,13.29,14.90,"5,138.77",4.23,15.81,13.53,12.05,7.29,4.23,40.58,38.18,42.80,52.23,50.39,16.16,23.90,47.90,24.55,17.32,(29.45),16.80,12.12,(27.86),11.84,12.04,1.69,12.12,5.37,(55.69),,,,5.13,47.90,,40.58,47.90
+Minth Group Limited (SEHK:425),4914520,SEHK,Consumer Discretionary; Automobiles and Components; Automobile Components; Automotive Parts and Equipment,2.40,1.60,1.67,2.98,3.66,"14,548.16",10.66,12.53,9.74,9.91,8.94,10.66,39.48,49.76,36.76,41.02,NA,24.30,27.50,13.17,28.85,40.90,41.77,40.90,34.35,(16.01),33.45,21.15,(36.77),21.35,15.78,(26.09),,,,2.40,13.17,,39.48,13.17
+"Miramar Hotel and Investment Company, Limited (SEHK:71)",4982119,SEHK,"Consumer Discretionary; Consumer Services; Hotels, Restaurants and Leisure; Hotels, Resorts and Cruise Lines; Travel and Tourism Services; Travel Agencies; Lodging; Hotels And Motels; Hotels",3.89,4.31,3.75,3.86,4.86,"6,826.68",4.99,6.82,1.54,1.68,2.43,4.99,32.72,128.17,100.52,67.64,NA,15.04,15.70,4.39,15.66,13.00,(16.99),12.90,12.80,(0.78),12.88,12.18,(5.43),12.30,10.70,(13.01),,,,3.89,4.39,,32.72,4.39
+MTR Corporation Limited (SEHK:66),4259264,SEHK,Industrials; Transportation; Ground Transportation; Rail Transportation; Railroad Transportation of Passengers; Commuter Rail Systems,2.61,2.84,2.94,3.48,4.32,"150,145.31",4.51,6.58,(2.65),5.42,5.64,4.51,55.72,NM,75.01,87.13,97.57,40.50,46.05,13.70,45.90,43.35,(5.56),44.15,41.85,(5.21),42.15,41.35,(1.90),41.80,30.30,(27.51),,,,2.61,13.70,,55.72,13.70
+NetDragon Websoft Holdings Limited (SEHK:777),4969307,SEHK,Media and Entertainment; Interactive Home Entertainment; Entertainment Software; Computer and Mobile Games; Communication Services; Entertainment,1.64,2.88,3.55,4.77,6.46,"5,673.88",7.00,13.84,14.25,14.32,11.17,7.00,17.32,26.75,28.44,43.40,159.46,11.96,18.32,53.18,18.90,17.38,(8.04),17.38,18.32,5.41,18.14,16.76,(7.61),16.78,12.38,(26.22),,,,1.64,53.18,,17.32,53.18
+New World Development Company Limited (SEHK:17),4143428,SEHK,Real Estate; Real Estate Management and Development; Diversified Real Estate Activities; Real Estate Management and Development,4.78,5.65,6.68,9.36,6.27,"20,007.23",1.47,8.16,1.18,1.60,1.45,1.47,7.16,474.42,457.78,412.00,602.56,40.56,42.72,5.33,42.80,36.10,(15.65),36.80,30.85,(16.17),30.45,22.00,(27.75),22.75,12.12,(46.73),,,,4.78,5.33,,7.16,5.33
+Nexteer Automotive Group Limited (SEHK:1316),4631322,SEHK,Consumer Discretionary; Automobiles and Components; Automobile Components; Automotive Parts and Equipment; Motor Vehicle Safety and Security Systems; Steering and Suspension System Components,3.43,3.01,0.75,1.45,0.74,"9,813.41",2.27,13.18,6.48,6.44,3.29,2.27,33.44,69.79,19.91,41.10,NA,10.90,7.06,(35.23),7.06,8.33,17.99,8.82,9.68,9.75,9.68,5.11,(47.21),5.25,4.93,(6.10),,,,3.43,-35.23,,33.44,-35.23
+Nissin Foods Company Limited (SEHK:1475),6348755,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Food Products; Packaged Foods and Meats; Frozen Foods; Prepared and Preserved Foods; Snack Food; Seasonings and Preservatives; Sauces And Salad Dressings; Packaged Food Mixes",1.53,1.83,2.35,2.18,2.43,"5,176.53",9.23,7.63,8.58,8.32,9.11,9.23,40.67,41.63,49.42,48.01,NA,3.61,6.19,71.47,6.22,6.38,2.57,6.38,5.97,(6.43),6.10,6.69,9.67,6.72,6.25,(6.99),,,,1.53,71.47,,40.67,71.47
+NWS Holdings Limited (SEHK:659),4995427,SEHK,Industrials; Capital Goods; Industrial Conglomerates; Industrial Conglomerates,5.31,8.07,8.07,9.04,8.29,"25,349.18",5.12,7.93,1.94,3.02,3.35,5.12,69.20,341.46,168.08,135.02,115.29,15.86,10.92,(31.15),11.10,7.19,(35.23),7.51,7.31,(2.66),7.48,6.75,(9.76),6.80,7.36,8.24,,,,5.31,-31.15,,69.20,-31.15
+Orient Overseas (International) Limited (SEHK:316),4994763,SEHK,Industrials; Transportation; Marine Transportation; Marine Transportation Of Freight; Cargo or Container Ships; Marine Transportation,2.17,0.76,9.22,33.40,23.65,"62,702.44",11.11,3.19,17.09,93.10,86.25,11.11,6.66,132.81,20.23,40.03,159.32,52.20,37.80,(27.59),37.70,77.50,105.57,81.65,191.30,134.29,201.00,141.00,(29.85),141.70,109.00,(23.08),,,,2.17,-27.59,,6.66,-27.59
+Pacific Basin Shipping Limited (SEHK:2343),4296133,SEHK,Industrials; Transportation; Marine Transportation; Marine Transportation; Marine Transportation Of Freight; Cargo or Container Ships,2.26,1.44,4.90,29.17,9.14,"12,422.62",5.90,2.00,(17.79),58.35,37.55,5.90,86.87,NM,10.24,102.04,144.04,1.48,1.64,10.81,1.64,1.46,(10.98),1.54,2.86,85.71,3.00,2.64,(12.00),2.62,2.57,(1.91),,,,2.26,10.81,,86.87,10.81
+PAX Global Technology Limited (SEHK:327),4972219,SEHK,"Information Technology; Technology Hardware and Equipment; Electronic Equipment, Instruments and Components; Electronic Equipment and Instruments",2.19,1.89,3.99,4.74,6.61,"6,808.98",16.19,13.96,17.53,18.16,18.98,16.19,14.11,15.64,32.37,27.30,NA,2.87,3.65,27.18,3.77,6.88,82.49,7.02,5.52,(21.37),5.43,6.75,24.31,6.80,6.05,(11.03),,,,2.19,27.18,,14.11,27.18
+PCCW Limited (SEHK:8),4163694,SEHK,Communication Services; Diversified Telecommunication Services; Integrated Telecommunication Services; Telecommunication Services; Local Telecommunications Services; Long Distance Telecommunications Services,6.84,6.89,8.19,10.58,9.19,"29,907.71",18.61,15.27,8.74,18.93,13.64,18.61,356.98,NM,206.64,791.86,NM,4.52,4.61,1.99,4.61,4.67,1.30,4.60,3.95,(14.13),3.97,3.52,(11.34),3.61,4.16,15.24,,,,6.84,1.99,,356.98,1.99
+PetroChina Company Limited (SEHK:857),5985856,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Integrated Oil and Gas",3.81,6.01,7.57,9.71,9.14,"2,068,620.15",11.40,4.70,2.38,8.27,11.10,11.40,66.28,147.73,43.25,NA,NA,4.63,3.91,(15.55),3.93,2.40,(38.93),2.40,3.47,44.58,3.48,3.57,2.59,3.60,5.16,43.33,,,,3.81,-15.55,,66.28,-15.55
+PICC Property and Casualty Company Limited (SEHK:2328),4141028,SEHK,Financials; Insurance; Insurance; Property and Casualty Insurance; Casualty; Accident Insurance; Fire and Marine Insurance; Liability Insurance; Property; Commercial Property Insurance; Surety Insurance; Personal Property Insurance; Homeowner's and Renter's Insurance; Motor Vehicle Insurance,3.29,8.59,7.13,6.41,5.65,"221,760.37",10.78,15.59,11.59,11.31,13.63,10.78,42.28,40.62,38.43,34.97,44.24,7.78,9.39,20.69,9.58,5.87,(38.73),5.88,6.37,8.33,6.47,7.41,14.53,7.38,9.28,25.75,,,,3.29,20.69,,42.28,20.69
+"Postal Savings Bank of China Co., Ltd. (SEHK:1658)",4395358,SEHK,Banks; Banks; Diversified Banks; Diversified Commercial Banks; Financials,4.15,5.22,4.58,5.98,7.50,"488,870.89",9.70,11.97,10.56,10.42,10.53,9.70,29.19,29.89,30.20,28.81,31.44,4.15,5.30,27.71,5.35,4.38,(18.13),4.38,5.47,24.89,5.54,4.85,(12.45),4.96,3.73,(24.80),,,,4.15,27.71,,29.19,27.71
+Power Assets Holdings Limited (SEHK:6),4098381,SEHK,Utilities; Utilities; Electric Utilities; Electric Utilities; Electric Power Distribution; Electric Power Generation By Fossil Fuels; Electric Power Transmission and Control,4.91,6.67,5.80,6.60,6.23,"92,170.30",6.84,8.44,7.20,7.16,6.51,6.84,83.80,97.46,98.03,106.55,NA,53.50,57.00,6.54,57.15,42.00,(26.51),42.70,48.60,13.82,49.25,42.75,(13.20),43.05,45.25,5.11,,,,4.91,6.54,,83.80,6.54
+"Qingdao Port International Co., Ltd. (SEHK:6198)",4995333,SEHK,Transportation; Transportation Infrastructure; Marine Cargo Services; Industrials; Marine Ports and Services,7.87,4.57,7.29,7.95,7.03,"53,413.62",12.86,13.12,12.57,12.16,12.92,12.86,70.27,37.89,49.68,40.62,38.22,5.06,5.53,9.29,5.61,4.79,(14.62),4.84,4.32,(10.74),4.37,3.78,(13.50),3.85,4.23,9.87,,,,7.87,9.29,,70.27,9.29
+"Qinhuangdao Port Co., Ltd. (SEHK:3369)",4995404,SEHK,Industrials; Transportation; Transportation Infrastructure; Marine Ports and Services; Marine Cargo Services; Towing and Tugboat Services,5.99,7.54,6.11,6.02,5.76,"18,221.06",8.32,5.42,5.68,6.04,7.73,8.32,82.69,82.05,65.08,46.86,41.44,1.76,1.46,(17.05),1.47,1.30,(11.56),1.30,1.26,(3.08),1.25,1.09,(12.80),1.12,1.34,19.64,,,,5.99,-17.05,,82.69,-17.05
+Sany Heavy Equipment International Holdings Company Limited (SEHK:631),4994667,SEHK,Industrials; Capital Goods; Construction Machinery and Heavy Transportation Equipment; Heavy Duty Trucks; Industrial Trucks and Trailers; Machinery; Dump Truck Lifting Mechanisms,2.35,2.07,1.99,1.87,2.52,"16,282.57",16.99,13.57,14.02,15.73,17.67,16.99,34.93,37.70,35.80,28.00,NA,2.64,4.26,61.36,4.46,5.80,30.04,5.87,7.54,28.45,7.79,8.02,2.95,8.00,7.55,(5.63),,,,2.35,61.36,,34.93,61.36
+Shandong Weigao Group Medical Polymer Company Limited (SEHK:1066),4812322,SEHK,Health Care; Health Care Equipment and Services; Health Care Equipment and Supplies; Health Care Supplies; Medical Consumables,1.34,0.79,1.80,1.35,2.19,"22,030.45",8.69,11.96,12.31,12.31,13.01,8.69,38.46,33.61,28.70,27.23,NA,6.06,9.34,54.13,9.16,17.52,91.27,17.00,9.73,(42.76),9.91,12.82,29.36,13.04,7.61,(41.64),,,,1.34,54.13,,38.46,54.13
+Shandong Xinhua Pharmaceutical Company Limited (SEHK:719),4810873,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Medicinal Chemicals and Botanical Products; Pharmaceutical Products; Anti-infective Drugs; Cardiovascular Drugs; Central Nervous System Drugs",2.98,3.70,3.87,2.16,3.79,"8,939.36",11.09,10.91,10.68,10.28,10.65,11.09,38.80,39.05,42.59,39.66,35.43,3.61,3.82,5.82,3.88,3.55,(8.51),3.52,4.65,32.10,4.57,8.15,78.34,8.38,5.78,(31.03),,,,2.98,5.82,,38.80,5.82
+"Shanghai Fudan-Zhangjiang Bio-Pharmaceutical Co.,Ltd. (SEHK:1349)",4811405,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Pharmaceutical Products; Cardiovascular Drugs; Anti-infective Drugs; Oncology Drugs",1.83,2.03,1.59,2.48,3.13,"5,842.77",4.70,23.38,11.17,10.12,6.18,4.70,30.88,42.37,24.45,51.48,70.10,3.96,4.46,12.63,4.48,3.81,(14.96),3.89,3.85,(1.03),3.91,3.47,(11.25),3.50,2.55,(27.14),,,,1.83,12.63,,30.88,12.63
+"Shanghai Haohai Biological Technology Co., Ltd. (SEHK:6826)",4811438,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Biotechnology; Biotechnology",1.24,1.64,1.18,2.23,1.09,"14,911.70",6.92,7.93,3.98,5.89,3.18,6.92,21.58,53.92,24.96,70.31,17.69,38.30,47.10,22.98,46.85,46.80,(0.11),48.15,51.50,6.96,52.00,36.85,(29.13),36.35,40.30,10.87,,,,1.24,22.98,,21.58,22.98
+Shanghai Industrial Holdings Limited (SEHK:363),6333815,SEHK,Industrials; Capital Goods; Industrial Conglomerates; Industrial Conglomerates,6.67,4.53,8.80,9.95,9.49,"11,415.72",5.87,7.50,5.07,5.03,4.21,5.87,16.88,36.26,29.03,45.11,NA,15.30,15.00,(1.96),15.12,10.60,(29.89),10.68,11.36,6.37,11.36,9.65,(15.05),9.94,9.69,(2.52),,,,6.67,-1.96,,16.88,-1.96
+Shenzhen Expressway Corporation Limited (SEHK:548),4995088,SEHK,Industrials; Transportation; Transportation Infrastructure; Highways and Railtracks,3.67,7.79,6.87,10.79,8.28,"21,390.73",8.62,12.86,9.45,9.71,6.64,8.62,85.11,87.28,95.19,130.40,105.14,8.54,11.18,30.91,11.52,7.30,(36.63),7.29,7.55,3.57,7.64,6.73,(11.91),6.86,6.31,(8.02),,,,3.67,30.91,,85.11,30.91
+Shenzhen International Holdings Limited (SEHK:152),4995063,SEHK,Industrials; Transportation; Transportation Infrastructure; Highways and Railtracks,2.10,4.23,1.51,1.63,3.91,"14,215.30",5.27,15.51,11.41,9.88,3.15,5.27,39.21,82.02,15.19,54.20,NA,14.94,17.12,14.59,17.20,12.52,(27.21),12.42,8.10,(34.78),8.22,7.66,(6.81),7.66,6.58,(14.10),,,,2.10,14.59,,39.21,14.59
+Shenzhen Investment Limited (SEHK:604),4143421,SEHK,Real Estate; Real Estate Management and Development; Diversified Real Estate Activities; Real Estate Management and Development,5.77,6.77,10.71,8.21,12.17,"8,275.88",0.40,9.33,7.64,(3.83),4.73,0.40,37.87,42.83,NM,64.02,NM,2.52,3.12,23.81,3.16,2.66,(15.82),2.64,1.68,(36.36),1.67,1.34,(19.76),1.37,1.15,(16.06),,,,5.77,23.81,,37.87,23.81
+Shenzhou International Group Holdings Limited (SEHK:2313),4914521,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Textiles, Apparel and Luxury Goods; Apparel, Accessories and Luxury Goods; Apparel",1.58,1.25,1.44,1.86,2.24,"103,797.51",14.32,20.81,19.38,12.25,15.59,14.32,47.16,50.57,80.60,45.22,NA,86.80,113.90,31.22,114.70,152.00,32.52,150.40,149.90,(0.33),138.20,87.80,(36.47),88.65,80.40,(9.31),,,,1.58,31.22,,47.16,31.22
+Shoucheng Holdings Limited (SEHK:697),4491799,SEHK,Real Estate; Real Estate Management and Development; Real Estate Management and Development; Diversified Real Estate Activities,5.21,5.25,6.19,5.06,212.36,"10,000.67",4.58,4.69,5.85,(10.06),9.03,4.58,26.10,121.49,NM,95.22,NA,0.96,1.93,100.52,1.93,2.20,14.29,2.16,1.55,(28.24),1.56,1.90,21.79,1.91,1.57,(17.80),,,,5.21,100.52,,26.10,100.52
+Shougang Fushan Resources Group Limited (SEHK:639),4354182,SEHK,Materials; Materials; Metals and Mining; Steel; Metallurgical (Coking) Coal Mining,10.12,8.90,6.44,18.88,13.19,"14,681.98",12.39,6.96,6.92,16.80,17.49,12.39,77.63,79.68,33.83,88.13,NA,1.55,1.68,8.39,1.70,1.82,7.06,1.85,2.64,42.70,2.32,2.49,7.33,2.52,2.88,14.29,,,,10.12,8.39,,77.63,8.39
+Sichuan Expressway Company Limited (SEHK:107),4995058,SEHK,Industrials; Transportation; Transportation Infrastructure; Highways and Railtracks,4.66,6.65,4.64,7.08,4.56,"15,930.70",6.59,7.28,4.47,11.13,3.37,6.59,101.49,160.26,55.93,266.03,141.02,2.38,2.44,2.52,2.45,1.80,(26.53),1.82,2.08,14.29,2.07,1.82,(12.08),1.84,2.44,32.61,,,,4.66,2.52,,101.49,2.52
+Sino Biopharmaceutical Limited (SEHK:1177),4811882,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Pharmaceutical Products; Cardiovascular Drugs; Oncology Drugs; Respiratory Drugs; Medicinal Chemicals and Botanical Products; Pharmaceutical Research and Development",0.73,0.89,1.83,2.48,2.31,"46,589.00",12.12,16.48,20.20,55.25,13.22,12.12,29.68,42.84,6.42,49.84,NA,3.31,7.27,119.32,7.33,7.50,2.27,7.70,5.46,(29.09),5.62,4.57,(18.68),4.63,3.47,(25.05),,,,0.73,119.32,,29.68,119.32
+Sino Land Company Limited (SEHK:83),4143454,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Real Estate Management and Development,4.86,5.45,5.66,5.84,6.83,"65,606.88",3.66,4.89,1.15,6.92,3.79,3.66,53.32,225.32,62.11,74.97,78.70,13.16,11.32,(13.98),11.40,10.10,(11.40),10.20,9.71,(4.80),9.66,9.76,1.04,10.12,8.49,(16.11),,,,4.86,-13.98,,53.32,-13.98
+Sinofert Holdings Limited (SEHK:297),4354297,SEHK,Materials; Materials; Chemicals; Fertilizers and Agricultural Chemicals; Nitrogenous Fertilizers; Phosphatic Fertilizers,2.77,3.87,2.79,5.56,6.85,"5,619.56",6.96,8.62,8.24,10.27,12.02,6.96,23.24,30.22,22.45,28.81,NA,0.87,0.81,(6.90),0.82,0.76,(7.32),0.76,1.17,53.95,1.25,0.95,(24.00),0.95,0.91,(4.21),,,,2.77,-6.90,,23.24,-6.90
+"SINOPEC Engineering (Group) Co., Ltd. (SEHK:2386)",4990128,SEHK,"Industrials; Capital Goods; Construction and Engineering; Construction and Engineering; Construction Support Services; Heavy Construction; Commercial Construction and Engineering; Commercial Construction, General Contractors and Operative Builders; Commercial and Institutional Buildings; Industrial Buildings and Warehouses; Construction Management Services; Engineering and Surveying Services; Engineering Services; Nonbuilding Structures Construction",5.56,11.32,8.80,11.57,9.08,"20,991.40",7.67,8.20,8.58,7.42,7.73,7.67,47.05,58.06,55.77,64.09,60.77,6.53,4.66,(28.64),4.80,3.34,(30.42),3.46,3.85,11.27,3.84,3.43,(10.68),3.52,4.00,13.64,,,,5.56,-28.64,,47.05,-28.64
+Sinopec Kantons Holdings Limited (SEHK:934),4980643,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Oil and Gas Storage and Transportation",5.49,7.41,6.54,6.78,6.55,"9,397.68",8.55,9.08,9.41,6.97,2.66,8.55,34.82,21.60,47.34,114.34,NA,3.34,3.28,(1.80),3.29,2.70,(17.93),2.82,3.06,8.51,3.08,2.95,(4.22),2.88,3.36,16.67,,,,5.49,-1.80,,34.82,-1.80
+Sinopharm Group Co. Ltd. (SEHK:1099),4811392,SEHK,Health Care; Healthcare Equipment Distribution; Health Care Equipment and Services; Health Care Providers and Services; Health Care Distributors; Pharmaceutical Product Distribution,2.36,3.46,4.95,4.40,4.41,"60,977.62",13.03,14.63,14.50,13.78,13.68,13.03,28.04,25.95,27.75,27.45,NA,31.05,28.45,(8.37),28.35,18.86,(33.47),18.98,16.96,(10.64),17.40,19.84,14.02,20.35,20.45,0.49,,,,2.36,-8.37,,28.04,-8.37
+Sinotrans Limited (SEHK:598),4241666,SEHK,Industrials; Transportation; Air Freight and Logistics; Air Freight and Logistics; Charter Freight Air Transportation; Services Incidental to Road Transportation of Freight; Freight Loading and Unloading; Freight Packing and Crating,5.75,4.67,5.71,8.89,8.25,"45,203.44",11.56,10.08,9.19,11.69,11.88,11.56,36.40,32.27,23.92,51.00,42.02,3.33,2.65,(20.42),2.71,2.82,4.06,2.86,2.50,(12.59),2.54,2.54,0.00,2.56,3.27,27.73,,,,5.75,-20.42,,36.40,-20.42
+Sinotruk (Hong Kong) Limited (SEHK:3808),4994628,SEHK,Industrials; Capital Goods; Machinery; Construction Machinery and Heavy Transportation Equipment; Heavy Duty Trucks; Construction Machinery and Equipment; Truck Bodies,3.85,1.97,8.67,6.25,2.15,"59,637.46",12.82,13.54,22.77,12.01,4.78,12.82,44.75,14.47,55.83,86.60,NA,11.16,16.62,48.92,16.68,19.80,18.71,19.38,12.00,(38.08),11.90,10.88,(8.57),11.18,15.32,37.03,,,,3.85,48.92,,44.75,48.92
+SITC International Holdings Company Limited (SEHK:1308),4539927,SEHK,Industrials; Transportation; Marine Transportation; Marine Transportation; Marine Transportation Of Freight; Cargo or Container Ships,4.63,2.93,5.67,21.89,16.32,"40,668.72",26.18,21.45,31.94,86.11,105.95,26.18,68.14,77.40,47.47,80.95,141.51,7.00,9.50,35.71,9.60,16.74,74.38,18.00,28.20,56.67,29.65,17.36,(41.45),17.48,13.48,(22.88),,,,4.63,35.71,,68.14,35.71
+SSY Group Limited (SEHK:2005),4812016,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Medicinal Chemicals and Botanical Products; Pharmaceutical Products",1.58,2.50,2.49,3.02,3.04,"13,657.60",19.25,23.78,11.00,12.71,18.25,19.25,26.62,54.39,38.52,34.57,NA,5.56,6.31,13.49,6.45,4.40,(31.78),4.50,4.02,(10.67),4.02,4.31,7.21,4.90,4.94,0.82,,,,1.58,13.49,,26.62,13.49
+Sun Art Retail Group Limited (SEHK:6808),4911901,SEHK,Consumer Staples; Consumer Staples Distribution and Retail; Consumer Staples Distribution and Retail; Consumer Staples Merchandise Retail; Hypermarkets and Super Centers,1.48,1.90,4.15,1.76,3.21,"13,737.17",0.32,12.43,11.60,NA,(3.12),0.32,40.68,NA,36.67,NM,345.87,7.70,9.45,22.73,9.40,7.88,(16.17),7.90,3.13,(60.38),3.13,2.56,(18.21),2.74,1.40,(48.91),,,,1.48,22.73,,40.68,22.73
+Sun Hung Kai Properties Limited (SEHK:16),4143426,SEHK,Real Estate; Real Estate Management and Development; Diversified Real Estate Activities; Real Estate Management and Development,4.15,4.95,5.23,4.63,5.86,"201,540.62",4.05,8.19,4.17,4.61,4.33,4.05,31.94,60.96,53.75,56.12,60.00,108.80,119.30,9.65,118.50,100.00,(15.61),103.30,94.60,(8.42),94.55,106.80,12.96,109.20,84.45,(22.66),,,,4.15,9.65,,31.94,9.65
+SUNeVision Holdings Ltd. (SEHK:1686),4967253,SEHK,Information Technology; Software and Services; Co-location/Data Centers; IT Services; Infrastructure Services; Internet Services and Infrastructure,3.13,2.48,2.63,4.93,3.62,"9,660.60",19.58,15.47,16.31,17.95,18.73,19.58,70.60,85.29,90.08,92.97,93.25,4.60,5.27,14.57,5.25,7.05,34.29,7.28,7.38,1.37,7.28,4.22,(42.03),4.26,3.09,(27.46),,,,3.13,14.57,,70.60,14.57
+Sunny Optical Technology (Group) Company Limited (SEHK:2382),4971046,SEHK,"Information Technology; Technology Hardware and Equipment; Electronic Equipment, Instruments and Components; Electronic Components; Electronic Components; Optoelectronics",0.49,0.48,0.43,1.20,0.71,"40,480.42",5.11,36.52,33.43,26.81,11.49,5.11,15.56,16.35,19.79,43.97,NA,65.85,134.90,104.86,139.00,169.70,22.09,177.00,246.60,39.32,250.00,92.85,(62.86),95.90,70.85,(26.12),,,,0.49,104.86,,15.56,104.86
+Swire Pacific Limited (SEHK:19),4210824,SEHK,Real Estate; Real Estate Management and Development; Diversified Real Estate Activities; Real Estate Management and Development,4.35,5.47,4.51,4.00,4.61,"78,856.96",9.31,3.62,(1.56),2.09,1.85,9.31,41.67,NM,96.65,89.02,47.27,79.85,72.40,(9.33),72.90,43.00,(41.02),44.45,44.35,(0.22),44.90,68.70,53.01,66.70,66.10,(0.90),,,,4.35,-9.33,,41.67,-9.33
+Swire Properties Limited (SEHK:1972),4253046,SEHK,Real Estate; Real Estate Management and Development; Real Estate Operating Companies; Real Estate Operators And Lessors; Nonresidential Building Operators and Lessors; Real Estate Management and Development; Real Estate Management Services; Nonresidential Property Managers; Residential Property Managers; Residential Building Operators and Lessors,3.33,3.95,4.71,4.84,6.39,"87,048.00",0.95,4.72,1.40,2.49,2.81,0.95,38.43,130.00,77.87,73.53,233.33,27.25,25.85,(5.14),25.70,22.55,(12.26),23.30,19.54,(16.14),20.20,19.84,(1.78),20.65,15.80,(23.49),,,,3.33,-5.14,,38.43,-5.14
+Techtronic Industries Company Limited (SEHK:669),4911120,SEHK,Industrials; Capital Goods; Machinery; Industrial Machinery and Supplies and Components,1.49,1.00,1.08,2.24,1.99,"191,164.06",17.83,19.07,21.95,25.49,21.70,17.83,36.36,32.67,35.86,42.74,44.74,41.10,63.55,54.62,64.75,110.60,70.81,114.30,155.20,35.78,157.60,87.10,(44.73),88.35,93.05,5.32,,,,1.49,54.62,,36.36,54.62
+Tencent Holdings Limited (SEHK:700),4329847,SEHK,Media and Entertainment; Online Services; Social Media and Networking Platforms; Communication Services; Interactive Media and Services; Interactive Media and Services,0.27,0.21,0.35,0.48,0.82,"2,808,882.33",14.25,22.70,25.28,27.53,22.74,14.25,8.91,6.47,5.56,6.88,18.21,306.60,375.60,22.50,382.40,564.00,47.49,572.50,456.80,(20.21),453.80,334.00,(26.40),345.20,293.60,(14.95),,,,0.27,22.50,,8.91,22.50
+"The Bank of East Asia, Limited (SEHK:23)",4073180,SEHK,Financials; Banks; Banks; Diversified Banks; Diversified Commercial Banks,2.47,3.08,5.27,5.39,5.50,"24,279.26",3.85,3.13,3.30,4.62,3.94,3.85,51.44,41.29,45.82,61.21,40.91,24.60,17.40,(29.27),17.74,16.56,(6.65),16.64,11.20,(32.69),11.30,9.46,(16.28),9.50,9.64,1.47,,,,2.47,-29.27,,51.44,-29.27
+The Hong Kong and China Gas Company Limited (SEHK:3),4157456,SEHK,Utilities; Utilities; Gas Utilities; Gas Utilities; Oil and Gas Distribution,2.17,2.93,2.79,4.72,5.85,"105,988.06",9.81,11.15,9.33,7.73,8.06,9.81,78.85,98.49,123.38,121.86,NA,13.41,13.80,2.96,13.84,11.03,(20.32),11.14,12.14,8.95,12.28,7.42,(39.58),7.53,5.98,(20.58),,,,2.17,2.96,,78.85,2.96
+The United Laboratories International Holdings Limited (SEHK:3933),4810869,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Pharmaceuticals; Medicinal Chemicals and Botanical Products; Pharmaceutical Products; Anti-infective Drugs; Cardiovascular Drugs; Oncology Drugs; Antibiotics; Antiviral Drugs; Central Nervous System Drugs; Vaccines; Veterinary Drugs",1.20,1.39,2.22,3.06,4.05,"17,552.48",23.13,10.03,9.17,11.03,15.85,23.13,15.33,18.23,22.35,17.24,NA,4.05,5.68,40.25,5.62,5.50,(2.14),5.34,4.36,(18.35),4.57,4.90,7.22,5.14,7.01,36.38,,,,1.20,40.25,,15.33,40.25
+The Wharf (Holdings) Limited (SEHK:4),4210707,SEHK,Real Estate; Diversified Real Estate Activities; Real Estate Management and Development; Real Estate Management and Development,3.28,1.32,1.67,1.74,1.59,"75,789.48",0.73,2.43,3.09,3.84,(0.89),0.73,29.28,31.50,20.30,NA,NA,19.98,19.82,(0.80),19.98,20.85,4.35,20.15,23.95,18.86,23.55,22.95,(2.55),23.15,25.15,8.64,,,,3.28,-0.80,,29.28,-0.80
+Tian An China Investments Company Limited (SEHK:28),4147698,SEHK,"Real Estate; Real Estate Management and Development; Real Estate Development; Land Sub Dividers And Developers; Real Estate Management and Development; Land Sub Dividers and Developers, except Cemetery",5.76,4.32,4.63,5.05,7.10,"5,805.64",4.64,5.33,2.16,5.06,5.57,4.64,22.39,48.56,20.98,19.18,NA,4.09,3.47,(15.16),3.48,4.63,33.05,4.64,4.32,(6.90),4.30,3.96,(7.91),3.94,3.52,(10.66),,,,5.76,-15.16,,22.39,-15.16
+Tianli International Holdings Limited (SEHK:1773),10797280,SEHK,Consumer Discretionary; Consumer Services; Diversified Consumer Services; Education Services; Schools; Elementary and Secondary Schools; Specialty Educational Services; Child Day Care Services; Exam Preparation and Tutoring,1.05,0.50,4.03,1.23,1.65,"8,633.32",16.66,11.29,0.39,NA,5.25,16.66,22.39,20.50,NM,85.03,30.45,1.40,3.10,121.43,3.10,8.16,163.23,8.51,1.91,(77.56),1.91,2.02,5.76,2.63,3.23,22.81,,,,1.05,121.43,,22.39,121.43
+Tianneng Power International Limited (SEHK:819),4912383,SEHK,Consumer Discretionary; Automobiles and Components; Automobile Components; Automotive Parts and Equipment,6.41,2.09,4.85,4.85,6.07,"6,925.67",10.31,27.23,29.91,12.49,12.78,10.31,22.37,16.32,28.83,15.70,27.98,6.59,5.93,(10.02),6.16,18.70,203.57,19.58,8.25,(57.87),8.23,8.24,0.12,8.57,6.59,(23.10),,,,6.41,-10.02,,22.37,-10.02
+Tingyi (Cayman Islands) Holding Corp. (SEHK:322),4298555,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Coffee And Tea; Coffee; Tea; Meats, Meat Processing And Meat Related Products; Meat Products; Snack Food; Food Products; Packaged Foods and Meats; Bread and Bakery Products; Prepared and Preserved Foods",1.89,2.48,5.36,3.02,2.70,"46,765.16",20.66,15.94,19.14,18.60,15.68,20.66,37.63,41.00,53.42,77.92,NA,10.24,13.30,29.88,13.22,13.24,0.15,13.22,16.02,21.18,15.80,13.78,(12.78),14.02,9.52,(32.10),,,,1.89,29.88,,37.63,29.88
+Tong Ren Tang Technologies Co. Ltd. (SEHK:1666),4280194,SEHK,"Health Care; Pharmaceuticals, Biotechnology and Life Sciences; Pharmaceuticals; Medicinal Chemicals and Botanical Products; Pharmaceutical Products; Pharmaceuticals",2.67,3.61,2.32,3.31,2.68,"6,198.99",10.63,10.09,10.37,10.90,11.66,10.63,55.20,43.83,40.40,35.16,NA,10.16,7.66,(24.61),7.87,4.85,(38.37),4.94,8.38,69.64,9.17,5.65,(38.39),5.81,6.55,12.74,,,,2.67,-24.61,,55.20,-24.61
+Topsports International Holdings Limited (SEHK:6110),15403780,SEHK,Consumer Discretionary; Consumer Discretionary Distribution and Retail; Specialty Retail; Online Apparel and Accessory Retail; Apparel Retail,1.39,1.83,3.80,3.53,3.68,"32,184.34",17.99,76.78,36.88,27.36,24.12,17.99,NA,32.30,42.53,63.37,67.53,NA,9.42,#VALUE!,9.10,11.60,27.47,12.06,7.89,(34.58),7.71,6.19,(19.71),6.36,6.08,(4.40),,,,1.39,#VALUE!,,NA,#VALUE!
+Towngas Smart Energy Company Limited (SEHK:1083),5001473,SEHK,Utilities; Utilities; Gas Utilities; Gas Utilities; Oil and Gas Distribution,2.78,4.29,2.21,3.83,4.62,"10,045.88",7.38,7.95,7.67,6.39,4.90,7.38,5.73,5.02,5.47,12.68,NA,5.65,5.40,(4.42),5.44,3.50,(35.66),3.45,6.78,96.52,6.93,3.92,(43.43),3.89,3.25,(16.45),,,,2.78,-4.42,,5.73,-4.42
+TravelSky Technology Limited (SEHK:696),4967716,SEHK,"Consumer Discretionary; Consumer Services; Hotels, Restaurants and Leisure; Hotels, Resorts and Cruise Lines; Travel and Tourism Services; Travel Agencies",1.61,1.69,0.15,0.39,0.43,"26,365.15",7.10,14.10,2.17,3.22,3.49,7.10,34.29,231.85,10.68,26.13,NA,19.98,19.02,(4.80),19.08,18.70,(1.99),19.26,13.12,(31.88),13.14,16.50,25.57,17.26,13.50,(21.78),,,,1.61,-4.80,,34.29,-4.80
+Tsim Sha Tsui Properties Limited (SEHK:247),4213727,SEHK,Real Estate Management and Development; Real Estate Development; Real Estate Management and Development; Real Estate,2.18,2.25,2.32,2.62,3.19,"37,467.17",3.66,4.91,1.15,6.95,3.78,3.66,0.17,0.64,0.11,0.17,0.21,25.50,25.20,(1.18),25.20,24.45,(2.98),24.00,23.70,(1.25),23.60,21.78,(7.71),21.75,18.20,(16.32),,,,2.18,-1.18,,0.17,-1.18
+Tsingtao Brewery Company Limited (SEHK:168),4913406,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Beverages; Brewers; Beer, Ale and Malt Beverages",1.03,0.73,1.23,1.67,2.73,"92,178.73",15.95,10.00,11.27,14.42,15.20,15.95,35.43,33.83,33.07,40.73,58.06,30.90,52.35,69.42,52.00,81.20,56.15,85.05,73.00,(14.17),70.85,77.10,8.82,78.10,52.40,(32.91),,,,1.03,69.42,,35.43,69.42
+Uni-President China Holdings Ltd (SEHK:220),4912241,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Food Products; Packaged Foods and Meats; Coffee And Tea; Tea; Dairy Products and Eggs; Dairy Products; Prepared and Preserved Foods; Seasonings and Preservatives; Coffee",3.35,4.38,6.00,6.27,6.77,"24,879.36",12.55,10.18,11.82,10.85,9.07,12.55,76.62,84.21,108.10,147.88,NA,6.75,8.18,21.19,8.26,7.89,(4.48),7.85,7.56,(3.69),7.55,7.81,3.44,7.92,5.55,(29.92),,,,3.35,21.19,,76.62,21.19
+Vitasoy International Holdings Limited (SEHK:345),4912945,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Food Products; Packaged Foods and Meats; Dairy Products; Coffee And Tea; Tea; Dairy Products and Eggs",1.48,1.07,1.84,0.08,0.36,"5,725.43",0.63,22.53,16.54,15.99,(4.29),0.63,53.68,82.94,62.48,NM,30.39,29.00,28.25,(2.59),28.10,30.20,7.47,31.45,15.74,(49.95),16.06,16.06,0.00,16.16,7.78,(51.86),,,,1.48,-2.59,,53.68,-2.59
+VSTECS Holdings Limited (SEHK:856),4968208,SEHK,"Information Technology; Technology Hardware and Equipment; Electronic Equipment, Instruments and Components; Technology Distributors; Communications Equipment Distribution; Software Distribution; Technology Hardware and Equipment Distribution",3.80,2.63,3.01,6.00,3.86,"6,767.75",11.61,15.14,17.11,17.83,10.57,11.61,27.27,22.71,24.36,47.74,NA,3.82,4.00,4.71,3.98,6.36,59.80,6.85,7.31,6.72,7.10,4.50,(36.62),4.58,4.40,(3.93),,,,3.80,4.71,,27.27,4.71
+Vtech Holdings Limited (SEHK:303),4966019,SEHK,Information Technology; Technology Hardware and Equipment; Communications Equipment; Communications Equipment; Telephone and Telecommunications Equipment; Telephone Equipment; Teleconferencing Equipment; Wireline Telephone Equipment; Cordless Telephones,6.80,6.83,11.59,10.59,9.78,"10,987.29",22.72,27.33,31.56,34.65,24.50,22.72,117.51,88.46,57.86,133.00,115.15,64.50,77.00,19.38,76.65,60.15,(21.53),61.20,61.05,(0.25),61.65,50.30,(18.41),51.00,47.15,(7.55),,,,6.80,19.38,,117.51,19.38
+"Weichai Power Co., Ltd. (SEHK:2338)",4996039,SEHK,Industrials; Capital Goods; Machinery; Construction Machinery and Heavy Transportation Equipment; Heavy Duty Trucks; Industrial Trucks and Trailers,2.95,2.10,3.29,3.12,3.21,"164,028.96",10.34,18.04,15.01,13.09,5.42,10.34,44.69,32.56,53.30,89.59,52.73,8.73,16.44,88.32,17.30,15.56,(10.06),16.18,15.26,(5.69),15.62,10.48,(32.91),10.74,13.04,21.42,,,,2.95,88.32,,44.69,88.32
+WH Group Limited (SEHK:288),4913418,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Food Products; Packaged Foods and Meats; Prepared and Preserved Foods; Frozen Foods; Meats, Meat Processing And Meat Related Products; Livestock And Animal Specialties; Meat Processing; Meat Slaughtering; Meat Products; Poultry And Poultry Products; Poultry Processing; Poultry Slaughtering",2.48,4.85,3.58,4.19,5.95,"75,803.53",8.20,18.97,10.69,12.56,16.42,8.20,25.60,72.34,31.09,22.70,NA,5.79,8.05,39.03,8.26,6.50,(21.31),6.72,4.89,(27.23),4.93,4.54,(7.91),4.66,5.04,8.15,,,,2.48,39.03,,25.60,39.03
+Wharf Real Estate Investment Company Limited (SEHK:1997),7529237,SEHK,Real Estate; Real Estate Management and Development; Real Estate Operating Companies; Real Estate Management and Development; Real Estate Operators And Lessors; Nonresidential Building Operators and Lessors; Office Building Operators and Lessors; Shopping Mall Operators and Lessors,4.52,4.24,3.43,2.95,4.85,"68,922.36",2.38,1.79,(3.78),2.11,(4.41),2.38,157.36,NM,90.34,NM,81.53,45.90,47.55,3.59,46.90,40.35,(13.97),41.05,39.60,(3.53),38.90,45.50,16.97,46.45,26.40,(43.16),,,,4.52,3.59,,157.36,3.59
+"Xinhua Winshare Publishing and Media Co., Ltd. (SEHK:811)",4331835,SEHK,Media and Entertainment; Media; Publishing; Printed Media Publishing; Book Publishing; Newspaper and Magazine Publishing; Newspaper Publishing; Periodical Publishing; Published Electronic Materials; Communication Services,5.87,6.86,6.32,7.05,5.54,"16,112.27",12.49,12.83,12.98,12.33,11.71,12.49,32.50,29.31,29.29,28.27,26.61,4.85,5.86,20.82,5.90,4.78,(18.98),4.79,5.91,23.38,5.86,5.27,(10.07),5.32,6.95,30.64,,,,5.87,20.82,,32.50,20.82
+Xinyi Energy Holdings Limited (SEHK:3868),6317710,SEHK,Utilities; Utilities; Independent Power and Renewable Electricity Producers; Renewable Electricity; Electric Power By Solar Energy,2.45,2.76,3.72,6.83,7.55,"8,586.85",7.94,10.75,8.31,10.05,8.01,7.94,73.35,106.19,91.74,88.25,NA,NA,2.04,#VALUE!,2.13,5.26,146.95,5.46,4.27,(21.79),4.35,2.59,(40.46),2.66,1.43,(46.24),,,,2.45,#VALUE!,,73.35,#VALUE!
+Xinyi Glass Holdings Limited (SEHK:868),4911707,SEHK,Industrials; Capital Goods; Building Products; Building Products,5.04,2.17,6.56,7.98,5.48,"33,923.03",15.83,22.62,26.30,36.92,15.40,15.83,46.54,29.46,44.83,71.25,NA,8.52,10.32,21.13,10.34,21.65,109.38,22.40,19.50,(12.95),19.34,14.54,(24.82),14.92,8.76,(41.29),,,,5.04,21.13,,46.54,21.13
+Xinyi Solar Holdings Limited (SEHK:968),4972454,SEHK,Information Technology; Semiconductors and Semiconductor Equipment; Semiconductors and Semiconductor Equipment; Semiconductor Materials and Equipment,1.75,0.84,2.57,2.31,3.84,"49,895.38",12.86,18.27,19.86,16.43,12.22,12.86,26.47,9.73,41.19,46.57,NA,2.69,5.53,105.58,5.74,20.25,252.79,20.65,13.22,(35.98),13.20,8.64,(34.55),8.91,4.56,(48.82),,,,1.75,105.58,,26.47,105.58
+Xtep International Holdings Limited (SEHK:1368),4912870,SEHK,"Consumer Discretionary; Consumer Durables and Apparel; Textiles, Apparel and Luxury Goods; Footwear; Athletic Footwear",5.31,3.62,1.46,3.05,4.72,"11,008.03",11.99,11.90,7.08,11.64,11.20,11.99,59.98,54.40,39.24,59.71,45.51,4.31,4.14,(3.94),4.13,3.87,(6.30),3.84,13.00,238.54,12.96,8.69,(32.95),8.70,4.41,(49.31),,,,5.31,-3.94,,59.98,-3.94
+Yangtze Optical Fibre And Cable Joint Stock Limited Company (SEHK:6869),4967958,SEHK,Information Technology; Technology Hardware and Equipment; Communications Equipment; Communications Equipment; Networking Equipment; Optical Networking Equipment,3.66,3.36,2.02,2.37,6.00,"14,607.12",8.14,9.06,5.94,7.22,9.25,8.14,32.15,51.31,35.85,31.69,44.44,20.75,15.48,(25.40),15.98,10.36,(35.17),10.52,12.94,23.00,13.28,13.90,4.67,13.94,8.36,(40.03),,,,3.66,-25.40,,32.15,-25.40
+Yankuang Energy Group Company Limited (SEHK:1171),4157535,SEHK,"Energy; Energy; Oil, Gas and Consumable Fuels; Coal and Consumable Fuels; Coal Products",8.78,10.23,4.69,7.88,14.99,"175,659.60",20.37,13.51,7.14,20.86,37.91,20.37,63.47,118.68,65.82,56.30,127.37,4.06,4.67,14.94,4.74,4.13,(12.80),4.14,10.33,149.60,10.84,15.87,46.37,15.87,14.84,(6.47),,,,8.78,14.94,,63.47,14.94
+Yihai International Holding Ltd. (SEHK:1579),4913296,SEHK,"Consumer Staples; Food, Beverage and Tobacco; Food Products; Packaged Foods and Meats; Prepared and Preserved Foods; Prepared Soups and Stews; Snack Food; Seasonings and Preservatives; Herbs, Spices and Extracts; Sauces And Salad Dressings",0.38,0.20,0.84,0.98,1.63,"14,610.19",18.85,33.35,31.49,22.50,18.88,18.85,20.68,23.01,31.78,30.26,NA,18.46,45.70,147.56,47.25,115.00,143.39,117.50,36.05,(69.32),34.40,27.60,(19.77),28.35,12.40,(56.26),,,,0.38,147.56,,20.68,147.56
+Yuexiu Property Company Limited (SEHK:123),4270336,SEHK,Real Estate; Real Estate Management and Development; Real Estate Development; Real Estate Management and Development,5.78,6.79,9.33,6.85,8.47,"14,410.91",4.89,9.64,7.84,7.61,7.71,4.89,37.97,37.78,46.29,45.75,41.23,7.05,9.00,27.66,9.15,7.80,(14.75),7.60,6.87,(9.61),6.83,9.45,38.36,9.78,6.36,(34.97),,,,5.78,27.66,,37.97,27.66
+"Zhejiang Expressway Co., Ltd. (SEHK:576)",4995062,SEHK,Industrials; Transportation; Transportation Infrastructure; Highways and Railtracks,6.01,5.93,6.08,7.31,8.18,"30,027.43",12.07,13.60,9.79,15.46,13.45,12.07,43.85,63.72,32.20,31.52,31.45,6.73,7.10,5.50,7.22,6.55,(9.28),6.54,6.95,6.27,6.87,6.01,(12.52),6.14,5.21,(15.15),,,,6.01,5.50,,43.85,5.50
+Zhongsheng Group Holdings Limited (SEHK:881),4914761,SEHK,"Consumer Discretionary; Consumer Discretionary Distribution and Retail; Specialty Retail; Automotive Retail; Motor Vehicle Parts, Accessories, and Related Retail Services; Motor Vehicle Parts and Supply Stores; Motor Vehicle Retail; Motor Vehicle Dealers (New)",1.16,0.81,0.95,2.09,5.84,"30,059.42",11.07,21.93,22.75,24.88,15.60,11.07,16.41,16.84,13.36,25.92,NA,15.14,31.90,110.70,31.75,55.25,74.02,55.10,60.80,10.34,59.75,40.15,(32.80),41.65,18.68,(55.15),,,,1.16,110.70,,16.41,110.70
+"Zhuzhou CRRC Times Electric Co., Ltd. (SEHK:3898)",4991073,SEHK,Industrials; Capital Goods; Machinery; Construction Machinery and Heavy Transportation Equipment; Railroad Equipment,1.81,1.46,1.21,2.77,2.70,"63,766.98",8.63,12.56,10.75,7.07,7.56,8.63,20.70,21.60,32.71,25.31,26.06,43.75,28.20,(35.54),29.65,33.80,14.00,36.55,45.15,23.53,47.25,38.75,(17.99),38.65,22.30,(42.30),,,,1.81,-35.54,,20.70,-35.54
+Zijin Mining Group Company Limited (SEHK:2899),4355642,SEHK,Materials; Metals and Mining; Materials; Gold; Gold Ores,2.93,1.25,1.56,2.20,1.31,"501,479.95",20.20,9.70,12.85,23.40,22.79,20.20,108.63,72.24,32.68,42.94,57.26,2.82,3.88,37.59,4.00,8.78,119.50,9.50,9.28,(2.32),9.28,10.58,14.01,11.24,12.72,13.17,,,,2.93,37.59,,108.63,37.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.01,-18.16,,32.17,-18.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.35,12.16,,36.44,12.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.56,46.30,,24.01,46.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.49,-20.34,,31.00,-20.34
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.43,-1.49,,54.66,-1.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.46,75.32,,27.20,75.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.37,-10.03,,35.30,-10.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.61,51.97,,41.49,51.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.48,-35.21,,72.68,-35.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.90,-21.36,,32.70,-21.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.32,2.32,,28.89,2.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.41,-26.92,,32.21,-26.92
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.93,-26.93,,44.79,-26.93
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.51,-29.92,,27.21,-29.92
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.19,-21.41,,37.44,-21.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.10,85.40,,25.49,85.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.82,-32.98,,35.49,-32.98
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.11,-14.54,,48.34,-14.54
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.12,-13.12,,47.13,-13.12
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.41,40.57,,71.72,40.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.03,416.39,,85.76,416.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.19,160.26,,2.94,160.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.35,-7.52,,18.06,-7.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.33,-10.64,,0.00,-10.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.97,-20.85,,133.22,-20.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.64,-11.35,,NM,-11.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.74,-37.24,,47.00,-37.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.65,-18.78,,37.79,-18.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.94,-30.44,,29.91,-30.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.97,-26.27,,112.56,-26.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.60,-48.78,,142.15,-48.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.23,-39.68,,30.03,-39.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.72,6.50,,13.85,6.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.94,-13.38,,31.00,-13.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.70,54.43,,18.39,54.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.95,-17.86,,37.91,-17.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.83,47.05,,64.87,47.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.47,-19.35,,159.37,-19.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.16,-30.14,,27.57,-30.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.89,-15.89,,24.51,-15.89
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.60,2.97,,22.59,2.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.62,5.30,,26.13,5.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.51,47.00,,35.90,47.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.68,-22.27,,36.56,-22.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.24,-16.56,,64.28,-16.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.51,53.86,,17.21,53.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.31,-22.12,,32.96,-22.12
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.42,46.71,,20.05,46.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.01,-28.75,,14.26,-28.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.36,-32.36,,55.38,-32.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.10,3.56,,29.15,3.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.73,20.88,,9.83,20.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.66,-45.87,,28.24,-45.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.37,-24.09,,18.79,-24.09
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.05,-45.08,,25.53,-45.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.24,-19.04,,23.48,-19.04
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.84,-26.17,,69.51,-26.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.59,-1.78,,74.46,-1.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.02,-39.85,,30.95,-39.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.27,68.00,,26.79,68.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.04,-15.59,,47.54,-15.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.11,-2.94,,38.31,-2.94
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.73,-18.78,,30.10,-18.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.76,-45.78,,20.96,-45.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.86,-24.09,,39.45,-24.09
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.58,7.39,,15.84,7.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.44,-11.84,,69.91,-11.84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.79,-27.76,,58.83,-27.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.47,-39.29,,32.02,-39.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.00,5.31,,119.97,5.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.15,-30.79,,21.95,-30.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.81,-32.81,,44.42,-32.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.39,-33.72,,39.84,-33.72
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.64,-39.21,,43.60,-39.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.12,3.41,,29.35,3.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.49,4.17,,26.96,4.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.95,-21.78,,30.61,-21.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.41,-11.65,,37.33,-11.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.87,29.14,,110.31,29.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.31,-3.13,,62.83,-3.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.01,-47.31,,19.78,-47.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.20,-13.78,,71.65,-13.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.04,-28.87,,NA,-28.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.91,-24.75,,95.55,-24.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.30,-13.04,,67.12,-13.04
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.93,44.57,,113.24,44.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.05,-44.68,,103.59,-44.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.92,35.48,,222.15,35.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.75,14.49,,72.45,14.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.88,-17.08,,14.60,-17.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.32,100.96,,15.52,100.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.33,7.83,,39.86,7.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.25,-26.99,,39.16,-26.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.48,48.41,,NA,48.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.13,-18.49,,29.61,-18.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.34,-14.84,,44.28,-14.84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.40,-24.76,,28.24,-24.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.18,-28.83,,25.94,-28.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.96,15.95,,35.86,15.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.74,36.67,,55.43,36.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.39,-3.88,,110.58,-3.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.12,58.54,,20.81,58.54
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.47,31.64,,27.38,31.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.13,7.39,,32.65,7.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.67,-6.79,,38.89,-6.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.32,510.28,,15.02,510.28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.03,7.37,,25.08,7.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.76,-19.67,,50.34,-19.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.94,69.87,,40.81,69.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.01,-3.02,,25.99,-3.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.25,99.58,,205.62,99.58
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.40,58.16,,18.09,58.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.90,-19.62,,NM,-19.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.89,13.40,,33.65,13.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.78,14.34,,31.03,14.34
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.16,-14.77,,84.28,-14.77
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.29,-12.40,,41.55,-12.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.39,-28.90,,44.25,-28.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.24,-3.85,,45.58,-3.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.71,-30.11,,NM,-30.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.50,-11.25,,65.04,-11.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.25,-1.13,,NM,-1.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.72,18.34,,NM,18.34
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.01,-17.57,,65.77,-17.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.68,-14.96,,75.84,-14.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.95,-20.92,,85.31,-20.92
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.94,-0.36,,63.44,-0.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.20,-1.68,,103.59,-1.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.00,-8.55,,100.62,-8.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,63.21,,60.70,63.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.21,-33.90,,164.78,-33.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.71,-16.86,,31.27,-16.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.80,-20.17,,123.90,-20.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.89,11.95,,91.92,11.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.00,-14.29,,63.40,-14.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.77,8.72,,NM,8.72
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.63,-14.25,,20.10,-14.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.71,24.82,,17.96,24.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.87,-21.60,,98.38,-21.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.23,17.33,,41.65,17.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.69,30.02,,14.09,30.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.16,29.45,,32.98,29.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.63,-17.35,,117.65,-17.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.22,-4.83,,37.56,-4.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.94,4.96,,33.28,4.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.55,-42.68,,18.54,-42.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.84,36.31,,59.98,36.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.32,131.24,,22.24,131.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.11,-24.49,,61.52,-24.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.07,-14.22,,NM,-14.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.04,7.21,,37.24,7.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.07,22.37,,44.07,22.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.42,-1.23,,49.79,-1.23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.88,-17.80,,74.55,-17.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.31,204.71,,30.31,204.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.75,-23.46,,91.68,-23.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.24,-29.45,,38.18,-29.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.60,41.77,,49.76,41.77
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.31,-16.99,,128.17,-16.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.84,-5.56,,NM,-5.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.88,-8.04,,26.75,-8.04
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.65,-15.65,,474.42,-15.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.01,17.99,,69.79,17.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.83,2.57,,41.63,2.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.07,-35.23,,341.46,-35.23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.76,105.57,,132.81,105.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.44,-10.98,,NM,-10.98
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.89,82.49,,15.64,82.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.89,1.30,,NM,1.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.01,-38.93,,147.73,-38.93
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.59,-38.73,,40.62,-38.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.22,-18.13,,29.89,-18.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.67,-26.51,,97.46,-26.51
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.57,-14.62,,37.89,-14.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.54,-11.56,,82.05,-11.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.07,30.04,,37.70,30.04
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.79,91.27,,33.61,91.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.70,-8.51,,39.05,-8.51
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.03,-14.96,,42.37,-14.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.64,-0.11,,53.92,-0.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.53,-29.89,,36.26,-29.89
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.79,-36.63,,87.28,-36.63
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.23,-27.21,,82.02,-27.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.77,-15.82,,42.83,-15.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.25,32.52,,50.57,32.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.25,14.29,,121.49,14.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.90,7.06,,79.68,7.06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.65,-26.53,,160.26,-26.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.89,2.27,,42.84,2.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.45,-11.40,,225.32,-11.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.87,-7.32,,30.22,-7.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.32,-30.42,,58.06,-30.42
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.41,-17.93,,21.60,-17.93
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.46,-33.47,,25.95,-33.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.67,4.06,,32.27,4.06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.97,18.71,,14.47,18.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.93,74.38,,77.40,74.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.50,-31.78,,54.39,-31.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.90,-16.17,,NA,-16.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.95,-15.61,,60.96,-15.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.48,34.29,,85.29,34.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.48,22.09,,16.35,22.09
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.47,-41.02,,NM,-41.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.95,-12.26,,130.00,-12.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.00,70.81,,32.67,70.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.21,47.49,,6.47,47.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.08,-6.65,,41.29,-6.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.93,-20.32,,98.49,-20.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.39,-2.14,,18.23,-2.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.32,4.35,,31.50,4.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.32,33.05,,48.56,33.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.50,163.23,,20.50,163.23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.09,203.57,,16.32,203.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.48,0.15,,41.00,0.15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.61,-38.37,,43.83,-38.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.83,27.47,,32.30,27.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.29,-35.66,,5.02,-35.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.69,-1.99,,231.85,-1.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.25,-2.98,,0.64,-2.98
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.73,56.15,,33.83,56.15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.38,-4.48,,84.21,-4.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.07,7.47,,82.94,7.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.63,59.80,,22.71,59.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.83,-21.53,,88.46,-21.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.10,-10.06,,32.56,-10.06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.85,-21.31,,72.34,-21.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.24,-13.97,,NM,-13.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.86,-18.98,,29.31,-18.98
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.76,146.95,,106.19,146.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.17,109.38,,29.46,109.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.84,252.79,,9.73,252.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.62,-6.30,,54.40,-6.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.36,-35.17,,51.31,-35.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.23,-12.80,,118.68,-12.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.20,143.39,,23.01,143.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.79,-14.75,,37.78,-14.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.93,-9.28,,63.72,-9.28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.81,74.02,,16.84,74.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.46,14.00,,21.60,14.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.25,119.50,,72.24,119.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.37,-4.63,,30.21,-4.63
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.76,-20.24,,30.39,-20.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.61,-48.68,,39.62,-48.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.58,-19.52,,35.36,-19.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.40,32.08,,34.32,32.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.92,-7.95,,31.23,-7.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.92,-13.99,,42.78,-13.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.12,-19.55,,70.19,-19.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.89,14.33,,19.52,14.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.46,7.66,,30.09,7.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.09,-7.66,,30.54,-7.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.08,15.44,,30.65,15.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.62,0.86,,29.91,0.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.24,6.11,,14.50,6.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.54,-2.26,,42.92,-2.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.27,-0.78,,23.90,-0.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.79,63.86,,33.05,63.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.09,-10.36,,28.08,-10.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.86,6.46,,49.07,6.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.95,17.46,,51.47,17.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.07,19.44,,79.91,19.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.03,-31.29,,23.51,-31.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.40,21.18,,18.27,21.18
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.21,-24.32,,31.31,-24.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.08,43.64,,127.80,43.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.19,-12.69,,NM,-12.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.45,75.00,,24.63,75.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.80,-2.07,,186.27,-2.07
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.03,3.36,,29.38,3.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.58,90.68,,43.47,90.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.05,28.88,,135.90,28.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.26,14.80,,29.95,14.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.84,-0.13,,14.18,-0.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.24,-6.41,,29.05,-6.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.00,160.14,,33.82,160.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.89,4.42,,23.43,4.42
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.15,-15.82,,44.11,-15.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.07,73.68,,112.16,73.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.59,38.80,,31.60,38.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.48,12.13,,43.49,12.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.89,-6.67,,23.01,-6.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.40,-47.23,,24.90,-47.23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.54,13.83,,45.34,13.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.95,-24.44,,34.51,-24.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.34,-18.96,,67.82,-18.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.78,111.63,,12.72,111.63
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.30,44.03,,38.27,44.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.74,-7.53,,21.31,-7.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.14,49.16,,14.26,49.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.24,6.73,,49.84,6.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.93,6.46,,28.07,6.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.59,41.55,,19.12,41.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.02,3.96,,259.02,3.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.96,0.25,,20.02,0.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.39,11.88,,26.96,11.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.87,104.70,,24.05,104.70
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.46,2.83,,48.78,2.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.96,214.37,,NM,214.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.56,-7.41,,33.43,-7.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.74,-13.72,,27.93,-13.72
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.85,-31.19,,52.14,-31.19
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.11,4.88,,32.98,4.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.63,5.81,,30.27,5.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.38,-10.35,,20.00,-10.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.51,212.57,,169.23,212.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.75,68.93,,38.73,68.93
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.80,25.38,,69.94,25.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.42,29.27,,81.39,29.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.02,113.44,,33.32,113.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.70,126.02,,85.63,126.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.74,-23.68,,22.00,-23.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.81,24.40,,32.52,24.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.13,-21.82,,53.68,-21.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.24,-12.75,,60.48,-12.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.86,83.88,,29.08,83.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.23,106.59,,8.97,106.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.70,-10.65,,28.57,-10.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.67,19.13,,42.12,19.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.42,43.79,,46.46,43.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.23,124.11,,26.70,124.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.99,38.99,,22.29,38.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.17,7.79,,73.51,7.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.80,22.26,,38.13,22.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.99,17.51,,90.74,17.51
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.94,7.80,,90.76,7.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.97,-26.34,,47.70,-26.34
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.85,13.90,,29.11,13.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.74,0.00,,57.31,0.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.71,-2.86,,135.57,-2.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.01,20.89,,40.76,20.89
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.57,-8.70,,16.78,-8.70
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.62,22.82,,62.59,22.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.53,5.65,,22.06,5.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.28,-20.87,,NA,-20.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.01,6.14,,30.16,6.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.26,-0.91,,40.86,-0.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.80,-16.02,,28.83,-16.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.24,6.55,,25.89,6.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.65,115.08,,23.81,115.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.15,96.76,,11.87,96.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.12,22.63,,104.57,22.63
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.86,-6.47,,37.50,-6.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.12,26.66,,36.45,26.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.20,-11.28,,26.85,-11.28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.75,20.59,,27.51,20.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.45,12.82,,19.52,12.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.82,-17.27,,29.77,-17.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.17,-10.03,,22.85,-10.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.94,-20.82,,35.87,-20.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.51,-4.74,,24.80,-4.74
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.01,65.62,,295.27,65.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.70,-2.56,,16.25,-2.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.81,-0.46,,NM,-0.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.42,15.44,,33.60,15.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.67,-23.81,,38.43,-23.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.00,-30.21,,82.78,-30.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.12,-11.30,,37.82,-11.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.92,19.29,,34.04,19.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.08,-2.00,,38.07,-2.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.35,-10.43,,26.04,-10.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.51,-26.95,,41.32,-26.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.04,-12.13,,45.26,-12.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.80,-20.59,,90.70,-20.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.27,4.16,,73.55,4.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.29,-59.26,,80.14,-59.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.51,7.44,,NA,7.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.87,-28.30,,82.66,-28.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.19,-0.39,,96.49,-0.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.84,4.59,,112.90,4.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.01,3.08,,91.96,3.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.03,64.25,,NM,64.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.27,-9.28,,29.29,-9.28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.98,-8.48,,73.90,-8.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.98,-3.55,,26.70,-3.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12.10,40.91,,61.16,40.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.09,-17.23,,8.03,-17.23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.98,-18.21,,19.60,-18.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.36,9.41,,10.21,9.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.65,2.94,,51.34,2.94
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18.27,20.93,,26.80,20.93
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.11,14.48,,13.15,14.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.90,4.41,,115.02,4.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.86,24.85,,43.62,24.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.53,4.43,,7.90,4.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.09,-13.97,,48.07,-13.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.79,13.16,,14.76,13.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.57,17.59,,35.86,17.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.29,60.13,,12.84,60.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.13,-6.58,,66.92,-6.58
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.49,-4.32,,508.75,-4.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.05,64.67,,21.58,64.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.97,-17.06,,41.23,-17.06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15.07,-8.75,,93.06,-8.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.00,14.13,,41.84,14.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.40,-29.36,,43.46,-29.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.53,41.13,,78.26,41.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.20,-27.86,,42.80,-27.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.67,-16.01,,36.76,-16.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.75,-0.78,,100.52,-0.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.94,-5.21,,75.01,-5.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.55,5.41,,28.44,5.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.68,-16.17,,457.78,-16.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.75,9.75,,19.91,9.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.35,-6.43,,49.42,-6.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.07,-2.66,,168.08,-2.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22,134.29,,20.23,134.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.90,85.71,,10.24,85.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.99,-21.37,,32.37,-21.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.19,-14.13,,206.64,-14.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.57,44.58,,43.25,44.58
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.13,8.33,,38.43,8.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.58,24.89,,30.20,24.89
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.80,13.82,,98.03,13.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.29,-10.74,,49.68,-10.74
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.11,-3.08,,65.08,-3.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.99,28.45,,35.80,28.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.80,-42.76,,28.70,-42.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.87,32.10,,42.59,32.10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.59,-1.03,,24.45,-1.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.18,6.96,,24.96,6.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.80,6.37,,29.03,6.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.87,3.57,,95.19,3.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.51,-34.78,,15.19,-34.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.71,-36.36,,NM,-36.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.44,-0.33,,80.60,-0.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.19,-28.24,,NM,-28.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.44,42.70,,33.83,42.70
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.64,14.29,,55.93,14.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.83,-29.09,,6.42,-29.09
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.66,-4.80,,62.11,-4.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.79,53.95,,22.45,53.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.80,11.27,,55.77,11.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.54,8.51,,47.34,8.51
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.95,-10.64,,27.75,-10.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.71,-12.59,,23.92,-12.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.67,-38.08,,55.83,-38.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.67,56.67,,47.47,56.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.49,-10.67,,38.52,-10.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.15,-60.38,,36.67,-60.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.23,-8.42,,53.75,-8.42
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.63,1.37,,90.08,1.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.43,39.32,,19.79,39.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.51,-0.22,,96.65,-0.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.71,-16.14,,77.87,-16.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.08,35.78,,35.86,35.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.35,-20.21,,5.56,-20.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.27,-32.69,,45.82,-32.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.79,8.95,,123.38,8.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.22,-18.35,,22.35,-18.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.67,18.86,,20.30,18.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.63,-6.90,,20.98,-6.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.03,-77.56,,NM,-77.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.85,-57.87,,28.83,-57.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.36,21.18,,53.42,21.18
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.32,69.64,,40.40,69.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.80,-34.58,,42.53,-34.58
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.21,96.52,,5.47,96.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.15,-31.88,,10.68,-31.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.32,-1.25,,0.11,-1.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.23,-14.17,,33.07,-14.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.00,-3.69,,108.10,-3.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.84,-49.95,,62.48,-49.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.01,6.72,,24.36,6.72
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.59,-0.25,,57.86,-0.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.29,-5.69,,53.30,-5.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.58,-27.23,,31.09,-27.23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.43,-3.53,,90.34,-3.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.32,23.38,,29.29,23.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.72,-21.79,,91.74,-21.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.56,-12.95,,44.83,-12.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.57,-35.98,,41.19,-35.98
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.46,238.54,,39.24,238.54
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.02,23.00,,35.85,23.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.69,149.60,,65.82,149.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.84,-69.32,,31.78,-69.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.33,-9.61,,46.29,-9.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.08,6.27,,32.20,6.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.95,10.34,,13.36,10.34
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.21,23.53,,32.71,23.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.56,-2.32,,32.68,-2.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.03,-0.74,,30.52,-0.74
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.71,9.87,,70.18,9.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.26,48.11,,11.70,48.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.23,-30.80,,83.78,-30.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.14,0.00,,79.78,0.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.27,-10.81,,40.66,-10.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.01,-34.41,,61.43,-34.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.68,-36.53,,78.24,-36.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.06,-38.21,,30.56,-38.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.12,0.35,,30.46,0.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.22,-8.54,,34.05,-8.54
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.27,-5.27,,31.29,-5.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.04,-32.98,,34.32,-32.98
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.40,-7.41,,22.49,-7.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.85,-35.69,,101.95,-35.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.48,-31.60,,23.10,-31.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.44,-18.95,,36.29,-18.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.15,13.50,,907.13,13.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.25,2.50,,52.50,2.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.85,-19.17,,63.49,-19.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.06,-27.38,,9.34,-27.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.48,-10.68,,12.49,-10.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.85,0.96,,21.96,0.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.04,-19.29,,101.64,-19.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.31,-22.82,,122.33,-22.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.96,-22.61,,NA,-22.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.81,-18.50,,43.50,-18.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.29,-27.52,,73.33,-27.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.22,2.06,,29.51,2.06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.55,34.25,,42.66,34.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.69,-12.18,,141.60,-12.18
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.72,-25.00,,35.57,-25.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.13,-55.49,,6.83,-55.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.71,-10.11,,28.90,-10.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.52,-41.96,,21.67,-41.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.29,-4.50,,39.44,-4.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.63,-17.35,,21.41,-17.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.90,-34.53,,102.74,-34.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.60,-47.36,,40.05,-47.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.46,-10.26,,45.02,-10.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.53,-16.08,,43.88,-16.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.84,-30.73,,39.97,-30.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.70,-12.99,,102.51,-12.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.68,3.08,,19.83,3.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.38,-13.96,,53.74,-13.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.80,-50.31,,93.24,-50.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.02,-9.97,,39.16,-9.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.27,-21.07,,28.41,-21.07
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.22,-20.99,,11.75,-20.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.95,9.87,,69.29,9.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12.70,-33.30,,73.97,-33.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.48,31.05,,54.17,31.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.25,38.74,,36.70,38.74
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.62,-13.96,,18.88,-13.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.63,11.83,,32.85,11.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.23,2.78,,25.82,2.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.50,2.17,,85.02,2.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.87,-39.45,,26.09,-39.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.65,-34.00,,NM,-34.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.15,-9.83,,40.03,-9.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.66,-30.77,,144.30,-30.77
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.33,-33.56,,60.86,-33.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.73,9.66,,35.69,9.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.37,35.33,,22.72,35.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.60,-41.86,,23.38,-41.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.14,-36.06,,44.39,-36.06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.86,20.85,,76.66,20.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.05,11.13,,33.44,11.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.07,-10.60,,30.66,-10.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.03,-51.49,,99.52,-51.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.73,-11.64,,21.75,-11.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.76,18.53,,103.39,18.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.69,-1.18,,52.56,-1.18
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.29,23.53,,47.69,23.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.27,-43.62,,27.58,-43.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.74,-31.07,,18.36,-31.07
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.11,-5.65,,29.20,-5.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.16,-6.85,,64.40,-6.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.14,13.71,,68.53,13.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.66,-35.64,,34.52,-35.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.96,6.05,,25.28,6.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.68,-0.38,,71.20,-0.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.62,-1.64,,38.13,-1.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.14,-17.56,,87.27,-17.56
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.44,-28.59,,736.78,-28.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.33,-12.62,,78.98,-12.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.01,23.36,,54.61,23.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25.45,-27.78,,147.98,-27.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.94,5.44,,88.34,5.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.44,-10.14,,18.83,-10.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.81,-56.41,,44.32,-56.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.02,-0.94,,49.20,-0.94
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.09,-7.60,,31.24,-7.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.78,-19.55,,NA,-19.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.44,-3.19,,34.42,-3.19
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.76,5.45,,32.78,5.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.07,-16.67,,36.37,-16.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.86,-23.39,,29.76,-23.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.03,-4.60,,26.50,-4.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.96,-31.61,,16.22,-31.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.63,-39.42,,84.00,-39.42
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.29,-1.75,,73.82,-1.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.51,-27.32,,45.30,-27.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.89,-10.43,,28.37,-10.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.80,-19.10,,28.40,-19.10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.38,-53.61,,34.92,-53.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.68,8.94,,34.95,8.94
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.20,68.44,,27.95,68.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.84,-46.48,,36.60,-46.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.59,-15.66,,29.50,-15.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.89,-32.83,,647.14,-32.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.39,-29.77,,18.78,-29.77
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.84,-21.82,,NM,-21.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.71,-4.04,,47.12,-4.04
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.09,-27.45,,79.32,-27.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.67,-19.29,,84.06,-19.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.06,-32.82,,41.05,-32.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.50,-3.36,,37.58,-3.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.64,-17.50,,40.13,-17.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.01,-21.35,,33.35,-21.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.38,-11.46,,44.19,-11.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.00,-12.35,,43.00,-12.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.11,-3.30,,91.76,-3.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.00,-10.05,,74.12,-10.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.52,41.43,,38.19,41.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.61,-18.05,,NA,-18.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.03,2.60,,84.51,2.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.20,-33.03,,95.80,-33.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.67,-9.20,,113.47,-9.20
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.26,-25.82,,95.90,-25.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.07,-10.28,,NM,-10.28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.54,-9.05,,29.66,-9.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.53,-11.32,,91.36,-11.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.10,-9.29,,41.17,-9.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.29,-23.65,,80.63,-23.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.46,-41.14,,37.03,-41.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.75,-9.97,,47.93,-9.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.56,-28.07,,39.39,-28.07
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.94,-17.27,,71.05,-17.27
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20.83,17.65,,33.75,17.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.03,-35.37,,91.00,-35.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15.73,-35.97,,245.13,-35.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.23,-28.67,,80.58,-28.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.53,-24.83,,34.41,-24.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.09,-36.76,,67.35,-36.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.61,-27.52,,71.63,-27.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.93,-29.17,,23.59,-29.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.79,-20.76,,29.40,-20.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.65,-4.23,,75.67,-4.23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.26,-16.53,,NA,-16.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.25,-25.19,,22.37,-25.19
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.39,-32.69,,26.82,-32.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,16.06,-37.44,,191.14,-37.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.74,9.18,,44.28,9.18
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.12,-32.67,,51.05,-32.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.28,-15.61,,62.82,-15.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.29,1.69,,52.23,1.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.98,-36.77,,41.02,-36.77
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.86,-5.43,,67.64,-5.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.48,-1.90,,87.13,-1.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.77,-7.61,,43.40,-7.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.36,-27.75,,412.00,-27.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.45,-47.21,,41.10,-47.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.18,9.67,,48.01,9.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.04,-9.76,,135.02,-9.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33.40,-29.85,,40.03,-29.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29.17,-12.00,,102.04,-12.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.74,24.31,,27.30,24.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.58,-11.34,,791.86,-11.34
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.71,2.59,,NA,2.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.41,14.53,,34.97,14.53
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.98,-12.45,,28.81,-12.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.60,-13.20,,106.55,-13.20
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.95,-13.50,,40.62,-13.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.02,-12.80,,46.86,-12.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.87,2.95,,28.00,2.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.35,29.36,,27.23,29.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.16,78.34,,39.66,78.34
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.48,-11.25,,51.48,-11.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.23,-29.13,,70.31,-29.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.95,-15.05,,45.11,-15.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.79,-11.91,,130.40,-11.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.63,-6.81,,54.20,-6.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.21,-19.76,,64.02,-19.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.86,-36.47,,45.22,-36.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.06,21.79,,95.22,21.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18.88,7.33,,88.13,7.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.08,-12.08,,266.03,-12.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.48,-18.68,,49.84,-18.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.84,1.04,,74.97,1.04
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.56,-24.00,,28.81,-24.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.57,-10.68,,64.09,-10.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.78,-4.22,,114.34,-4.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.40,14.02,,27.45,14.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.89,0.00,,51.00,0.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.25,-8.57,,86.60,-8.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,21.89,-41.45,,80.95,-41.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.02,7.21,,34.57,7.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.76,-18.21,,NM,-18.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.63,12.96,,56.12,12.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.93,-42.03,,92.97,-42.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.20,-62.86,,43.97,-62.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.00,53.01,,89.02,53.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.84,-1.78,,73.53,-1.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.24,-44.73,,42.74,-44.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.48,-26.40,,6.88,-26.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.39,-16.28,,61.21,-16.28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.72,-39.58,,121.86,-39.58
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,7.22,,17.24,7.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.74,-2.55,,NA,-2.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.05,-7.91,,19.18,-7.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.23,5.76,,85.03,5.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.85,0.12,,15.70,0.12
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.02,-12.78,,77.92,-12.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.31,-38.39,,35.16,-38.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.53,-19.71,,63.37,-19.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.83,-43.43,,12.68,-43.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.39,25.57,,26.13,25.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.62,-7.71,,0.17,-7.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.67,8.82,,40.73,8.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.27,3.44,,147.88,3.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.08,0.00,,NM,0.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.00,-36.62,,47.74,-36.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.59,-18.41,,133.00,-18.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.12,-32.91,,89.59,-32.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.19,-7.91,,22.70,-7.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.95,16.97,,NM,16.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.05,-10.07,,28.27,-10.07
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.83,-40.46,,88.25,-40.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.98,-24.82,,71.25,-24.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.31,-34.55,,46.57,-34.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.05,-32.95,,59.71,-32.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.37,4.67,,31.69,4.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.88,46.37,,56.30,46.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.98,-19.77,,30.26,-19.77
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.85,38.36,,45.75,38.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.31,-12.52,,31.52,-12.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.09,-32.80,,25.92,-32.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.77,-17.99,,25.31,-17.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.20,14.01,,42.94,14.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.01,12.31,,31.90,12.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.29,-22.93,,63.14,-22.93
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.96,-35.73,,NA,-35.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.09,-34.99,,85.05,-34.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.88,19.57,,69.02,19.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.03,-27.30,,39.29,-27.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.37,33.63,,144.74,33.63
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.69,-7.71,,NA,-7.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.16,7.04,,NA,7.04
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.45,4.20,,32.13,4.20
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.92,-3.65,,37.33,-3.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.37,6.33,,32.66,6.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.23,-39.43,,28.09,-39.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.48,5.03,,NA,5.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.02,-13.86,,NA,-13.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.60,-10.36,,NA,-10.36
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.72,4.84,,NA,4.84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.81,-10.83,,26.36,-10.83
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.78,-20.90,,51.82,-20.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.27,-5.39,,80.51,-5.39
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.59,6.35,,13.23,6.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.50,42.97,,NA,42.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.57,-10.77,,NA,-10.77
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.70,-3.48,,13.68,-3.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.74,7.37,,103.98,7.37
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.43,-21.47,,NA,-21.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.09,3.68,,NA,3.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.97,-29.09,,59.28,-29.09
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.78,5.14,,31.23,5.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.41,10.25,,44.90,10.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.11,-9.61,,117.83,-9.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.57,7.64,,35.71,7.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.17,-61.79,,NA,-61.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.07,-5.68,,30.53,-5.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.00,-24.05,,32.71,-24.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.24,33.65,,22.70,33.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.92,-50.95,,88.19,-50.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.66,-15.22,,107.22,-15.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.06,-27.84,,NA,-27.84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.52,5.38,,NA,5.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.94,6.99,,33.09,6.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.13,-32.84,,69.69,-32.84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.44,-15.03,,NA,-15.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.27,-25.92,,26.32,-25.92
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.20,10.73,,45.23,10.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.17,-42.52,,75.82,-42.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.45,11.08,,56.66,11.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.11,-42.31,,NA,-42.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.71,-8.12,,NA,-8.12
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.16,23.43,,69.18,23.43
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12.88,-48.85,,84.40,-48.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.31,30.87,,37.99,30.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.24,-17.48,,31.64,-17.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.78,-26.15,,NA,-26.15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.45,-34.48,,31.66,-34.48
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.30,-33.41,,NA,-33.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.20,7.07,,69.90,7.07
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.38,-20.50,,57.92,-20.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.36,-10.78,,31.56,-10.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.90,-37.76,,NA,-37.76
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.94,-59.81,,NA,-59.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.10,-13.51,,NA,-13.51
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.75,-23.50,,NA,-23.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.12,-21.32,,NA,-21.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.50,-5.67,,33.76,-5.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.93,6.13,,29.81,6.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.87,16.05,,88.98,16.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.20,-6.79,,NA,-6.79
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.70,6.61,,NA,6.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.68,-13.68,,100.06,-13.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.87,-31.64,,20.06,-31.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.46,17.24,,74.57,17.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.47,-4.65,,NA,-4.65
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.03,-5.41,,NA,-5.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.23,-36.16,,15.82,-36.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.89,-13.40,,27.02,-13.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.96,12.22,,30.05,12.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.90,-14.96,,NA,-14.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.56,-29.40,,92.86,-29.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.40,-8.90,,NA,-8.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.30,-5.22,,NA,-5.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.47,20.59,,73.60,20.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.82,-18.50,,42.18,-18.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.88,5.11,,NA,5.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.81,13.17,,115.28,13.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.20,15.41,,76.01,15.41
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.31,28.71,,47.04,28.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.83,-23.08,,370.17,-23.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.18,21.60,,NA,21.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.47,-9.47,,NA,-9.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.35,-65.17,,NA,-65.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.61,57.24,,51.60,57.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.79,16.00,,NA,16.00
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.25,0.88,,NA,0.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.44,-12.74,,NA,-12.74
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.76,26.50,,32.27,26.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.94,-13.25,,48.94,-13.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.31,-15.61,,40.19,-15.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.13,-48.71,,30.69,-48.71
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.62,-36.01,,NA,-36.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.60,-7.84,,99.32,-7.84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.82,41.80,,NA,41.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.06,-49.29,,NA,-49.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.98,0.16,,31.55,0.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.07,34.63,,23.74,34.63
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.89,-30.12,,34.21,-30.12
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.14,-21.13,,43.93,-21.13
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12.01,-10.17,,NA,-10.17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.44,-27.57,,38.77,-27.57
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.57,-4.67,,28.05,-4.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.31,-32.35,,33.39,-32.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.42,-10.70,,NA,-10.70
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.18,-30.26,,85.29,-30.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.89,-30.26,,35.25,-30.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.44,-45.30,,47.10,-45.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.80,-31.07,,NA,-31.07
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.09,-31.89,,79.08,-31.89
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.74,-5.84,,39.09,-5.84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.23,-16.35,,23.08,-16.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.33,-15.59,,19.11,-15.59
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.42,6.49,,60.93,6.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.08,-26.72,,41.75,-26.72
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.17,-30.96,,88.64,-30.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.82,-29.91,,72.50,-29.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.78,-26.31,,81.56,-26.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.48,-12.86,,94.24,-12.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.37,-28.62,,NA,-28.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.80,-10.29,,NA,-10.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.07,-4.51,,114.12,-4.51
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,-21.87,,86.97,-21.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.39,3.89,,146.88,3.89
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.62,-5.91,,31.29,-5.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.18,-1.68,,77.19,-1.68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.01,-6.44,,54.84,-6.44
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.24,14.01,,63.07,14.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.11,23.26,,7.87,23.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.77,-29.86,,62.50,-29.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.72,-41.29,,NA,-41.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.45,-18.96,,60.54,-18.96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18.18,-6.78,,37.31,-6.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.87,-26.60,,NA,-26.60
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.87,-22.22,,NA,-22.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.04,-20.88,,NA,-20.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.08,24.82,,NA,24.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.53,-34.20,,NA,-34.20
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.95,-14.62,,NM,-14.62
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.48,68.26,,36.00,68.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.32,-69.86,,NA,-69.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.08,-10.14,,62.98,-10.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.68,-24.66,,NA,-24.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.14,-9.35,,84.13,-9.35
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.83,-48.24,,27.06,-48.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.20,-12.86,,NA,-12.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.06,-12.89,,50.27,-12.89
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.67,-31.67,,65.57,-31.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.98,-13.14,,73.72,-13.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.90,-55.69,,50.39,-55.69
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.66,-26.09,,NA,-26.09
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.86,-13.01,,NA,-13.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.32,-27.51,,97.57,-27.51
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.46,-26.22,,159.46,-26.22
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.27,-46.73,,602.56,-46.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.74,-6.10,,NA,-6.10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.43,-6.99,,NA,-6.99
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.29,8.24,,115.29,8.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,23.65,-23.08,,159.32,-23.08
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.14,-1.91,,144.04,-1.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.61,-11.03,,NA,-11.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.19,15.24,,NM,15.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.14,43.33,,NA,43.33
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.65,25.75,,44.24,25.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.50,-24.80,,31.44,-24.80
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.23,5.11,,NA,5.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.03,9.87,,38.22,9.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.76,19.64,,41.44,19.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.52,-5.63,,NA,-5.63
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.19,-41.64,,NA,-41.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.79,-31.03,,35.43,-31.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.13,-27.14,,70.10,-27.14
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.09,10.87,,17.69,10.87
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.49,-2.52,,NA,-2.52
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.28,-8.02,,105.14,-8.02
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.91,-14.10,,NA,-14.10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12.17,-16.06,,NM,-16.06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.24,-9.31,,NA,-9.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NA,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.19,14.29,,NA,14.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.56,32.61,,141.02,32.61
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.31,-25.05,,NA,-25.05
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.83,-16.11,,78.70,-16.11
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.85,-4.21,,NA,-4.21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.08,13.64,,60.77,13.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.55,16.67,,NA,16.67
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.41,0.49,,NA,0.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.25,27.73,,42.02,27.73
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.15,37.03,,NA,37.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,16.32,-22.88,,141.51,-22.88
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.04,0.82,,NA,0.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.21,-48.91,,345.87,-48.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.86,-22.66,,60.00,-22.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.62,-27.46,,93.25,-27.46
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.71,-26.12,,NA,-26.12
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.61,-0.90,,47.27,-0.90
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.39,-23.49,,233.33,-23.49
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.99,5.32,,44.74,5.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.82,-14.95,,18.21,-14.95
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.50,1.47,,40.91,1.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.85,-20.58,,NA,-20.58
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.05,36.38,,NA,36.38
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.59,8.64,,NA,8.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.10,-10.66,,NA,-10.66
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.65,22.81,,30.45,22.81
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.07,-23.10,,27.98,-23.10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.70,-32.10,,NA,-32.10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.68,12.74,,NA,12.74
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.68,-4.40,,67.53,-4.40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.62,-16.45,,NA,-16.45
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.43,-21.78,,NA,-21.78
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.19,-16.32,,0.21,-16.32
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.73,-32.91,,58.06,-32.91
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.77,-29.92,,NA,-29.92
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.36,-51.86,,30.39,-51.86
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.86,-3.93,,NA,-3.93
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.78,-7.55,,115.15,-7.55
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.21,21.42,,52.73,21.42
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.95,8.15,,NA,8.15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.85,-43.16,,81.53,-43.16
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.54,30.64,,26.61,30.64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.55,-46.24,,NA,-46.24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.48,-41.29,,NA,-41.29
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.84,-48.82,,NA,-48.82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.72,-49.31,,45.51,-49.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.00,-40.03,,44.44,-40.03
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.99,-6.47,,127.37,-6.47
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.63,-56.26,,NA,-56.26
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.47,-34.97,,41.23,-34.97
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.18,-15.15,,31.45,-15.15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.84,-55.15,,NA,-55.15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.70,-42.30,,26.06,-42.30
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.31,13.17,,57.26,13.17
