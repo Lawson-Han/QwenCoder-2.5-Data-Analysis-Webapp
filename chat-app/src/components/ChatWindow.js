@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { List, Avatar, Input, Empty, Button, message, Typography, Table } from 'antd';
-import { RobotFilled, UserOutlined, WifiOutlined, LoadingOutlined } from '@ant-design/icons';
+import { RobotFilled, UserOutlined, WifiOutlined, LoadingOutlined, DownloadOutlined } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { io } from 'socket.io-client';
 import { API_BASE_URL, SOCKET_URL } from '../config';
@@ -9,6 +9,8 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import remarkGfm from 'remark-gfm';
 import ChartContainer from './ChartContainer';
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 
 const { Text } = Typography;
 const ChatWindow = ({ session }) => {
@@ -22,6 +24,7 @@ const ChatWindow = ({ session }) => {
     const [uploadedFile, setUploadedFile] = useState(null);
     const [showInitializing, setShowInitializing] = useState(false);
     const [initializingText, setInitializingText] = useState('');
+    const chartRef = useRef(null);
 
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -79,7 +82,7 @@ const ChatWindow = ({ session }) => {
 
     const initializeSocket = () => {
         const newSocket = io(SOCKET_URL);
-        
+
         newSocket.on('message_received', () => {
             console.log('Message received confirmation from server');
             setInitializingText('analyzing');
@@ -87,7 +90,7 @@ const ChatWindow = ({ session }) => {
 
         newSocket.on('receive_message', message => {
             setShowInitializing(false);
-            
+
             setMessages(prevMessages => {
                 const updatedMessages = [...prevMessages];
                 const lastMessage = updatedMessages[updatedMessages.length - 1];
@@ -102,8 +105,8 @@ const ChatWindow = ({ session }) => {
                         console.log("chart_type:", message.chart_type);
                     }
                 } else if (message.text) {
-                    if (lastMessage && 
-                        lastMessage.role === 'assistant' && 
+                    if (lastMessage &&
+                        lastMessage.role === 'assistant' &&
                         lastMessage.message_id === message.message_id
                     ) {
                         updatedMessages[updatedMessages.length - 1] = {
@@ -196,6 +199,130 @@ const ChatWindow = ({ session }) => {
 
     );
 
+    const handleTableExport = (data, type) => {
+        if (type === 'csv') {
+            const headers = data.columns.map(col => col.title).join(',');
+            const rows = data.dataSource.map(row =>
+                data.columns.map(col => row[col.dataIndex]).join(',')
+            ).join('\n');
+            const csvContent = `${headers}\n${rows}`;
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'table-export.csv';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        } else if (type === 'pdf') {
+            const doc = new jsPDF();
+            
+            // 设置标题
+            doc.setFontSize(16);
+            doc.text('Data Export', 14, 15);
+            
+            // 准备表格数据
+            const headers = data.columns.map(col => col.title);
+            const rows = data.dataSource.map(row =>
+                data.columns.map(col => {
+                    const value = row[col.dataIndex];
+                    return value === null || value === undefined ? '-' : String(value);
+                })
+            );
+
+            // 生成表格
+            doc.autoTable({
+                head: [headers],
+                body: rows,
+                startY: 25,
+                theme: 'grid',
+                styles: {
+                    fontSize: 8,
+                    cellPadding: 2,
+                    overflow: 'linebreak',
+                    cellWidth: 'wrap'
+                },
+                headStyles: {
+                    fillColor: [41, 128, 185],
+                    textColor: 255,
+                    fontSize: 9,
+                    fontStyle: 'bold'
+                },
+                columnStyles: {
+                    // 可以在这里为特定列设置样式
+                    // 例如: 0: {cellWidth: 30}
+                },
+                margin: { top: 25 },
+                didDrawPage: function(data) {
+                    // 添加页脚
+                    doc.setFontSize(8);
+                    doc.text(
+                        `Generated on ${new Date().toLocaleString()}`,
+                        data.settings.margin.left,
+                        doc.internal.pageSize.height - 10
+                    );
+                }
+            });
+
+            // 保存文件
+            doc.save('table-export.pdf');
+        }
+    };
+
+    const handleChartExport = (chartRef) => {
+        try {
+            if (!chartRef?.current) {
+                message.error('Chart reference not found');
+                return;
+            }
+
+            const canvas = chartRef.current.querySelector('canvas');
+            if (!canvas) {
+                message.error('Canvas element not found');
+                return;
+            }
+
+            // 创建一个新的 canvas 以保持原始质量
+            const newCanvas = document.createElement('canvas');
+            const context = newCanvas.getContext('2d');
+
+            // 设置与原始 canvas 相同的尺寸
+            newCanvas.width = canvas.width;
+            newCanvas.height = canvas.height;
+
+            // 添加白色背景
+            context.fillStyle = '#FFFFFF';
+            context.fillRect(0, 0, newCanvas.width, newCanvas.height);
+
+            // 绘制原始 canvas 内容
+            context.drawImage(canvas, 0, 0);
+
+            // 尝试以更高质量导出
+            newCanvas.toBlob((blob) => {
+                if (!blob) {
+                    message.error('Failed to generate image');
+                    return;
+                }
+
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `chart-${Date.now()}.png`;  // 添加时间戳避免重名
+
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                // 清理 URL 对象
+                URL.revokeObjectURL(url);
+                message.success('Chart exported successfully');
+            }, 'image/png', 1.0);  // 使用 PNG 格式和最高质量
+
+        } catch (error) {
+            console.error('Chart export failed:', error);
+            message.error('Failed to export chart');
+        }
+    };
+
     const renderMessageContent = (msg) => (
         <>
             <ReactMarkdown
@@ -267,9 +394,10 @@ const ChatWindow = ({ session }) => {
             >
                 {msg.message}
             </ReactMarkdown>
-            
+
             {msg.tableData && (!msg.chart_type || msg.chart_type === 'query') && (
                 <div style={{ marginTop: msg.message ? '16px' : 0 }}>
+
                     <Table
                         columns={msg.tableData.columns.map(col => ({
                             ...col,
@@ -281,7 +409,27 @@ const ChatWindow = ({ session }) => {
                         }))}
                         scroll={{ x: true }}
                         size="large"
+                        pagination={{
+                            hideOnSinglePage: true,    // 只有一页时隐藏分页器
+                            pageSize: 10               // 每页显示的条数，可以根据需要调整
+                        }}
                     />
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+                        <Button.Group size="large">
+                            <Button
+                                icon={<DownloadOutlined />}
+                                onClick={() => handleTableExport(msg.tableData, 'csv')}
+                            >
+                                Export CSV
+                            </Button>
+                            <Button
+                                icon={<DownloadOutlined />}
+                                onClick={() => handleTableExport(msg.tableData, 'pdf')}
+                            >
+                                Export PDF
+                            </Button>
+                        </Button.Group>
+                    </div>
                 </div>
             )}
         </>
@@ -309,21 +457,32 @@ const ChatWindow = ({ session }) => {
                                     </>
                                 )}
                             </div>
-                            
+
                             {msg.role === 'assistant' && msg.tableData && msg.chart_type && msg.chart_type !== 'query' && (
-                                <div className="chart-wrapper" style={{ 
+                                <div className="chart-wrapper" style={{
                                     marginLeft: '48px',
                                     marginRight: '48px',
                                     marginTop: '16px'
                                 }}>
+
                                     <ChartContainer
                                         type={msg.chart_type}
                                         data={msg.tableData.dataSource}
                                         columns={msg.tableData.columns}
+                                        ref={chartRef}
                                     />
+                                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+                                        <Button
+                                            size="large"
+                                            icon={<DownloadOutlined />}
+                                            onClick={() => handleChartExport(chartRef)}
+                                        >
+                                            Export Chart
+                                        </Button>
+                                    </div>
                                 </div>
                             )}
-                            
+
                             {showInitializing && index === messages.length - 1 && msg.role === 'user' && (
                                 <div className="message-item message-left">
                                     <Avatar size="middle" className="avatar" icon={<RobotFilled />} />

@@ -32,9 +32,10 @@ def dict_factory(cursor, row):
 
 def init_db():
     conn = get_db_connection()
-    conn.row_factory = dict_factory
-    
     cursor = conn.cursor()
+    
+    # 确保数据库使用UTF-8编码
+    cursor.execute('PRAGMA encoding = "UTF-8"')
     
     # 删除现有表
     cursor.execute("DROP TABLE IF EXISTS query_results")
@@ -76,15 +77,15 @@ def init_db():
         )
     """)
     
-    cursor.execute("""
+    cursor.execute('''
         CREATE TABLE IF NOT EXISTS session_files (
-            session_id INTEGER NOT NULL,
-            file_path TEXT NOT NULL,
-            file_name TEXT NOT NULL,
-            FOREIGN KEY (session_id) REFERENCES sessions(id) ON DELETE CASCADE,
-            PRIMARY KEY (session_id)
+            session_id INTEGER,
+            file_path TEXT,
+            file_name TEXT COLLATE NOCASE,  -- 添加COLLATE NOCASE支持大小写不敏感
+            PRIMARY KEY (session_id),
+            FOREIGN KEY (session_id) REFERENCES sessions(id) ON DELETE CASCADE
         )
-    """)
+    ''')
     
     # 插入示例会话
     sample_sessions = [

@@ -1,9 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
 import { Line, Column, Bar, Pie, Scatter } from '@antv/g2plot';
 
-const ChartRenderer = ({ type, data, columns }) => {
+const ChartRenderer = forwardRef(({ type, data, columns }, ref) => {
     const containerRef = useRef(null);
     const chartRef = useRef(null);
+
+    useImperativeHandle(ref, () => ({
+        querySelector: (selector) => containerRef.current?.querySelector(selector),
+        getChart: () => chartRef.current
+    }));
 
     useEffect(() => {
         if (!containerRef.current || !data || data.length === 0) return;
@@ -121,6 +126,6 @@ const ChartRenderer = ({ type, data, columns }) => {
             }} 
         />
     );
-};
+});
 
 export default ChartRenderer; 

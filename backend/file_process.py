@@ -129,7 +129,16 @@ class FileProcessor:
             # 验证文件是否可读
             pd.read_csv(file_path, nrows=1)  # 测试文件是否可读
             
-            table_name = os.path.splitext(os.path.basename(file_path))[0]
+            # 正确处理文件名，包括中文
+            file_name = os.path.basename(file_path)
+            table_name = os.path.splitext(file_name)[0]
+            
+            # 验证文件名不为空
+            if not table_name or table_name.lower() == "csv":
+                # 如果文件名异常，使用时间戳作为备用名称
+                from datetime import datetime
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                table_name = f"uploaded_file_{timestamp}"
             
             cursor = db_conn.cursor()
             cursor.execute("""

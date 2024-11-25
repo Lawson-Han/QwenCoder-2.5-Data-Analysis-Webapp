@@ -11,8 +11,10 @@ import pandas as pd
 from file_process import FileProcessor
 import numpy as np
 from typing import Tuple
+import urllib.parse
 
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False  # 确保JSON响应支持中文
 CORS(
     app,
     resources={
@@ -28,7 +30,7 @@ OLLAMA_API_URL = "http://localhost:11434/api/chat"
 
 # 配置上传文件夹
 UPLOAD_FOLDER = "uploads"
-ALLOWED_EXTENSIONS = {"csv", "pdf"}
+ALLOWED_EXTENSIONS = {"csv", "xlsx", "xls"}
 
 # 确保上传文件夹存在
 if not os.path.exists(UPLOAD_FOLDER):
@@ -284,8 +286,30 @@ def upload_file():
 
     if file and allowed_file(file.filename):
         try:
-            # 安全地处理文件名并保存
-            filename = secure_filename(file.filename)
+            # 解码文件名
+            original_filename = urllib.parse.unquote(file.filename)
+            base_name = os.path.splitext(original_filename)[0]
+            extension = os.path.splitext(original_filename)[1]  # 获取扩展名
+            
+            # 只在文件名完全为空或仅为扩展名的情况下使用时间戳
+            if not base_name.strip():  # 文件名为空或只包含空格
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                filename = f"uploaded_file_{timestamp}{extension}"
+            else:
+                # 使用 secure_filename 处理文件名，但保留中文字符
+                # 只替换不安全的字符，保留中文和其他有效字符
+                safe_base_name = "".join(c for c in base_name if c.isalnum() or c.isspace() or c in '-_()[]{}中文')
+                safe_base_name = safe_base_name.strip()
+                filename = f"{safe_base_name}{extension}"
+            
+            print("Processing file:", {
+                "original_filename": original_filename,
+                "base_name": base_name,
+                "extension": extension,
+                "final_filename": filename
+            })
+            
+            # 确保文件名使用UTF-8编码
             file_path = os.path.join(UPLOAD_FOLDER, filename)
             file.save(file_path)
 

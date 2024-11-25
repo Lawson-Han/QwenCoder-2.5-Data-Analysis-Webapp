@@ -80,23 +80,30 @@ const FileUploader = ({ sessionId, onFileChange, uploadedFile }) => {
         name: 'file',
         action: `${API_BASE_URL}/upload`,
         maxCount: 1,    
-        accept: '.csv,.pdf',
+        accept: '.csv,.xlsx,.xls',
         fileList: fileList,
-        data: {
-            session_id: sessionId
+        data: (file) => {
+            return {
+                session_id: sessionId,
+                file_name: encodeURIComponent(file.name)
+            }
         },
         beforeUpload: (file) => {
             const isLt10M = file.size / 1024 / 1024 < 10;
-            const isCsv = file.type === 'text/csv' || file.type === 'application/vnd.ms-excel';
+            const isValidType = file.type === 'text/csv' || 
+                              file.type === 'application/vnd.ms-excel' ||
+                              file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
             
             if (!isLt10M) {
                 message.error('File must be smaller than 10MB');
                 return Upload.LIST_IGNORE;
             }
-            if (!isCsv) {
-                message.error(`${file.name} is not a csv file.`);
+            if (!isValidType) {
+                message.error(`${file.name} is not a valid file type. Please upload CSV or Excel files.`);
                 return Upload.LIST_IGNORE;
             }
+            
+            console.log('Uploading file:', file.name);
             return true;
         },
         onChange(info) {
@@ -105,7 +112,7 @@ const FileUploader = ({ sessionId, onFileChange, uploadedFile }) => {
                 if (filePath) {
                     message.success(`${info.file.name} file uploaded successfully`);
                     onFileChange({
-                        name: info.file.response?.file_name,
+                        name: info.file.name,
                         filePath: filePath
                     });
                 }

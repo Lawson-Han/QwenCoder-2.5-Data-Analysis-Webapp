@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import ChartRenderer from './ChartRenderer';
 import { InfoCircleOutlined } from '@ant-design/icons';
 
-const ChartContainer = ({ type, data, columns }) => {
+const ChartContainer = forwardRef(({ type, data, columns }, ref) => {
     // 优化提示文字，使其更友好和易于理解
     const getChartHint = (type) => {
         const hints = {
@@ -59,6 +59,7 @@ const ChartContainer = ({ type, data, columns }) => {
             </div>
             
             <ChartRenderer
+                ref={ref}
                 type={type}
                 data={data}
                 columns={columns}
@@ -88,6 +89,6 @@ const ChartContainer = ({ type, data, columns }) => {
             </div>
         </div>
     );
-};
+});
 
 export default ChartContainer; 
