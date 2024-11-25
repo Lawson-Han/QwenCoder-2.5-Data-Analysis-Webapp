@@ -170,8 +170,8 @@ def handle_send_message(data):
         
         # 先保存助手消息以获取 message_id
         cursor.execute(
-            "INSERT INTO messages (session_id, role, text) VALUES (?, ?, ?)",
-            (session_id, "assistant", sql_query),
+            "INSERT INTO messages (session_id, role, text, type) VALUES (?, ?, ?, ?)",
+            (session_id, "assistant", sql_query, intent),
         )
         conn.commit()
         message_id = cursor.lastrowid  # 获取新插入消息的ID

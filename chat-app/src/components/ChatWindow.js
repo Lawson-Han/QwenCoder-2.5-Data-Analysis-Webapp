@@ -49,12 +49,14 @@ const ChatWindow = ({ session }) => {
                     // 处理消息数据
                     if (messagesResponse.ok) {
                         const data = await messagesResponse.json();
+                        console.log("data:", data);
                         setMessages(
                             data.messages.map(msg => ({
                                 message: msg.text,
                                 role: msg.role,
                                 message_id: msg.id,
-                                tableData: msg.table_data
+                                tableData: msg.table_data,
+                                chart_type: msg.type
                             }))
                         );
                     } else {
