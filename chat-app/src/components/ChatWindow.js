@@ -17,7 +17,6 @@ const ChatWindow = ({ session }) => {
     const [messages, setMessages] = useState([]);
     const [socket, setSocket] = useState(null);
     const [newMessage, setNewMessage] = useState('');
-    const [currentAssistantMessageId, setCurrentAssistantMessageId] = useState(null);
 
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef(null);
@@ -270,61 +269,6 @@ const ChatWindow = ({ session }) => {
         }
     };
 
-    const handleChartExport = (chartRef) => {
-        try {
-            if (!chartRef?.current) {
-                message.error('Chart reference not found');
-                return;
-            }
-
-            const canvas = chartRef.current.querySelector('canvas');
-            if (!canvas) {
-                message.error('Canvas element not found');
-                return;
-            }
-
-            // 创建一个新的 canvas 以保持原始质量
-            const newCanvas = document.createElement('canvas');
-            const context = newCanvas.getContext('2d');
-
-            // 设置与原始 canvas 相同的尺寸
-            newCanvas.width = canvas.width;
-            newCanvas.height = canvas.height;
-
-            // 添加白色背景
-            context.fillStyle = '#FFFFFF';
-            context.fillRect(0, 0, newCanvas.width, newCanvas.height);
-
-            // 绘制原始 canvas 内容
-            context.drawImage(canvas, 0, 0);
-
-            // 尝试以更高质量导出
-            newCanvas.toBlob((blob) => {
-                if (!blob) {
-                    message.error('Failed to generate image');
-                    return;
-                }
-
-                const url = URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                link.href = url;
-                link.download = `chart-${Date.now()}.png`;  // 添加时间戳避免重名
-
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-
-                // 清理 URL 对象
-                URL.revokeObjectURL(url);
-                message.success('Chart exported successfully');
-            }, 'image/png', 1.0);  // 使用 PNG 格式和最高质量
-
-        } catch (error) {
-            console.error('Chart export failed:', error);
-            message.error('Failed to export chart');
-        }
-    };
-
     const renderMessageContent = (msg) => (
         <>
             <ReactMarkdown
@@ -466,22 +410,12 @@ const ChatWindow = ({ session }) => {
                                     marginRight: '48px',
                                     marginTop: '16px'
                                 }}>
-
                                     <ChartContainer
                                         type={msg.chart_type}
                                         data={msg.tableData.dataSource}
                                         columns={msg.tableData.columns}
                                         ref={chartRef}
                                     />
-                                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
-                                        <Button
-                                            size="large"
-                                            icon={<DownloadOutlined />}
-                                            onClick={() => handleChartExport(chartRef)}
-                                        >
-                                            Export Chart
-                                        </Button>
-                                    </div>
                                 </div>
                             )}
 

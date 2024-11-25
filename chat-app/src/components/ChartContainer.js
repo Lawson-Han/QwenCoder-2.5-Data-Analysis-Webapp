@@ -1,4 +1,6 @@
 import React, { forwardRef } from 'react';
+import { Button, message } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 import ChartRenderer from './ChartRenderer';
 import { InfoCircleOutlined } from '@ant-design/icons';
 
@@ -35,6 +37,59 @@ const ChartContainer = forwardRef(({ type, data, columns }, ref) => {
 
     const hint = getChartHint(type);
 
+    const handleChartExport = () => {
+        try {
+            if (!ref?.current) {
+                message.error('Chart reference not found');
+                return;
+            }
+
+            const canvas = ref.current.querySelector('canvas');
+            if (!canvas) {
+                message.error('Canvas element not found');
+                return;
+            }
+
+            // Create a new canvas with padding
+            const padding = 40; // Add padding around the chart
+            const newCanvas = document.createElement('canvas');
+            const context = newCanvas.getContext('2d');
+            
+            // Set new canvas size with padding
+            newCanvas.width = canvas.width + (padding * 2);
+            newCanvas.height = canvas.height + (padding * 2);
+            
+            // Fill background
+            context.fillStyle = '#FFFFFF';
+            context.fillRect(0, 0, newCanvas.width, newCanvas.height);
+            
+            // Draw the original canvas with padding
+            context.drawImage(canvas, padding, padding);
+
+            newCanvas.toBlob((blob) => {
+                if (!blob) {
+                    message.error('Failed to generate image');
+                    return;
+                }
+
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `${hint.title.toLowerCase().replace(/\s+/g, '-')}-${Date.now()}.png`;
+
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+                message.success('Chart exported successfully');
+            }, 'image/png', 1.0);
+
+        } catch (error) {
+            console.error('Chart export failed:', error);
+            message.error('Failed to export chart');
+        }
+    };
+
     return (
         <div className="chart-container" style={{
             background: '#fff',
@@ -57,14 +112,15 @@ const ChartContainer = forwardRef(({ type, data, columns }, ref) => {
                     {hint.title}
                 </h4>
             </div>
-            
+
             <ChartRenderer
                 ref={ref}
                 type={type}
                 data={data}
                 columns={columns}
             />
-            
+
+
             <div style={{
                 marginTop: '16px',
                 padding: '12px 16px',
@@ -74,7 +130,7 @@ const ChartContainer = forwardRef(({ type, data, columns }, ref) => {
                 alignItems: 'flex-start',
                 gap: '12px'
             }}>
-                <InfoCircleOutlined style={{ 
+                <InfoCircleOutlined style={{
                     color: '#1890ff',
                     marginTop: '3px'
                 }} />
@@ -87,6 +143,21 @@ const ChartContainer = forwardRef(({ type, data, columns }, ref) => {
                     {hint.desc}
                 </span>
             </div>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                marginTop: '16px',
+            }}>
+                <Button
+                    type='dashed'
+                    size="large"
+                    icon={<DownloadOutlined />}
+                    onClick={handleChartExport}
+                >
+                    Export Chart
+                </Button>
+            </div>
+
         </div>
     );
 });
