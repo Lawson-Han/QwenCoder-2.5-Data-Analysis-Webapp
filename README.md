@@ -1,151 +1,81 @@
-# llama3.2-simple-website
+# QwenCoder-2.5 Data Analysis Web-app
 
-It's a simple LLM web app using React.js and Flask, with a MySQL database implemented.
+一个使用 React.js 和 Flask 以及 Sqlite3 数据库的简洁LLM网页应用。
 
-## Time Record
-## Time Record
+[English](README_EN.md) | [中文](README.md)
 
-9/26 22:44: Started working.
+## 快速开始
 
-9/26 23:05: Finished testing on React, Flask, and MySQL database. First connection debugging established.
+1. 安装并启动 Ollama：
+    ```bash
+    curl https://ollama.ai/install.sh | sh
+    ollama pull qwen2.5-coder:7b 
+    # 如果你的电脑配置较高，可以拉取14b模型
 
-9/27 0:37: Completed frontend page design; temporarily added a simulated response style.
-
-9/27 1:45: Frontend reading from the database connection completed. New session creation and refresh tested successfully, allowing for persistent rendering. Began beautifying parts of the application.
-
-<img src="./readme-image/Screenshot 2024-09-27 at 03.15.16.png" alt="Screenshot 2024-09-27 at 03.15.16" style="zoom:50%;" />
-
-9/27 2:31: Handled timezone for displaying correct timestamps. Encountered a bug that took some time to fix; currently complete.
-
-9/27, 4:23 AM: Got stuck on the streaming display part—ran into an unusual bug with Socket.io.
-
-9/27 5:06 AM Thought it was due to an outdated OpenSSL version affecting HTTP requests. Got it fixed now.
-
-9/27 6:31 AM Streaming display is up and running! Finished all the tasks. Tomorrow, I'll hunt for bugs and look for areas to optimize—for example, the LLM should store context to continue the conversation.
-
-<img src="./readme-image/Screenshot 2024-09-27 at 06.30.29.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:50%;" />
-
-9/27 14:16 Started optimizing loading display; it should show loading when the large model is returning, and return to normal when generation is complete.
-
-9/27 15:17 Completed loading display, completed scroll bar settings, and correctly rendered Markdown format. Noted that the model did not properly remember conversation history, started working on a fix.
-
-9/27 15:36 Memory mechanics now completed. Started working on the default tab, i.e., the initial landing page.
-
-9/27 16:19 Styling beautification completed, but discovered a sidebar scaling bug.
-
-9/27 16:52 Finalise a more robust sidebar.
-
-<img src="./readme-image/Screenshot 2024-09-27 at 16.51.55.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:20%;" />
-
-<img src="./readme-image/Screenshot 2024-09-27 at 16.53.30.png" alt="Screenshot 2024-09-27 at 06.30.29" style="zoom:30%;" />
-
-## Summary
-
-The development process has been smooth, and the main features are completed. It takes around 10 hours.
-
-## Chat App (Frontend)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ollama pull qwen2.5-coder:3b 
+    # 用于intent判断的小模型
+    ollama serve
+    ```
+    
+2. 启动后端：
+    ```bash
+    cd backend
+    pip install -r requirements.txt
+    python app.py
+    ```
+    
+3. 启动前端：
+    ```bash
+    cd chat-app
+    npm install
+    npm start
+    ```
+    
+### 端口
+- 前端: http://localhost:3000
+- 后端: http://localhost:5001
 
 
-## Chat App (Backend)
-## Quick Start
+## 实现步骤详解
 
-1. Install Ollama (Mac/Linux):
-```bash
-curl https://ollama.ai/install.sh | sh
-```
+用户首先创建一个会话并上传数据文件，后端解析文件结构后存储文件信息。
 
-2. Download qwen2.5-coder:32b model:
-```bash
-ollama pull qwen2.5-coder:32b
-```
+用户发送查询请求时，后端接收消息，验证会话是否有上传文件，然后解析文件结构，准备历史消息，并生成用于大型语言模型（LLM）的提示。
 
-3. Start the Ollama server:
-```bash
-ollama serve
-```
+LLM 根据提示生成 SQL 查询，后端执行查询并返回结果，将查询结果格式化为前端可展示的表格或图表数据，最后将结果实时发送给前端渲染和展示。
 
-4. Clone the repository:
-```bash
-git clone [your-repository-url]
-cd llama3.2-simple-website
-```
+### 1. 用户创建会话
 
-5. Start the Backend:
-```bash
-cd backend
-pip install -r requirements.txt
-python app.py
-```
+- 用户点击“新建会话”按钮，前端发送请求到后端的 `/add_session` 接口。
+- 后端在数据库中创建一个新的会话记录，返回会话 ID 给前端。
 
-6. Start the Frontend (in a new terminal):
-```bash
-cd chat-app
-npm install
-npm start
-```
+### 2. 文件上传
 
-### Access the Application
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:5000
+- 用户在会话中选择要上传的数据文件。
+- 前端通过 `/upload` 接口将文件和会话 ID 发送给后端。
+- 后端保存文件，解析上传文件的数据结构，确认文件合理性之后存储文件路径和名称到数据库的 `session_files` 表中。
 
-### Project Structure
-```
-llama3.2-simple-website/
-├── backend/           # Flask backend
-│   ├── app.py        # Main application file
-│   ├── database.py   # Database operations
-│   └── requirements.txt  # Python dependencies
-└── chat-app/         # React frontend
-    ├── src/          # Source code
-    └── package.json  # Node.js dependencies
-```
+### 3. 消息发送
 
-### Troubleshooting
+- 用户在前端输入查询，如“显示过去一年的销售趋势”。
+- 前端通过 Socket.IO （实时连接）将消息和会话 ID 发送给后端的 `handle_send_message` 函数。
 
-1. Check if Ollama is running:
-```bash
-ollama serve
-```
+### 4. 处理用户消息（`handle_send_message` 函数）
 
-2. Verify llama3.2 model is installed:
-```bash
-ollama list
-```
+- **接收消息**：`handle_send_message` 函数接收用户的消息数据，包括 `session_id` 和 `text`（用户输入的文本）。
+- **确认接收**：立即向前端发送消息接收的确认，前端显示处理状态从"Initialize Connection"转变为"Analyzing Query"。
+- **检查文件**：从数据库中查询该会话关联的文件信息。如果没有文件，返回错误消息，防止无文件处理。
+- **分析表结构**：使用 `FileProcessor` 读取用户上传的文件，获取数据表的结构信息（如列名、数据类型等），转化为 SQL 表，截取表头信息和数据结构供大模型理解文件。
+- **保存用户消息**：将用户的输入保存到数据库的 `messages` 表中。
+- **准备历史消息**：从数据库中获取该会话的所有历史消息，整理成适合发送给大模型的格式。
+- **生成提示（Prompt）**：根据用户输入和表结构信息，生成用于 LLM 的提示，并进一步使用小语言模型判断用户的意图（如需要生成什么类型的图表）和系统提示。
+- **调用 LLM**：使用生成的提示和历史消息，向 LLM 发送请求，要求其只生成对应的 SQL 查询。
+- **处理 LLM 响应**：以流式处理的方式接收 LLM 的响应，逐步构建完整的 SQL 查询，同时将响应的片段实时发送给前端显示。
+- **执行查询**：使用生成的 SQL 查询在用户上传的文件上执行。如果成功，获取查询结果；如果失败，返回错误信息。
+- **保存助手消息和结果**：将 LLM 生成的 SQL 查询作为助手的消息保存到数据库，并将查询结果存储到 `query_results` 表中。
+- **返回结果给前端**：将查询结果（数据表/图表类型）等信息发送给前端，前端会根据返回的信息，渲染对应的美化表格或者图表，供用户查看、交互和导出。
 
-3. Check backend logs in the terminal where you ran `python app.py`
 
-4. Check frontend logs in the terminal where you ran `npm start`
 
-5. If you encounter database issues, check if the SQLite database file exists:
-```bash
-ls backend/data/chat.db
-```
+
+
